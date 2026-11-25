@@ -1,0 +1,27 @@
+{
+ "files_with_fractional": 79,
+ "fractional_nodes": 207,
+ "judged": 157,
+ "not_judgeable": 50,
+ "not_judgeable_reasons": {
+  "legacy fractionalEvaluation operator (pre-#1266 syntax)": 4,
+  "non-literal variant in distribution: [{\"if\": [{\"==\": [{\"var\": \"tier\"},": 6,
+  "non-literal variant in distribution: [{\"var\": \"color\"}, 50]": 6,
+  "non-integer/computed weight: [\"red\", {\"if\": [{\"==\": [{\"var\": \"tier\"}, ": 6,
+  "non-literal variant in distribution: [false, 0]": 6,
+  "non-literal variant in distribution: [false, 100]": 6,
+  "non-literal variant in distribution: [null, 50]": 6,
+  "non-literal variant in distribution: [true, 50]": 3,
+  "unsupported bucketing expression: {\"fractional\": [[\"one\", 50], [\"two\",": 3,
+  "non-literal variant in distribution: []": 1,
+  "fractional args not a list": 1,
+  "non-integer/computed weight: [\"a\", \"one\"]": 1,
+  "non-literal variant in distribution: [3, 50]": 1
+ },
+ "flip_rate_G2_vs_G3": {
+  "min": 0.0,
+  "median": 0.473,
+  "max": 0.954
+ },
+ "judged_nonsample": 58
+}

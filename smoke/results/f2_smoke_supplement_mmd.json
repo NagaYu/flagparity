@@ -1,0 +1,49 @@
+{
+ "file": "census/files/adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04.yaml",
+ "rules_total": 2,
+ "rules_sum_ne_100": 1,
+ "findings": [
+  {
+   "flag": "enable-redis-cache-rollout",
+   "rule_index": 1,
+   "segment": "all-users",
+   "rollouts": [
+    [
+     "on",
+     10.0
+    ]
+   ],
+   "sum": 10.0,
+   "flag_default_variant": null,
+   "flag_enabled": false,
+   "engines": {
+    "server-legacy": {
+     "bucket_share_per_mille": {
+      "on": 100,
+      "None": 900
+     },
+     "d6_keys_count": {
+      "None": 894,
+      "on": 106
+     }
+    },
+    "server-v2.9+": {
+     "bucket_share_per_mille": {
+      "on": 1000
+     },
+     "d6_keys_count": {
+      "on": 1000
+     }
+    },
+    "rust-client": {
+     "bucket_share_per_mille": {
+      "on": 1000
+     },
+     "d6_keys_count": {
+      "on": 1000
+     }
+    }
+   }
+  }
+ ]
+}

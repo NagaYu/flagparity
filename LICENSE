@@ -1,0 +1,25 @@
+FlagParity
+Copyright (c) 2026 Yuta Nagao. All rights reserved.
+
+This software and its documentation (the "Software") are proprietary. No licence is granted except the limited
+evaluation permission below.
+
+Evaluation use. You may read the Software, run it on your own computers, and reproduce the evaluation described in
+README.md ("How it was evaluated" and "Reproducing"), solely to assess the Software for a possible licence or
+transfer. This permission is personal, non-exclusive, non-transferable and revocable.
+
+Not permitted without a separate written licence from the copyright holder: using the Software in production or in
+any product or service; redistributing, sublicensing, selling or publishing the Software or any modified version of
+it; and removing or altering this notice.
+
+Licensing and transfer. Licences for other uses, and a transfer of the Software, are available. Contact via
+https://nagayu-portfolio.nagayu.workers.dev/en
+
+Third-party material. Files from other projects that are included in this repository remain under their own licences,
+which are listed in THIRD_PARTY.md and kept next to those files. Nothing in this notice limits your rights under those
+licences.
+
+No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL
+THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR ITS USE.

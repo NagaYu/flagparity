@@ -1,0 +1,163 @@
+{
+ "after_owner_decisions": {
+  "after": 0,
+  "before": 43,
+  "compared_decisive": {
+   "D": 3546,
+   "F1": 2388,
+   "F2": 3408,
+   "F3": 2185,
+   "F4": 3254,
+   "F7": 3544
+  },
+  "resolved_by": {
+   "checker applies owner decision B-3a (C9)": 30,
+   "checker applies owner decision B-3b (C10)": 1,
+   "detector fix P3-Z-7 (defaultVariant reachable when fractional returns nil, e.g. no targetingKey) - was misclassified as B-2": 12
+  }
+ },
+ "cases_sha256": "c5455be9dea87dcbfe05ae2c631c2e05c651cde0ffd57a49161fe484afceb578",
+ "compared_decisive_final": {
+  "D": 3546,
+  "F1": 2395,
+  "F2": 3408,
+  "F3": 2190,
+  "F4": 3254,
+  "F7": 3544
+ },
+ "files": 1800,
+ "final_checker_steps": [
+  {
+   "by_class": {
+    "D": 51,
+    "F1": 5,
+    "F2": 25,
+    "F3": 186,
+    "F4": 111,
+    "F7": 29
+   },
+   "mismatches": 407,
+   "step": "pre-fix detector (1b8f1b6) + final checker"
+  },
+  {
+   "by_class": {
+    "F1": 3,
+    "F3": 146,
+    "F4": 99
+   },
+   "category": "detector defect",
+   "mismatches": 248,
+   "removed": 164,
+   "removed_by_class": {
+    "D": 51,
+    "F1": 3,
+    "F2": 25,
+    "F3": 44,
+    "F4": 12,
+    "F7": 29
+   },
+   "step": "fix 1 YAML as yaml.v3 decodes it (1358029)",
+   "surfaced": 5
+  },
+  {
+   "by_class": {
+    "F1": 3,
+    "F3": 54,
+    "F4": 99
+   },
+   "category": "definition boundary handled by Step 0",
+   "mismatches": 156,
+   "removed": 92,
+   "removed_by_class": {
+    "F3": 92
+   },
+   "step": "fix 2 P3-A-1 bare-value flagd targeting (a5701d6)",
+   "surfaced": 0
+  },
+  {
+   "by_class": {
+    "F1": 3,
+    "F3": 43,
+    "F4": 99
+   },
+   "category": "detector defect",
+   "mismatches": 145,
+   "removed": 11,
+   "removed_by_class": {
+    "F3": 11
+   },
+   "step": "fix 3 undefined flagd defaultVariant reported (7946244)",
+   "surfaced": 0
+  },
+  {
+   "by_class": {
+    "F1": 3,
+    "F3": 43,
+    "F4": 1
+   },
+   "category": "definition boundary handled by Step 0",
+   "mismatches": 47,
+   "removed": 98,
+   "removed_by_class": {
+    "F4": 98
+   },
+   "step": "fix 4 P3-A-2 resolved-variant F4 (62dc17c)",
+   "surfaced": 0
+  },
+  {
+   "by_class": {
+    "F1": 2,
+    "F3": 43
+   },
+   "category": "see per-mismatch note",
+   "mismatches": 45,
+   "removed": 2,
+   "removed_by_class": {
+    "F1": 1,
+    "F4": 1
+   },
+   "step": "fixes 4b/5/6 default resolution, semver witnesses, jsonlogic v3.10.2 (fa43339)",
+   "surfaced": 0
+  },
+  {
+   "by_class": {
+    "F1": 1,
+    "F3": 42
+   },
+   "category": "detector defect",
+   "mismatches": 43,
+   "removed": 2,
+   "removed_by_class": {
+    "F1": 1,
+    "F3": 1
+   },
+   "step": "fix 7 numeric witnesses for string constants (dbc67e2)",
+   "surfaced": 0
+  }
+ ],
+ "original_phase2_checker": {
+  "by_class": {
+   "D": 51,
+   "F1": 203,
+   "F2": 6,
+   "F3": 193,
+   "F4": 103,
+   "F7": 88,
+   "FMT": 27
+  },
+  "pre_fix_mismatches": 671,
+  "removed_by_checker_fixes_C1_C8": 329,
+  "surfaced_by_checker_fixes": 65
+ },
+ "per_format": 600,
+ "residual_after_all_fixes": {
+  "categories": {
+   "boundary:B-2": 12,
+   "boundary:B-3-dialect?": 1,
+   "boundary:B-3-goff-disabled-targeting": 30
+  },
+  "mismatches": 43
+ },
+ "schema": "flagbound.fuzz-summary/v1",
+ "seed": 20261125
+}

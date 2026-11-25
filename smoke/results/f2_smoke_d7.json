@@ -1,0 +1,47 @@
+{
+ "file": "census/files/9c969ffb7c05a8aaa78c5d0f78f4aa2b76c8ce4962f0ee7bf407efb2f8cbe6b0.yaml",
+ "rules_total": 2,
+ "rules_sum_ne_100": 1,
+ "findings": [
+  {
+   "flag": "flipt",
+   "rule_index": 1,
+   "segment": "all-users",
+   "rollouts": [
+    [
+     "fromFlipt2",
+     110.0
+    ]
+   ],
+   "sum": 110.0,
+   "flag_default_variant": null,
+   "flag_enabled": false,
+   "engines": {
+    "server-legacy": {
+     "bucket_share_per_mille": {
+      "fromFlipt2": 1000
+     },
+     "d6_keys_count": {
+      "fromFlipt2": 1000
+     }
+    },
+    "server-v2.9+": {
+     "bucket_share_per_mille": {
+      "fromFlipt2": 1000
+     },
+     "d6_keys_count": {
+      "fromFlipt2": 1000
+     }
+    },
+    "rust-client": {
+     "bucket_share_per_mille": {
+      "fromFlipt2": 1000
+     },
+     "d6_keys_count": {
+      "fromFlipt2": 1000
+     }
+    }
+   }
+  }
+ ]
+}

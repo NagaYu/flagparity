@@ -1,0 +1,599 @@
+{
+ "inputs": [
+  {
+   "sha256": "024e126bcf14464997241f6694241daef6e83a9dc7aa4423c51be067a36b2eae",
+   "source_url": "https://raw.githubusercontent.com/open-feature/go-sdk-contrib/4949f129289524d3823645dad68a2faaf57cad00/providers/go-feature-flag-in-process/testutils/module/flags.yaml"
+  },
+  {
+   "sha256": "026bb7ee7d9502dc28fb2b247406962dddb533abd3147e521501c80510020945",
+   "source_url": "https://raw.githubusercontent.com/cgolobic/openfeature-demo/5312e12935f3985389812659761b91fabbea1e40/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "033381db4d84bb7949f85e4b50b43b8f309e604164c6c2fd8c30e24214f71f2d",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/dev/default/features.yaml"
+  },
+  {
+   "sha256": "0401a11f710c302f7e36b660da4f323eee8139bff0fdbda07f09d629ae510af5",
+   "source_url": "https://raw.githubusercontent.com/Mahan-film/roxira-platform/60158253ff08d8a4cc6befa6ca6729aaf39eaeba/config/flags/flags.json"
+  },
+  {
+   "sha256": "0519791ba003fe0e42df1f5bca4a0ed8e1368bd43538e0d263b9f0e7fa75b18d",
+   "source_url": "https://raw.githubusercontent.com/mchittineni/sprocketry/ba12a611f48af4fd729eb315771b66e3b4a89267/deploy/helm/sprocketry/files/flagd/faults.json"
+  },
+  {
+   "sha256": "0765d0dece4a9586c27bab6f8fafe1f3a293595c5c29501ec8fff09838c20159",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/dev/default/features.yaml"
+  },
+  {
+   "sha256": "09771828d9a6556468cb79540df19ef553f396497e252314badb0bac4eb3942f",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/core/validation/testdata/valid_variant_flag_without_rollouts.yaml"
+  },
+  {
+   "sha256": "0a78c49a6d0e0ff2896ac51d7e8e11cea422959a7b664e33298270e2f4501c20",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/openfeature_react/config.goff.yaml"
+  },
+  {
+   "sha256": "0d95ac40d246b8478226c690162c4a34e1806c96b2829d42d535b92c09b52245",
+   "source_url": "https://raw.githubusercontent.com/myfear/the-main-thread/bdbc735635d3e4863e3ed1a96670f2bb87cb8c13/quarkus-openfeature-migration/flagd/pricing-flags.json"
+  },
+  {
+   "sha256": "0fb8b4ace42751fe2ffbb9bcaabaa1fff7705dc76a9d951bc184bb0353d3f539",
+   "source_url": "https://raw.githubusercontent.com/illenko/feature-flags-prototypes/db477aecb6ceba1f95ec86f40ee6ad330b837dbb/flags-local.yaml"
+  },
+  {
+   "sha256": "0fbc5f5509f2fdca39e59859189b4559de11c8f3072a1c5604a64a207b5179e2",
+   "source_url": "https://raw.githubusercontent.com/sswastioyono18/test-public-repo/c3e3d07e4727266303568b162046ab361e66885d/ff_experiment.yaml"
+  },
+  {
+   "sha256": "0fd74ec23e2a160b1ecf207daeb84e16ad68d44175ffd6ce40bfb72e624cf096",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/openfeature_react/config.goff.yaml"
+  },
+  {
+   "sha256": "106bd01633e9b60eb398e4c4bfb90769bc5ac5d67c1ee1cce77ccdf5c52496cf",
+   "source_url": "https://raw.githubusercontent.com/JieeiroSst/toggle-go/c9a84de47cc99900bd0cff700eb298788171207f/flag-config.goff.yaml"
+  },
+  {
+   "sha256": "106e84550d9ffb06e9c170224e210c7cb0784175aa66bdc4765df81592ba4fd6",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/cmdhelpers/configfile/testdata/flag.goff.yaml"
+  },
+  {
+   "sha256": "108d31ccd00e4e53908cda78c409b3da081766ed41f305de43f1e3797b69b99e",
+   "source_url": "https://raw.githubusercontent.com/unity-sds/unity-management-console/7fa02f21c662be4a1f6d80376d537699e5dceff1/configs/flag-config.yaml"
+  },
+  {
+   "sha256": "11f33eb128b0981239ac7da36ec63cc21a7ea3d4739fe1bb141661f9570178b2",
+   "source_url": "https://raw.githubusercontent.com/illenko/feature-flags-prototypes/db477aecb6ceba1f95ec86f40ee6ad330b837dbb/flags-local.yaml"
+  },
+  {
+   "sha256": "15cb9af4239e0024eb0b0e21044014d6d9b4bee93fe6bd94c43c0f59ef3e59b7",
+   "source_url": "https://raw.githubusercontent.com/open-feature/kotlin-sdk-contrib/184f266a851ffa64ac7e21990196dacc3074e261/providers/ofrep/src/integrationTest/goff/flags.goff.yaml"
+  },
+  {
+   "sha256": "16f94a20d9379cc66bed9df39d3bc9ed333581bb8acab2a10d0f4a39d25d0422",
+   "source_url": "https://raw.githubusercontent.com/nzuguem/notify-service-api/a1418d0b62527c3e886aa4776420f8d43663bb82/external-dependencies/feature-flag/config/flags-config.yaml"
+  },
+  {
+   "sha256": "18c9adf5f0fa73f6bf72b747be3d2476ec4b417225f2068ede0bd658315bd5df",
+   "source_url": "https://raw.githubusercontent.com/highflame-ai/highflame-iac/7e77f8b529483d9076b16f15c34204f750dc24ea/airgap-eval/config/flag/goff.yaml"
+  },
+  {
+   "sha256": "1a17f12d0aadc04de0547242ff74b7dc092170010a1e232b5d445bb1426a5269",
+   "source_url": "https://raw.githubusercontent.com/swift-open-feature/swift-ofrep/cafc6f407e89bec0c8d474ac369024235ff0b241/IntegrationTests/integration.flagd.json"
+  },
+  {
+   "sha256": "1ae51c442f4dd589bd1c8fae2a11ccfacc794ac34dbf8d4012c79195fcb273db",
+   "source_url": "https://raw.githubusercontent.com/open-feature/flagd-schemas/b65e5403fc5fa96f5f026cd6b04f1165d275be36/json/test/flags/positive/with-valid-targeting.json"
+  },
+  {
+   "sha256": "1cfe8ffd48bf677eeb59d54352a5088fdf5ce9057d7dc157f596c2a271d65c4b",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/flagd-evaluator/182fdad52ea3d3d23b11d0d37d76ce70bf804562/examples/flags/simple-flags.json"
+  },
+  {
+   "sha256": "1d350679fa70e2e93cd0751f763f956dfd043294f454c7f6d23d3a442ec82ded",
+   "source_url": "https://raw.githubusercontent.com/f-eld-ch/sitrep/fe6a20399b540297b0cbf4b1d93e0ecb55581be8/ui/features.yaml"
+  },
+  {
+   "sha256": "1d85e969533520ca82aebff821519f157b6731452bc5abe6d7dfbb734094af33",
+   "source_url": "https://raw.githubusercontent.com/justinabrahms/flagd-ui/5970abce380d2b34825d557fefc2352fcc8f4405/demo/flags.json"
+  },
+  {
+   "sha256": "20a4c5d54e4c274f4c569e815294a2188b2ecc46878a5a2cc4b3123bfdeb5061",
+   "source_url": "https://raw.githubusercontent.com/0Advi/faultline/c4f718acc010fbcd4088eeb5e3d57790355e7509/deploy/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "237f7de039009d964908d02c56325d79556a1d0cbc57a4d134a930394e7e7252",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/staging/default/features.yaml"
+  },
+  {
+   "sha256": "24b3798c33a8ae0141ebe02d7c7ef6ea618c096cff417a067f635bb12cfeac8f",
+   "source_url": "https://raw.githubusercontent.com/samutayuga/samfeatureflag/87ab29dc94f607385e14de45285982e2c0de1142/config/flags-config.yaml"
+  },
+  {
+   "sha256": "25fadce51b2557da4d047d6f826b0118f4f14201221e8206ca3ae086442b6bd6",
+   "source_url": "https://raw.githubusercontent.com/justinabrahms/flagd-ui/5970abce380d2b34825d557fefc2352fcc8f4405/demo/flags.json"
+  },
+  {
+   "sha256": "2664368bb68d50e68271fdd375a2a282063217f3e174d69bde0698647ff5246a",
+   "source_url": "https://raw.githubusercontent.com/deibsoncogo/pos-graduacao-ftr/65a1cf181473d162b617d430e7d30effcff88099/3.02-feature-flags/flagd-demo/flags.json"
+  },
+  {
+   "sha256": "26e5417f8ee89723a706ebb37f569ef60f2f53bc52ee360bdf05565e480302fd",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/demo-v2/eedd8aa6a0f647a8c2ca71405a6a789c3d7f1a0b/gitea/admin-features.yaml"
+  },
+  {
+   "sha256": "2ac92f0fd8c31ce3a5dadf50121937cb1ee0396d8ff68a480985c94df10189f8",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/flag-config-updated.yaml"
+  },
+  {
+   "sha256": "2bc45b29bf5802d9eb719499ac09743a8150c581c398f6a31393507a679c8cac",
+   "source_url": "https://raw.githubusercontent.com/diggsweden/wallet-client-gateway/c4fb71bc32686217126b724e7c582baf87441bb6/src/test/resources/feature-flags.json"
+  },
+  {
+   "sha256": "2d184b436ffe02526b2d4c3e136631ddebdc1bf42259403086712f5079c7ef7e",
+   "source_url": "https://raw.githubusercontent.com/SanidhyaMadheshia/localArena/bfb78963e08a77c84899c09625d4ead0ebf39f1a/infra/compose/flagd/flags.json"
+  },
+  {
+   "sha256": "2ec0b61abc27c6d75763b17c0d86eab12f8236907e34bf683fce03da9d4d3780",
+   "source_url": "https://raw.githubusercontent.com/appolon1908/Codestra-Grafana-/dc305bd8a5ff91e3db818d7230776dd04a4fa552/upstream/devenv/frontend-service/goff-flags.yaml"
+  },
+  {
+   "sha256": "30200bb3416ebaffeb61f48c33516a3e24c4a1228ee0be2453174fc34399b1b5",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/flag-config-3rd-file.yaml"
+  },
+  {
+   "sha256": "30c78635938912c46dc5a33bda7344486381de508746dd1a0297d4919145660a",
+   "source_url": "https://raw.githubusercontent.com/dambott/opentelemetry-helm-chartsv3/b9d148a46a8fa8443ce4fda1aafe5ec84df6fbac/charts/opentelemetry-demo/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "3245eb142b874bf0c5696761f20b9daddfd1eff2f4d128079604bf8ac6d22faa",
+   "source_url": "https://raw.githubusercontent.com/JiRaska/open-bank-oss/42c9166415d84075dce1799925b1d8ae9e6e38a5/openbank-libs/governance/feature-flags.example.flagd.json"
+  },
+  {
+   "sha256": "35dc3a29efee5507cf411c8a97ec4d4404f7bfbf07fc9aed264ca76d51e945e3",
+   "source_url": "https://raw.githubusercontent.com/mateuszmidor/GoStudy/13ba54c86756a659e96b67bea81743f11348f37d/go-feature-flag/flags.yaml"
+  },
+  {
+   "sha256": "3600a17289902ab620c5ce0b0daef892caa5ad3d174a9cf6c7ee90e1dc079b61",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/test/distributions/testdata/flag-configurations/valid/targeting-not-an-object.json"
+  },
+  {
+   "sha256": "38ffedc1c772eb2f6729cfa815c465421fb6cad4fdb4300627fffe9d31444f85",
+   "source_url": "https://raw.githubusercontent.com/jonas-haeusler/feature-flag-demo/5e1463796fded5d0a0b1bc2b82b7fafc1bae1bb0/src/main/resources/local-flags.json"
+  },
+  {
+   "sha256": "3a3831ff01d4faecd97cd8e564d5c98a90f18242068d84c9d2746b70038ad0bb",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/rollout_scheduled/flags.goff.yaml"
+  },
+  {
+   "sha256": "3b040d27f19035f2e9051c345a68e00935c891f768e3426b2e51e96b859e834c",
+   "source_url": "https://raw.githubusercontent.com/open-feature/python-sdk-contrib/47188dd92ebb8fcdd557bacb320857a88194cc63/providers/openfeature-provider-flagd/tests/flags/invalid-fractional-weights.json"
+  },
+  {
+   "sha256": "3c50b78bd3612511eb88b38c005c757657f05ef05c58e8669d728ad850d47bde",
+   "source_url": "https://raw.githubusercontent.com/grafana/composables/f3782841ec6731b609873f39943848c7a03336e0/goff/test/flags/test-flags-2.yaml"
+  },
+  {
+   "sha256": "3c54e52c1cfca04b6e1d16f633923f7aa8a59b1d2ad396dc1a1a9ba74661eedc",
+   "source_url": "https://raw.githubusercontent.com/orange-case/JoustMania/ac066e7715e6c02a7c48c9ef1be13fe119d29021/services/agent/experiment/testdata/game.json"
+  },
+  {
+   "sha256": "3e400b58e44ad9d34391371dfab579200c7eb8d5456d825595c044e44231c945",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/core/validation/testdata/valid_variant_flag_without_rollouts.yaml"
+  },
+  {
+   "sha256": "3fe2b86d78a7ea72696d40b5bbace9011f871d9b91105122cc7793044a7f99df",
+   "source_url": "https://raw.githubusercontent.com/open-feature/flagd-ofrep-cf-worker/d5f2321ec774c0b11d5de4c6fa1a67b6ceafd344/examples/js-worker/src/flags.json"
+  },
+  {
+   "sha256": "40edf3a92e7e5f58a07de1139b0ece036cfd4a85819f516cd0ef4051cc5aaf34",
+   "source_url": "https://raw.githubusercontent.com/H-Software/isp-net-adminator/56af7fcda1524869b7e7bbfd86a5ef5e6c157998/configs/flagd/flagd.example.json"
+  },
+  {
+   "sha256": "44a311aca8bc8b0847571f3d2f14e16ff5bc92c736a633aa0d13c535e1f32ebb",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/setup-action/81b069d4752b9f6665faf73b791abde0ceb864ed/examples/features.yaml"
+  },
+  {
+   "sha256": "4592bfc8a26865b5541238e1e89eb40fa28e88dedef1f06904a58ceb5d40a445",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/test/testbed/testdata/allFlags.after-two-changes.json"
+  },
+  {
+   "sha256": "472e9facf985564897c47d6aa119c49e1100644ea2b7e5cd8314b0a579349d97",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/config/samples/example_flags.flagd.json"
+  },
+  {
+   "sha256": "47bc92ea1985a508e7bf6175cc7f75af7581a23589c974447040173ae94e72dc",
+   "source_url": "https://raw.githubusercontent.com/Phile14augx/OPC_cerebro_hive/f5db3c622988edf91d69f5617fe603e93e5f2e1d/OPC/cerebro-hive-website/infra/flagd/flags.json"
+  },
+  {
+   "sha256": "4f0769e7faae25c7b01b64640abbcf0112dde4c8e12e0a3abbcd4f10af057ff5",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/retriever_multiple_config_files/flags2.goff.yaml"
+  },
+  {
+   "sha256": "50784a7dd3a1ec71175f1c62b02a32e8f98852ad4ff828751380f9a40720bc01",
+   "source_url": "https://raw.githubusercontent.com/askpt/openfeature-aspire-sample/ea61a70277d85629b49ff52688068311bbf923ed/src/Garage.AppHost/flags/flagd.json"
+  },
+  {
+   "sha256": "509db83d1a71da4685e5b6fce714e8262c97741f435524f0c233a54f464117c6",
+   "source_url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature-example/eaec1784ca141ebd4c30b6ede95b5bc539ef0a8e/flags/flags.json"
+  },
+  {
+   "sha256": "54b192c4f6079561a382b1b864e3f3fe0d8727625aa73a9d38cdd090895b27f5",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/rollout_progressive/flags.goff.yaml"
+  },
+  {
+   "sha256": "563cd40046ba3535f50dc602e6f2d1ef5589f4637a30cf8f99021f5f62c7953e",
+   "source_url": "https://raw.githubusercontent.com/diggsweden/wallet-ecosystem/31888daa0e06e56fda44588cef01770d3156ab21/config/wallet-client-gateway/feature-flags.json"
+  },
+  {
+   "sha256": "57dfd9a664aefa8848e5b1a9ceac555796b91c29237aa08441fec905b55e6c4f",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/core/validation/testdata/valid_constraint_list_values.yaml"
+  },
+  {
+   "sha256": "583dfb9780216ea5c44cd071c946e9b66b5ad8b407d7a2be37689bef926139f8",
+   "source_url": "https://raw.githubusercontent.com/berkslv/lecture-net-openfeature/1f92dab2575fafccc4fead76861b372f1bd22237/flags/flags.json"
+  },
+  {
+   "sha256": "5a31f63f00837387b255e6bdaf7768f554c1e5ec0466f04275049539326db7e4",
+   "source_url": "https://raw.githubusercontent.com/open-feature/python-sdk-contrib/47188dd92ebb8fcdd557bacb320857a88194cc63/providers/openfeature-provider-flagd/tests/flags/invalid-fractional-args.json"
+  },
+  {
+   "sha256": "5e5ab263219ce0b375e5462b51d335f0cb112a3a392cb792e0032b36066ea1b6",
+   "source_url": "https://raw.githubusercontent.com/jun06t/go-sample/539e52768a396631c4213f6229df73961369e699/openfeature/targeting/flags/flagd.json"
+  },
+  {
+   "sha256": "5ef06753f66b5c71a56a58f455dfd2c02d3b3bff65a02fd380b5d450a0589bfe",
+   "source_url": "https://raw.githubusercontent.com/guardian-intelligence/guardian/9acbe6b6f86fd20a526c04f16d93c6ae41494609/src/infrastructure/deployments/flags/prod/flags/flags.json"
+  },
+  {
+   "sha256": "62c41167fafd1ea184daa883664b8f035c0131b76966dbc79030bc07aecabc39",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/cmd/relayproxy/testdata/semaphore/config_flags.yaml"
+  },
+  {
+   "sha256": "637eb1b7aae5b997421bc607ad643bae2a7d880f01176992ca22deafef0cf0ac",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/internal/storage/fs/testdata/isoneof/features_1_5.yaml"
+  },
+  {
+   "sha256": "638d4f7234a60e35442b3957b39f2cb3d042e0b2bd6491257585bf10064cce5c",
+   "source_url": "https://raw.githubusercontent.com/alexandre-touret/feature-flag-workshop/36f9c8be1c30d8a4ea13b3502ef70bacfea2f30d/api/src/main/docker/go-feature-flag/flags.yaml"
+  },
+  {
+   "sha256": "6b9214ff53137ee90b43d8ad53fcb91f6a0bb6871ea818d9a2162422189be569",
+   "source_url": "https://raw.githubusercontent.com/yrw9281/OpenFeature.DotNet.Lab/4b476e653f20bdd11584207c44d3392aec9b0f7d/demo-03/flagd/flagd.json"
+  },
+  {
+   "sha256": "6bd85ad7829e51fba9ab014c187701e562724fd65353fe85a85e0d57a7eed45f",
+   "source_url": "https://raw.githubusercontent.com/open-feature/toggle-shop/9cc03471c6f8a1683bbd613658c6a1130fbeb4d8/flags.json"
+  },
+  {
+   "sha256": "6bf02a6c4905f6046b245de5b43c48738c7600b712da14d8e066da299076e66f",
+   "source_url": "https://raw.githubusercontent.com/aepfli/Fun-With-Flags-Demo/677b4c70f952ea6bd564065e474d51c50b9143d1/java-quarkus/flags.json"
+  },
+  {
+   "sha256": "6e0906b966517274212a67b087dd4d40bc443b30f901b9f9e27960520b845e20",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/demo/demo-flags.goff.yaml"
+  },
+  {
+   "sha256": "6e4258cebd460d5351aab98aa8458d6a6889bfa8ccd6a979a9b247e633d188f0",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/staging/default/features.yaml"
+  },
+  {
+   "sha256": "6f64fd8095bf28610ed7aa976299af46397cecb3247b900577e8235a3ee3225d",
+   "source_url": "https://raw.githubusercontent.com/open-feature/python-sdk-contrib/47188dd92ebb8fcdd557bacb320857a88194cc63/providers/openfeature-provider-flagd/tests/flags/invalid-fractional-weights-strings.json"
+  },
+  {
+   "sha256": "704663ba9e46e6d24a26f51593fb5e27cde658183c5b03792d71a6ba785bd1b3",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/openfeature/provider_tests/flags.yaml"
+  },
+  {
+   "sha256": "73a76d1732d18adfd8936fc35cc657f4e080c155e524f717577dcd140160f3e1",
+   "source_url": "https://raw.githubusercontent.com/iamywl/CNCF/2270239c990618c7f40f114e4ff55a4a992bd1a1/grafana/devenv/frontend-service/goff-flags.yaml"
+  },
+  {
+   "sha256": "774e664d29814b76457b954f14e07e14e47cbe3d0e9ce6d77e94db4c8f251193",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/openfeature_kotlin_server/config.goff.yaml"
+  },
+  {
+   "sha256": "7afc3582f4f714ae438c8d7704abcb5ea4219b2a1f33ab1d2afb1f2d393dba01",
+   "source_url": "https://raw.githubusercontent.com/thatisscary/electioneer/84f061390fd975782b57ca4deac406ef4cb0a067/infra/config/goff/flags.goff.yaml"
+  },
+  {
+   "sha256": "7bfde06553f036e4492bb4bd425ea6c2e7f6f6f5fc5fd7c11ffd8657369cddcb",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/retriever_multiple_config_files/flags.goff.yaml"
+  },
+  {
+   "sha256": "7c79aab4bd0ffc49a937d1819561721d82c5882d96a36d75ef966b4a81bea6ee",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/internal/storage/fs/testdata/isoneof/features_1_5.yaml"
+  },
+  {
+   "sha256": "7cca04f4bf6340e836a5f9032ce4f6b7c7be9d1cdf263b3d7b1bf20e4f2dfd73",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/examples/rollout_experimentation/flags.goff.yaml"
+  },
+  {
+   "sha256": "7e927bf81d6bd5267191c48c46614731b731136912e2d061569f5b4454ca55f9",
+   "source_url": "https://raw.githubusercontent.com/NeedleInAJayStack/Experiments/2ccf92215e3703a5f24d865bac32a5df72177042/services/feature_flagging/flagd/flags/demo.flagd.json"
+  },
+  {
+   "sha256": "81be3fee7ff518c19e7653998dd733decbe88963a6f28d1f9d5b9cd71737acbd",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/cmd/relayproxy/testdata/dockerhub-example/flags.goff.yaml"
+  },
+  {
+   "sha256": "84bcd654e7dd970157f359ec0eca1b613db04cc3327207c8b0fed9ab945d2798",
+   "source_url": "https://raw.githubusercontent.com/openkcm/cmk/d84133aa601c5c7eca55111bbbd576504eba4750/helm-tests/unit/testdata/files/flags-off.yaml"
+  },
+  {
+   "sha256": "86eaf1d1a1289e3feed8e199ed77bb348d6d1e53a025eac6f3e634b980b6dc89",
+   "source_url": "https://raw.githubusercontent.com/nanda-kshr/sample-project-openfeatures/2fba8aeaac3fbc4612ea2b65831a04f998ec9c9a/openfeature-nextjs/flags.flagd.json"
+  },
+  {
+   "sha256": "86f56e4c5787297d1aee02140949ade188694715f9a00ce225b11234abfc7ffa",
+   "source_url": "https://raw.githubusercontent.com/unity-sds/unity-management-console/7fa02f21c662be4a1f6d80376d537699e5dceff1/configs/flag-config.yaml"
+  },
+  {
+   "sha256": "87d23c5dea05be14e0599b83895b396d4b9e72184e45faf8d5cebbf668dd9b24",
+   "source_url": "https://raw.githubusercontent.com/cleston-sousa/simple-tests-runs/c58d85efd83ed0fcd8e20c0da3a5f161094f0b8d/src/main/resources/flagd/flags.flagd.json"
+  },
+  {
+   "sha256": "89d82eeae9abbf0153ea12253e004a0091ff5578c2b3eebd75325d1691095ecc",
+   "source_url": "https://raw.githubusercontent.com/LuisFilipe404/feature-flag-rockeseat/453f294d7faebbc27a8935813fa3cea3a9910d0a/flagd-demo/flags/demo.flagd.json"
+  },
+  {
+   "sha256": "8cb9e8948c6fcd089610b5814cf5c78ac3d28a5bdd2d5443bb6f801ecc69bb2b",
+   "source_url": "https://raw.githubusercontent.com/udita-0707/jaeger-mcp-benchmark-poc/af715c2ef650cda64400c1b3f0df77584e37d156/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "8d17eec44a6961df35a9269a53fff99e93d89dffd67ee8fba0118795debb1f1d",
+   "source_url": "https://raw.githubusercontent.com/iromu/spring-boot-openfeature/0d77b3e78093d305730bc69d43de930f4fea987d/spring-boot-starter-openfeature-flagd/src/test/resources/flags/testing-flags.json"
+  },
+  {
+   "sha256": "9326d742d0b7a6aa01fa5fa16844ac507f018ad3773c2a96f8ec3c6dbab55c97",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/prod/default/features.yaml"
+  },
+  {
+   "sha256": "962b46540e9fac3f6e92a4f510a23858ed3ff31c397e87da8493a83532e5cbbc",
+   "source_url": "https://raw.githubusercontent.com/pradyun1611/feature-flag-poc/ff1ceb6c6a706986c418eaf108f4a8f05f2b775c/flagd/flags.json"
+  },
+  {
+   "sha256": "9a87f1e60c7e6a7e85153eb971e7b82f4ba545e6fd6def491fb66a6d06a28621",
+   "source_url": "https://raw.githubusercontent.com/CommunityToolkit/Aspire/193555f823be07ffde5f84c5e32fde76e48d83da/examples/flagd/CommunityToolkit.Aspire.Hosting.Flagd.AppHost/flags/flagd.json"
+  },
+  {
+   "sha256": "9bd66b57a8a03930e68168c07c123f65f16d26c7e7ee52148a4caef1b6f92642",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/docs/assets/cheat-sheet-flags-payments.json"
+  },
+  {
+   "sha256": "9f2576f08be7225fe8e2f18098d0b04f97f0c00a3319c6a3f2e8c2c2650d4700",
+   "source_url": "https://raw.githubusercontent.com/Arks-06/sherlog/2ffc03649fff7a898e586eacc3f8022716673527/infra/vendor/opentelemetry-demo/src/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "a01b9c9c53e1c676894b28f829a0db159ec0fa4a96f25777ece77e2417b37ada",
+   "source_url": "https://raw.githubusercontent.com/aepfli/goff-tck-testbed/ad4e2b874ee6e470d4dc5e89c2e7131e25e69289/flags/canonical-flags.json"
+  },
+  {
+   "sha256": "a24188c7515dc201a0c5a9738743c9e0db8c87000fb10ce1594c2ed1fec11e16",
+   "source_url": "https://raw.githubusercontent.com/aepfli/Fun-With-Flags-Demo/677b4c70f952ea6bd564065e474d51c50b9143d1/go-chi/flags.json"
+  },
+  {
+   "sha256": "a25e4133013aff35a75866a2463154cdabc558787d8febb6861fd6cf1cccb3d5",
+   "source_url": "https://raw.githubusercontent.com/illenko/feature-flags-prototypes/db477aecb6ceba1f95ec86f40ee6ad330b837dbb/flags.yaml"
+  },
+  {
+   "sha256": "a4d2af2a013b0fca2303d68e2b13e2739b0cc1f863b67afc61bed767d9d13548",
+   "source_url": "https://raw.githubusercontent.com/Sengoku11/go-monorepo/1784b82b5212478618cf01bc7e9ca60035a86e05/apps/examples/canaryrollout/internal/featureflag/goff-flags.yaml"
+  },
+  {
+   "sha256": "a50690ba11eeb239c206c75c4511539954ec6c441528296bafd521380b57e9bf",
+   "source_url": "https://raw.githubusercontent.com/JieeiroSst/toggle-go/c9a84de47cc99900bd0cff700eb298788171207f/flag-config.goff.yaml"
+  },
+  {
+   "sha256": "a7b7fad4f2d248ddc913a8129b8a9f653d20fb18072849eab6db4f3bbd53cd42",
+   "source_url": "https://raw.githubusercontent.com/open-feature/playground/8140a5a4429127631965dbdc13e7e1dfa42ced89/config/flipt/flipt.yml"
+  },
+  {
+   "sha256": "a9096bad1b512f21a3451cdac34950368728c1c4a3d1e1007230e5586eb71c24",
+   "source_url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/sample-docusaurus/7c7265142347800e15860d3716edbe3278814a40/demo.flagd.json"
+  },
+  {
+   "sha256": "aa779e9958ecdf23b9fbab5fb44cad2e9f6e171ea3491fffa5a0356a84b4ece3",
+   "source_url": "https://raw.githubusercontent.com/aepfli/Fun-With-Flags-Demo/677b4c70f952ea6bd564065e474d51c50b9143d1/java-spring/flags.json"
+  },
+  {
+   "sha256": "ac80772c0ccbe8e343753beaab76bcfb5b7485f2d487f523f7add75d3d9f0e6d",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/test/distributions/testdata/flag-configurations/valid/targeting-fractional-and-sem-ver.json"
+  },
+  {
+   "sha256": "aeab89c6a89bfc9bc7bc4e422eca99ceba7a93b7c23d0e304395f5a373621f56",
+   "source_url": "https://raw.githubusercontent.com/rudigroblerZA/TvTracker/95789d3336f91bdad7a8345ea84e8bc7944bb9cd/src/TvTracker.AppHost/Flags/flagd.json"
+  },
+  {
+   "sha256": "aeff3f3bc80398e36e977cd1f2eac3f0463b72b0bd3adf032c4a72b6252586ee",
+   "source_url": "https://raw.githubusercontent.com/lolly-tools/lolly-work/4dc611bb3f90ebf677ad0891dd75ab61ed61b90c/tests/fixtures/ofrep/flagd-flags.json"
+  },
+  {
+   "sha256": "af15a46370762f0a5b05b24f4b5e739cc2e6baca6b3fa358bdf340623e04897a",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/ffclient/all_flags/config_flag/flag-config-all-flags.yaml"
+  },
+  {
+   "sha256": "b276233dc59d8596f6313199e56dc5735ce4bb444fa9cab3f0a6b5b3bd5e7fa5",
+   "source_url": "https://raw.githubusercontent.com/open-feature/ruby-sdk-contrib/513ca5c7cffcf53fdfadf6abdb23e342680f3c97/providers/openfeature-flagd-provider/docker/flags.json"
+  },
+  {
+   "sha256": "b299611130fb5e1f81a9531a44e1ce2627f2a6fd41b1c892470ed41a683da440",
+   "source_url": "https://raw.githubusercontent.com/nonchan7720/user-flex-feature/85cd7ee0033995d84b3bf0d68b778156ab554e1e/feature-flag/file.yaml"
+  },
+  {
+   "sha256": "b5f49c10bdc06ff02683485d87843b632528af48d7dd6c554d0cff1f5c1b15f0",
+   "source_url": "https://raw.githubusercontent.com/codacy-open-source-projects-scans/camel/3aa7ad6c1b82fe8a5a682e654fc9099d9cf8f987/components/camel-openfeature/src/test/resources/openfeature/flags.json"
+  },
+  {
+   "sha256": "ba8a39dcf6f3d8ad0bb0a3b88d2af84fbf53149eb07a6968577ab96b64a41c66",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/flagd-evaluator/182fdad52ea3d3d23b11d0d37d76ce70bf804562/examples/flags/targeted-flags.json"
+  },
+  {
+   "sha256": "bda7a55e22da6e3c6fa1b206aad689e7a8d4d0e50ba33e246dd831ade4d8ebc8",
+   "source_url": "https://raw.githubusercontent.com/17YuvrajSehgal/JiraAndLogs/b161ae8a2a6b8609772b037bb25378396d056cb7/deploy/otel-demo/flagd-baseline.json"
+  },
+  {
+   "sha256": "be5c947fc6aeb8a0b1e27253aca0bbf07c037923a8891a83270f3ead120e7e89",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/retriever/fileretriever/testdata/flag-config.yaml"
+  },
+  {
+   "sha256": "be5d523c067a9608c6ab505921b73d67bedad47cfb064f47c4031b6aa56b27b3",
+   "source_url": "https://raw.githubusercontent.com/cgolobic/openfeature-demo/5312e12935f3985389812659761b91fabbea1e40/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "c1f44c9ef3536bc352c65282737ca34ac53df3ec69c1b11b4b9fac0e0fd59d94",
+   "source_url": "https://raw.githubusercontent.com/jordanbrauer/hex/68e2ce9312efd119379db0f6f0301033480ec6e2/featureflag/testdata/flags.yaml"
+  },
+  {
+   "sha256": "c2c5a1d611735bec698c080bcd568103ebded6e15ecb1e1e47320e29e154ba1a",
+   "source_url": "https://raw.githubusercontent.com/lukas-reining/toggle-shop-spa/66a7b85455a7c5f96617c80e0e32cb1443062f46/flags.json"
+  },
+  {
+   "sha256": "c3136a087a450618d3db4034f79ab241483a5268564b24c7d7897ad749dd20bb",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/9fdd147cc31837b0be255c91f41c9a504ad455b6/cmd/relayproxy/testdata/web-provider-playground/relay-proxy/flags.goff.yaml"
+  },
+  {
+   "sha256": "c52bfd76c33fb523f793660db77127993619221427ba73ab6d9cb8babc54d823",
+   "source_url": "https://raw.githubusercontent.com/bigwhite/experiments/9faa2eceb9715406ca193a7096e19f4c02e8ae58/openfeature/demo2/flags.yaml"
+  },
+  {
+   "sha256": "c67a9c88eeed3cdadc01ca57b7c8dec8c294f832cb88c14842a4edada5aaf514",
+   "source_url": "https://raw.githubusercontent.com/open-feature/python-sdk-contrib/47188dd92ebb8fcdd557bacb320857a88194cc63/providers/openfeature-provider-flagd/tests/flags/basic-flag-wrong-variant.json"
+  },
+  {
+   "sha256": "c980492a76ecda5634cfcc9f9dff5fc40d24eb7d84e1da791159347e730750a1",
+   "source_url": "https://raw.githubusercontent.com/Light2Dark/sql-playground/9ef5df4ae4ce82f413a33508f7c8233ab34e3813/feature-flags.yaml"
+  },
+  {
+   "sha256": "d1258a3c84941f7e97a4f386d02c9df261d5ee6e605feac00739f768d1f62031",
+   "source_url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/test/testbed/testdata/allFlags.after-one-change.json"
+  },
+  {
+   "sha256": "d192492f55e608fa12fb9aa032584d586dc9b62a7ea4c5f2eb60e0c47f18fbad",
+   "source_url": "https://raw.githubusercontent.com/Mahan-film/roxira-platform/60158253ff08d8a4cc6befa6ca6729aaf39eaeba/config/flags/flags.json"
+  },
+  {
+   "sha256": "d1eef68cd166f0fae3aee90165842d253329e3fba937d26d0efb01ee962c1486",
+   "source_url": "https://raw.githubusercontent.com/dhruvvadoliya1/movie-app-backend/76327d094b9377462ef14fefffeebbad748f075d/helpers/flipt/flipt.yml"
+  },
+  {
+   "sha256": "d31554513e18ffd9b868fe9088c183e78d614be4d4673a2180c5768db8fa0f61",
+   "source_url": "https://raw.githubusercontent.com/thomaspoignant/toggle-shop-fork/612a6d1ee36dc8e2fe5647eaae53e2c72415fa07/go-feature-flag/flags.goff.yaml"
+  },
+  {
+   "sha256": "d48f91428cb112cbf23ac787b2f5619f0aa24d24dc421eddec87b52ddd4911b0",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/demo-v2/eedd8aa6a0f647a8c2ca71405a6a789c3d7f1a0b/gitea/admin-features.yaml"
+  },
+  {
+   "sha256": "d500b67735fb3d85c92ff29056e66eba7ca453d683c044dc4d0279b4bc30e132",
+   "source_url": "https://raw.githubusercontent.com/nyjin/flipt-demo/d43f89856bd3d4c4f17ca0cf7efecba31daed1f2/config/prod/default/features.yaml"
+  },
+  {
+   "sha256": "d51692195ae59872cd890b09cf6d9cfa24638d577c21c6b0c4ac6bc60117b669",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/benchmark/flag-config.yaml"
+  },
+  {
+   "sha256": "d67d8c3cb0d685c7a3b32d147fec54ea81899ea353132db773a82124b8ec5260",
+   "source_url": "https://raw.githubusercontent.com/yubinTW/openfeature-lab/2f6f391e6309f582f2681ec7552136e96d60b44c/lab02/flagd/demo.flagd.json"
+  },
+  {
+   "sha256": "d73fb9e3ca8096f06f73eea0da7f27dd0a7c2d107ff159706c5cf42d30913776",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/cmd/cli/linter/testdata/valid.yaml"
+  },
+  {
+   "sha256": "d8ac378669deb0c550086946c73bce9f6d93ae50aed05878e06e92b367ec26b2",
+   "source_url": "https://raw.githubusercontent.com/open-feature/go-sdk-contrib/4949f129289524d3823645dad68a2faaf57cad00/providers/go-feature-flag-in-process/testutils/module/flags.yaml"
+  },
+  {
+   "sha256": "d941ab37cff01393f36afe1203d8e2f96daeb84ac1a0fd9cf38e65679b4786be",
+   "source_url": "https://raw.githubusercontent.com/DanielHabenicht/flagd-ui/1c60671cc0ef574abd6ef6ed130ec7fb9651b83f/flags/multi-environment-example.flagd.json"
+  },
+  {
+   "sha256": "d96b37d8db48ff2c5a4cbea393e80c9544c26649382bde0dc4424eebca59cc87",
+   "source_url": "https://raw.githubusercontent.com/williamkoller/go-feature-flag-example/f7dc06f202cf59dc9bdd3a74dcc0efbff050dd6f/flag-config.goff.yaml"
+  },
+  {
+   "sha256": "dac2173df19fe8ad435f6d0fe7fcbf26473b60d19ac6b4edd7596ecd813eede8",
+   "source_url": "https://raw.githubusercontent.com/qomiralabs/drefyn/abc8f57450dad9df86720656bd5a00938bf246ea/apps/dashboard/e2e/flags/on.json"
+  },
+  {
+   "sha256": "dbf310a466cd899dc1427360925497ea890d986cd0fc4e9f1b15cd407f0eacdb",
+   "source_url": "https://raw.githubusercontent.com/Vercuski/Docker-Scripts/87ff037ffe1f2d0261bda5d50c8944f6b6d52d6b/FeatureFlags/Flagd/flags/flags.json"
+  },
+  {
+   "sha256": "dd9e9cb36d4cb79d4216aeb93636ab70093ab151bae6a21b61aec108a0d3b939",
+   "source_url": "https://raw.githubusercontent.com/sswastioyono18/test-public-repo/c3e3d07e4727266303568b162046ab361e66885d/ff.yaml"
+  },
+  {
+   "sha256": "e3e80cb003bd326f27fa20b94845bcb31299f45fb5a54f9b15b1dbe8d52cae2b",
+   "source_url": "https://raw.githubusercontent.com/open-feature/flagd-schemas/b65e5403fc5fa96f5f026cd6b04f1165d275be36/json/examples/full.json"
+  },
+  {
+   "sha256": "e46f63729508a5aeeecdce2f8446cd0ebf19712c902e1504af87581b4df80a0e",
+   "source_url": "https://raw.githubusercontent.com/aepfli/Fun-With-Flags-Demo/677b4c70f952ea6bd564065e474d51c50b9143d1/node-express/flags.json"
+  },
+  {
+   "sha256": "e66cf8fd77c229e229f143744fdbf8a1ec1e362d13846cb0f1f6c137d7817682",
+   "source_url": "https://raw.githubusercontent.com/perplexityai/SPACE/de38a31dcb52ba75543dc146aa612e86fa62632c/crates/l10_foundation/feature/flags/reference/flagd-space-flags.json"
+  },
+  {
+   "sha256": "e91310911bea3665d5f05885e71e6576ff894c14c33034b99978ef242a68ceef",
+   "source_url": "https://raw.githubusercontent.com/diggsweden/wallet-client-gateway/c4fb71bc32686217126b724e7c582baf87441bb6/docker-compose/feature-flags.json"
+  },
+  {
+   "sha256": "e976ba54b389117aa740ee0a50dfe1eb6abe7d358532308747c549bc511d861f",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/core/validation/testdata/valid_null_descriptions.yaml"
+  },
+  {
+   "sha256": "eb3ecbbb1bc4df22bea656741424b92e3900c3dd11c0542c5768157590220199",
+   "source_url": "https://raw.githubusercontent.com/shiftyp/otel-mcp-test-app/0712c8a9ffccf157bd7ff3a9d2b231e2cd29313d/flagd-config.json"
+  },
+  {
+   "sha256": "ebc1001e587f3d9c1c46fdd7136a1b12e94cd04e9035ff2b3776ad57e3aea478",
+   "source_url": "https://raw.githubusercontent.com/dynatrace-oss/ai-reliability-lab/17c96948ff13e60d7600ca54c4da1a1e9f583b64/code/monitor-production/step8-model-selection/flags.json"
+  },
+  {
+   "sha256": "f057c6eb80dc87088f224c2e42017e73a12e564822e3043d279e896534c04b43",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/build/testing/integration/testdata/namespaces/alternative/features.yaml"
+  },
+  {
+   "sha256": "f1c4cfc90b785a5f5bfa8ef367467a7528f622664229d6ea8c97ade6df558826",
+   "source_url": "https://raw.githubusercontent.com/Grunet/openfeature-for-denodeploy/d34d35ae215068bf263ed08a8928cb94237c484e/examples/attribute-targeting/flags.json"
+  },
+  {
+   "sha256": "f2e052aa487520931a93ee633c6f15caebf1fb5a9200841eac5dc269dd2313e6",
+   "source_url": "https://raw.githubusercontent.com/DanielHabenicht/flagd-ui/1c60671cc0ef574abd6ef6ed130ec7fb9651b83f/flags/demo.flagd.json"
+  },
+  {
+   "sha256": "f5ec24fddb5758826c79c546d71e61f783e4b30d4f8687d848718c6587dfc9ed",
+   "source_url": "https://raw.githubusercontent.com/flipt-io/demo-v2/eedd8aa6a0f647a8c2ca71405a6a789c3d7f1a0b/gitea/default-features.yaml"
+  },
+  {
+   "sha256": "f6e8e00897aaac51ff52f34794a499f64b70995837a2de0a58ed52a6b2b299c2",
+   "source_url": "https://raw.githubusercontent.com/orange-case/JoustMania/ac066e7715e6c02a7c48c9ef1be13fe119d29021/services/flagd/ci/observability.json"
+  },
+  {
+   "sha256": "fc508abebc9dca9c4d3b712541503627963bbda33bb783b194263add5a54957b",
+   "source_url": "https://raw.githubusercontent.com/jahnavi-yelamanchi/agent-deploy-control-plane/e83166173b5fd16b5159d13508eadb14317fe2c7/flags/flags.flagd.json"
+  },
+  {
+   "sha256": "fda918706a6dceca88b2e54952905024feaa5665767e14b713542dff16f6cfec",
+   "source_url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/flag-config-scheduled-v0.yaml"
+  },
+  {
+   "sha256": "fdf2994e3c386a0d4496149e7af95c99a645d1d6410e401724f12fbd86b090da",
+   "source_url": "https://raw.githubusercontent.com/open-feature/playground/8140a5a4429127631965dbdc13e7e1dfa42ced89/config/flagd/flags.json"
+  },
+  {
+   "sha256": "ff766fb17c60d4a595816012ba31f7ffd08e6698dccad5c46356bd6e52ac1a2c",
+   "source_url": "https://raw.githubusercontent.com/openkcm/common-sdk/87efa7d8c67d2cd0d357ddd96d7ae6a5b5fb3b1e/pkg/featureflags/testdata/flags.yaml"
+  },
+  {
+   "sha256": "ffadee98293bb1d04f2cfc89411d0b75feafd39e41576aa1df4ac9e909c6313d",
+   "source_url": "https://raw.githubusercontent.com/f-eld-ch/sitrep/fe6a20399b540297b0cbf4b1d93e0ecb55581be8/ui/features.yaml"
+  }
+ ],
+ "note": "sha256 of each of the 148 sealed inputs and the URL of the public file it is (or, for the 24 supplementary mutations, was derived from). Labels, pools and files are not published.",
+ "schema": "flagparity.holdout-public/v1",
+ "sealed_manifest_sha256": "6c24c604570b97eff19a2d6869d8e34b4ebb7f50aea153ddf416292251734683"
+}

@@ -1,0 +1,34 @@
+name: Go
+
+on: [push, pull_request]
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # floor is the go directive in go.mod; stable is the latest release
+        go: [floor, stable]
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go (go.mod floor)
+      if: matrix.go == 'floor'
+      uses: actions/setup-go@v5
+      with:
+        go-version-file: go.mod
+
+    - name: Set up Go (latest stable)
+      if: matrix.go == 'stable'
+      uses: actions/setup-go@v5
+      with:
+        go-version: stable
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Vet
+      run: go vet ./...
+
+    - name: Test
+      run: go test -v ./...

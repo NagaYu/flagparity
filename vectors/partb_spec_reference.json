@@ -1,0 +1,23 @@
+{
+ "vs testbed rule for G1": {
+  "applicable": 241,
+  "pass": 191,
+  "fail": 50,
+  "fractional_failures": 50,
+  "non_fractional_failures": 0
+ },
+ "vs testbed rule for G2": {
+  "applicable": 253,
+  "pass": 197,
+  "fail": 56,
+  "fractional_failures": 56,
+  "non_fractional_failures": 0
+ },
+ "vs testbed rule for G3": {
+  "applicable": 354,
+  "pass": 196,
+  "fail": 158,
+  "fractional_failures": 150,
+  "non_fractional_failures": 8
+ }
+}

@@ -1,0 +1,1736 @@
+{
+ "G1-1": {
+  "goff_source_only_caveat_missing": [],
+  "pass": true,
+  "semantics": {
+   "flagd/G1": {
+    "applicable": 206,
+    "fail": 0,
+    "pass": 206,
+    "status": "vector-verified"
+   },
+   "flagd/G2": {
+    "applicable": 253,
+    "fail": 0,
+    "pass": 253,
+    "status": "vector-verified"
+   },
+   "flagd/G3": {
+    "applicable": 354,
+    "fail": 0,
+    "pass": 354,
+    "status": "vector-verified"
+   },
+   "flipt/rust-client": {
+    "applicable": 38,
+    "fail": 0,
+    "pass": 38,
+    "status": "vector-verified"
+   },
+   "flipt/server-legacy": {
+    "applicable": 96,
+    "fail": 0,
+    "pass": 96,
+    "status": "vector-verified"
+   },
+   "flipt/server-v2.9+": {
+    "applicable": 92,
+    "fail": 0,
+    "pass": 92,
+    "status": "vector-verified"
+   },
+   "goff/pre-v1.32": {
+    "applicable": 0,
+    "fail": 0,
+    "pass": 0,
+    "status": "source-only"
+   },
+   "goff/v1.32+": {
+    "applicable": 176,
+    "fail": 0,
+    "pass": 176,
+    "status": "vector-verified"
+   }
+  }
+ },
+ "G1-2": {
+  "by_origin": {
+   "F1": {
+    "constructed": {
+     "detected": 15,
+     "misses": [],
+     "n": 15,
+     "recall": 1.0
+    },
+    "real": {
+     "detected": 8,
+     "misses": [],
+     "n": 8,
+     "recall": 1.0
+    }
+   },
+   "F2": {
+    "constructed": {
+     "detected": 9,
+     "misses": [],
+     "n": 9,
+     "recall": 1.0
+    },
+    "real": {
+     "detected": 13,
+     "misses": [],
+     "n": 13,
+     "recall": 1.0
+    }
+   },
+   "F3": {
+    "constructed": {
+     "detected": 9,
+     "misses": [],
+     "n": 9,
+     "recall": 1.0
+    },
+    "real": {
+     "detected": 10,
+     "misses": [],
+     "n": 10,
+     "recall": 1.0
+    }
+   },
+   "F4": {
+    "constructed": {
+     "detected": 0,
+     "misses": [],
+     "n": 0,
+     "recall": null
+    },
+    "real": {
+     "detected": 20,
+     "misses": [],
+     "n": 20,
+     "recall": 1.0
+    }
+   },
+   "F7": {
+    "constructed": {
+     "detected": 14,
+     "misses": [],
+     "n": 14,
+     "recall": 1.0
+    },
+    "real": {
+     "detected": 3,
+     "misses": [],
+     "n": 3,
+     "recall": 1.0
+    }
+   }
+  },
+  "by_route": {
+   "declared": {
+    "detected": 12,
+    "misses": [],
+    "n": 12,
+    "recall": 1.0
+   },
+   "detector+manual": {
+    "detected": 10,
+    "misses": [],
+    "n": 10,
+    "recall": 1.0
+   },
+   "manual-negative-review": {
+    "detected": 1,
+    "misses": [],
+    "n": 1,
+    "recall": 1.0
+   },
+   "mutation": {
+    "detected": 47,
+    "misses": [],
+    "n": 47,
+    "recall": 1.0
+   },
+   "phase0-f3-scan": {
+    "detected": 9,
+    "misses": [],
+    "n": 9,
+    "recall": 1.0
+   },
+   "phase0-oracle": {
+    "detected": 17,
+    "misses": [],
+    "n": 17,
+    "recall": 1.0
+   },
+   "phase0-smoke": {
+    "detected": 3,
+    "misses": [],
+    "n": 3,
+    "recall": 1.0
+   },
+   "source-reading": {
+    "detected": 2,
+    "misses": [],
+    "n": 2,
+    "recall": 1.0
+   }
+  },
+  "clean_set": {
+   "false_positives": [],
+   "files": 12
+  },
+  "negative_cases": {
+   "F1": {
+    "false_positives": [],
+    "n": 8
+   },
+   "F2": {
+    "false_positives": [],
+    "n": 9
+   },
+   "F3": {
+    "false_positives": [],
+    "n": 8
+   },
+   "F4": {
+    "false_positives": [],
+    "n": 9
+   },
+   "F7": {
+    "false_positives": [],
+    "n": 5
+   }
+  },
+  "overall": {
+   "detected": 101,
+   "misses": [],
+   "n": 101,
+   "recall": 1.0
+  },
+  "pass": true,
+  "per_class": {
+   "F1": {
+    "detected": 23,
+    "misses": [],
+    "n": 23,
+    "recall": 1.0
+   },
+   "F2": {
+    "detected": 22,
+    "misses": [],
+    "n": 22,
+    "recall": 1.0
+   },
+   "F3": {
+    "detected": 19,
+    "misses": [],
+    "n": 19,
+    "recall": 1.0
+   },
+   "F4": {
+    "detected": 20,
+    "misses": [],
+    "n": 20,
+    "recall": 1.0
+   },
+   "F7": {
+    "detected": 17,
+    "misses": [],
+    "n": 17,
+    "recall": 1.0
+   }
+  }
+ },
+ "G1-3": {
+  "accuracy": 1.0,
+  "correct": 20,
+  "denominator": 20,
+  "pass": true,
+  "wrong": []
+ },
+ "G1-4": {
+  "bytes": 2385328,
+  "identical": true,
+  "pass": true,
+  "run1_sha256": "87da932c7a94f8f65bdb96528a271e8ef90550c6796f0068402537d7b0e6f80f",
+  "run2_sha256": "87da932c7a94f8f65bdb96528a271e8ef90550c6796f0068402537d7b0e6f80f"
+ },
+ "G1-5": {
+  "bench": {
+   "balanced": true,
+   "input_files": 95,
+   "judged": 95,
+   "not_judgeable": 0
+  },
+  "census": {
+   "balanced": true,
+   "file_not_judgeable_reasons": {},
+   "flag_class_not_judgeable_without_reason": 0,
+   "input_files": 634,
+   "judged": 634,
+   "not_judgeable": 0,
+   "reported_files": 634
+  },
+  "pass": true
+ },
+ "GATE_1": "PASS",
+ "cases": [
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-001",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-smoke",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-002",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-003",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-004",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-005",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-006",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-007",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-008",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-009",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "route": "source-reading",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "hit": true,
+   "id": "F4-pos-020",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "route": "source-reading",
+   "status": "detected"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-legacy ~ flipt/server-v2.9+"
+   ],
+   "hit": true,
+   "id": "F4-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-legacy ~ flipt/server-v2.9+"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-v2.9+ ~ flipt/rust-client"
+   ],
+   "hit": true,
+   "id": "F4-pos-014",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-v2.9+ ~ flipt/rust-client"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-009",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-010",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "class": "F4",
+   "hit": false,
+   "id": "F4-neg-011",
+   "label": "negative",
+   "origin": "real",
+   "route": "phase0-oracle",
+   "status": "clean"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "hit": true,
+   "id": "F4-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "hit": true,
+   "id": "F4-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "hit": true,
+   "id": "F4-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "attribution_correct": true,
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "hit": true,
+   "id": "F4-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "predicted_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "route": "phase0-oracle",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": false,
+   "id": "F2-neg-009",
+   "label": "negative",
+   "origin": "real",
+   "route": "declared",
+   "status": "clean"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-001",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-002",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-003",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-004",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-005",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-006",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-smoke",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-007",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-008",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-009",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "route": "declared",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-001",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-002",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-003",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-004",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-005",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-006",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-007",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-008",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-009",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-010",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-011",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-012",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-013",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-014",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-015",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-014",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-015",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-016",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-017",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-018",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-019",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-020",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-021",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F2",
+   "hit": true,
+   "id": "F2-pos-022",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-001",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-002",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-003",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-004",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-005",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-006",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-007",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-008",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-009",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-001",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-002",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-003",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-004",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-005",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-006",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-007",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-008",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-009",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-010",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-011",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-012",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-013",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-014",
+   "label": "positive",
+   "origin": "constructed",
+   "route": "mutation",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-020",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-021",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-022",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": true,
+   "id": "F1-pos-023",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F1",
+   "hit": false,
+   "id": "F1-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-014",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-f3-scan",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": true,
+   "id": "F3-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "route": "manual-negative-review",
+   "status": "detected"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F3",
+   "hit": false,
+   "id": "F3-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "route": "phase0-smoke",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": true,
+   "id": "F7-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "route": "detector+manual",
+   "status": "detected"
+  },
+  {
+   "class": "F7",
+   "hit": false,
+   "id": "F7-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F7",
+   "hit": false,
+   "id": "F7-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F7",
+   "hit": false,
+   "id": "F7-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F7",
+   "hit": false,
+   "id": "F7-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  },
+  {
+   "class": "F7",
+   "hit": false,
+   "id": "F7-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "route": "manual-negative",
+   "status": "clean"
+  }
+ ]
+}

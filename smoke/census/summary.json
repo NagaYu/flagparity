@@ -1,0 +1,228 @@
+{
+ "fetchable_unique_candidates": 5898,
+ "fetch_status": {
+  "ok": 5896,
+  "http404": 2
+ },
+ "identified": {
+  "no-match": 4141,
+  "flagd": 598,
+  "unparseable": 726,
+  "flipt": 216,
+  "goff": 208,
+  "out:flipt-json": 1,
+  "out:flagd-yaml": 4,
+  "out:flagd-array": 2,
+  "": 2
+ },
+ "exclusions": {
+  "duplicate-bytes": 388
+ },
+ "counted_files": 634,
+ "counted_repos": 278,
+ "by_format": {
+  "flagd": {
+   "files": 350,
+   "repos": 201
+  },
+  "flipt": {
+   "files": 145,
+   "repos": 30
+  },
+  "goff": {
+   "files": 139,
+   "repos": 56
+  }
+ },
+ "provenance_prereg": {
+  "by_class": {
+   "sample:tutorial": 141,
+   "non-sample": 417,
+   "sample:provider-owned": 76
+  },
+  "by_format_class": {
+   "flagd": {
+    "sample:tutorial": 112,
+    "non-sample": 199,
+    "sample:provider-owned": 39
+   },
+   "flipt": {
+    "sample:tutorial": 7,
+    "non-sample": 117,
+    "sample:provider-owned": 21
+   },
+   "goff": {
+    "non-sample": 101,
+    "sample:tutorial": 22,
+    "sample:provider-owned": 16
+   }
+  },
+  "nonsample_files": 417,
+  "nonsample_repos": 157,
+  "nonsample_share": 0.6577,
+  "nonsample_fixture_path": 190,
+  "nonsample_not_fixture": 227,
+  "nonsample_not_fixture_repos": 132,
+  "nonsample_top_repos": [
+   [
+    "ministryofjustice/hmpps-feature-flags",
+    42
+   ],
+   [
+    "blitzy-showcase/flipt",
+    35
+   ],
+   [
+    "BlackbirdWorks/semaphore",
+    34
+   ],
+   [
+    "EconGraph/econ-graph",
+    34
+   ],
+   [
+    "gitbito/flipt",
+    20
+   ],
+   [
+    "open-feature-forking/openfeature-relay",
+    15
+   ],
+   [
+    "orange-case/JoustMania",
+    15
+   ],
+   [
+    "satorunooshie/ffcraft",
+    12
+   ],
+   [
+    "develogo/flags",
+    10
+   ],
+   [
+    "quarkiverse/quarkus-openfeature",
+    9
+   ],
+   [
+    "1fanwang/airflow-provider-openfeature",
+    8
+   ],
+   [
+    "davidaparicio/microsvcs",
+    5
+   ],
+   [
+    "Dynatrace/fm-provider-test-harness",
+    4
+   ],
+   [
+    "jordanwallwork/flagon",
+    4
+   ],
+   [
+    "appolon1908/Codestra-Grafana-",
+    3
+   ]
+  ]
+ },
+ "provenance_strict": {
+  "by_class": {
+   "sample:tutorial": 141,
+   "non-sample": 298,
+   "sample:duplicate-of-sample": 49,
+   "sample:provider-mirror": 70,
+   "sample:provider-owned": 76
+  },
+  "by_format_class": {
+   "flagd": {
+    "sample:tutorial": 112,
+    "non-sample": 170,
+    "sample:duplicate-of-sample": 14,
+    "sample:provider-mirror": 15,
+    "sample:provider-owned": 39
+   },
+   "flipt": {
+    "sample:tutorial": 7,
+    "non-sample": 61,
+    "sample:provider-mirror": 55,
+    "sample:duplicate-of-sample": 1,
+    "sample:provider-owned": 21
+   },
+   "goff": {
+    "non-sample": 67,
+    "sample:tutorial": 22,
+    "sample:duplicate-of-sample": 34,
+    "sample:provider-owned": 16
+   }
+  },
+  "nonsample_files": 298,
+  "nonsample_repos": 143,
+  "nonsample_share": 0.47,
+  "nonsample_fixture_path": 86,
+  "nonsample_not_fixture": 212,
+  "nonsample_not_fixture_repos": 121,
+  "nonsample_top_repos": [
+   [
+    "ministryofjustice/hmpps-feature-flags",
+    42
+   ],
+   [
+    "EconGraph/econ-graph",
+    34
+   ],
+   [
+    "orange-case/JoustMania",
+    15
+   ],
+   [
+    "satorunooshie/ffcraft",
+    12
+   ],
+   [
+    "develogo/flags",
+    10
+   ],
+   [
+    "quarkiverse/quarkus-openfeature",
+    9
+   ],
+   [
+    "1fanwang/airflow-provider-openfeature",
+    8
+   ],
+   [
+    "davidaparicio/microsvcs",
+    5
+   ],
+   [
+    "Dynatrace/fm-provider-test-harness",
+    4
+   ],
+   [
+    "appolon1908/Codestra-Grafana-",
+    3
+   ],
+   [
+    "Kavindu-Dodan/flag-test-ground",
+    3
+   ],
+   [
+    "kyma-project/cloud-manager",
+    3
+   ],
+   [
+    "mandar33/local-eks-platform",
+    3
+   ],
+   [
+    "alexcardell/openfeature-scala",
+    2
+   ],
+   [
+    "DanielHabenicht/flagd-ui",
+    2
+   ]
+  ]
+ }
+}

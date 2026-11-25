@@ -1,0 +1,73 @@
+{
+ "file": "census/files/aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f.json",
+ "n_contexts": 1000,
+ "flags": [
+  {
+   "flag": "ml.ranking_model",
+   "path": "targeting.fractional",
+   "operator": "fractional",
+   "distribution": [
+    [
+     "v1",
+     50
+    ],
+    [
+     "v2",
+     50
+    ]
+   ],
+   "bucketing": "default [flagKey, targetingKey]",
+   "alloc": {
+    "G1": {
+     "v1": 488,
+     "v2": 512
+    },
+    "G2": {
+     "v1": 517,
+     "v2": 483
+    },
+    "G3": {
+     "v1": 500,
+     "v2": 500
+    }
+   },
+   "flips_G2_vs_G3": 521,
+   "flip_rate_G2_vs_G3": 0.521,
+   "flips_G1_vs_G3": 490,
+   "flips_G1_vs_G2": 509,
+   "sample": [
+    {
+     "targetingKey": "user-0000",
+     "G1": "v2",
+     "G2": "v1",
+     "G3": "v1"
+    },
+    {
+     "targetingKey": "user-0001",
+     "G1": "v2",
+     "G2": "v2",
+     "G3": "v2"
+    },
+    {
+     "targetingKey": "user-0002",
+     "G1": "v1",
+     "G2": "v1",
+     "G3": "v1"
+    },
+    {
+     "targetingKey": "user-0003",
+     "G1": "v2",
+     "G2": "v2",
+     "G3": "v1"
+    },
+    {
+     "targetingKey": "user-0004",
+     "G1": "v1",
+     "G2": "v2",
+     "G3": "v1"
+    }
+   ],
+   "verdict": "judged"
+  }
+ ]
+}

@@ -1,0 +1,1465 @@
+{
+ "counts": {
+  "boundary:B-2": 12,
+  "boundary:B-3-dialect?": 1,
+  "boundary:B-3-goff-disabled-targeting": 30
+ },
+ "mismatches": [
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "green",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "false",
+      "red"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['false', 'red']",
+    "findings": [
+     {
+      "variant": "green",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "green",
+    "detector_ghosts": [
+     "green"
+    ]
+   },
+   "family": "mixed",
+   "file": "flagd-0064.json",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "green",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['blue']",
+    "findings": [
+     {
+      "variant": "green",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "green",
+    "detector_ghosts": [
+     "green"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0123.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "4",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['off']",
+    "findings": [
+     {
+      "variant": "4",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "4",
+    "detector_ghosts": [
+     "4"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0171.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "false",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "green"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['green']",
+    "findings": [
+     {
+      "variant": "false",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "false",
+    "detector_ghosts": [
+     "false"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0207.json",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "on",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "3"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['3']",
+    "findings": [
+     {
+      "variant": "on",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "on",
+    "detector_ghosts": [
+     "on"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0234.json",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "true",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "green"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['green']",
+    "findings": [
+     {
+      "variant": "true",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "true",
+    "detector_ghosts": [
+     "true"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0239.json",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "3",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "false",
+      "true"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['false', 'true']",
+    "findings": [
+     {
+      "variant": "3",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "3",
+    "detector_ghosts": [
+     "3"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0287.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "false",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "blue",
+      "true"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['blue', 'true']",
+    "findings": [
+     {
+      "variant": "false",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "false",
+    "detector_ghosts": [
+     "false"
+    ]
+   },
+   "family": "multi-contains",
+   "file": "flagd-0367.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "blue",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "green",
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['green', 'on']",
+    "findings": [
+     {
+      "variant": "blue",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "blue",
+    "detector_ghosts": [
+     "blue"
+    ]
+   },
+   "family": "mixed",
+   "file": "flagd-0383.json",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "3",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "red"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['red']",
+    "findings": [
+     {
+      "variant": "3",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "3",
+    "detector_ghosts": [
+     "3"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0424.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "red",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['off']",
+    "findings": [
+     {
+      "variant": "red",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "red",
+    "detector_ghosts": [
+     "red"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0484.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-2",
+   "checker": {
+    "evidence": {
+     "can_null": true,
+     "default": "default",
+     "default_only_via_unused_default": false,
+     "depends_on_F1": false,
+     "produced": [
+      "4"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": []
+    },
+    "state": "negative"
+   },
+   "class": "F3",
+   "detector": {
+    "basis": "produced by reachable paths: ['4']",
+    "findings": [
+     {
+      "variant": "default",
+      "why": "no reachable rule, positive-weight allocation or default produces it"
+     }
+    ],
+    "status": "detected"
+   },
+   "evidence": {
+    "checker_can_null": true,
+    "defaultVariant": "default",
+    "detector_ghosts": [
+     "default"
+    ]
+   },
+   "family": "frac-names",
+   "file": "flagd-0568.json",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-dialect?",
+   "checker": {
+    "evidence": {
+     "rules": [
+      {
+       "index": 0,
+       "reach": "no-witness",
+       "segment": {
+        "keys": [
+         "seg-0",
+         "seg-0"
+        ],
+        "operator": "OR_SEGMENT_OPERATOR"
+       }
+      },
+      {
+       "index": 1,
+       "reach": "reachable",
+       "segment": "seg-1",
+       "witness": {
+        "age": "",
+        "email": "",
+        "name": "",
+        "score": "22"
+       }
+      }
+     ],
+     "status": "computed",
+     "weak": []
+    },
+    "state": "candidate"
+   },
+   "class": "F1",
+   "detector": {
+    "basis": "every authored rule/branch has a witness context (450 witness contexts)",
+    "status": "clean"
+   },
+   "evidence": {
+    "note": "check by hand: Go TrimSpace vs Rust (evaluation.go L692 / lib.rs L510)"
+   },
+   "family": "yaml-keys",
+   "file": "flipt-0416.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "blue"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "pct",
+   "file": "goff-0006.yaml",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0031.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "disabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "off"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "semver-pre",
+   "file": "goff-0050.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0077.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "true"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-keys",
+   "file": "goff-0109.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 2
+   },
+   "family": "yaml-bool",
+   "file": "goff-0111.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "0x10",
+      "2"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-keys",
+   "file": "goff-0112.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "0x10"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "true"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-keys",
+   "file": "goff-0141.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "string-order",
+   "file": "goff-0142.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "ghost"
+     ],
+     "status": "computed",
+     "undefined": [
+      "ghost"
+     ],
+     "unproduced": [
+      "blue",
+      "disabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "semver-pre",
+   "file": "goff-0151.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "disabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "blue",
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 3
+   },
+   "family": "yaml-bool",
+   "file": "goff-0197.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "red"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "off"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "mixed",
+   "file": "goff-0198.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "off",
+      "red"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 2
+   },
+   "family": "yaml-bool",
+   "file": "goff-0214.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0237.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "enabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 3
+   },
+   "family": "yaml-bool",
+   "file": "goff-0237.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "semver-pre",
+   "file": "goff-0238.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "multi-contains",
+   "file": "goff-0260.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "enabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "1e3",
+      "false",
+      "true"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-keys",
+   "file": "goff-0266.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "1"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 2
+   },
+   "family": "yaml-keys",
+   "file": "goff-0274.yaml",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0302.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "enabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "multi-contains",
+   "file": "goff-0324.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "on"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "red"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "mixed",
+   "file": "goff-0344.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "disabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "red"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0356.yaml",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 2
+   },
+   "family": "yaml-bool",
+   "file": "goff-0357.yaml",
+   "flag": "flag-1",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "1e3"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "0x10",
+      "1",
+      "true"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 2
+   },
+   "family": "yaml-keys",
+   "file": "goff-0396.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "off"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "blue",
+      "enabled"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "mixed",
+   "file": "goff-0399.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "enabled",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "mixed",
+   "file": "goff-0449.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "enabled"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "blue",
+      "on"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "pct",
+   "file": "goff-0475.yaml",
+   "flag": "flag-0",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "red"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "yaml-bool",
+   "file": "goff-0528.yaml",
+   "flag": "flag-2",
+   "kind": "verdict"
+  },
+  {
+   "category": "boundary:B-3-goff-disabled-targeting",
+   "checker": {
+    "evidence": {
+     "depends_on_F1": false,
+     "produced": [
+      "blue"
+     ],
+     "status": "computed",
+     "undefined": [],
+     "unproduced": [
+      "disabled",
+      "red"
+     ]
+    },
+    "state": "candidate"
+   },
+   "class": "F3",
+   "detector": {
+    "reason": "toggle without rules or allocation (P1-B-1: excluded)",
+    "status": "not-applicable"
+   },
+   "evidence": {
+    "all_disabled": true,
+    "targeting_rules": 1
+   },
+   "family": "string-order",
+   "file": "goff-0530.yaml",
+   "flag": "flag-2",
+   "kind": "verdict"
+  }
+ ],
+ "source": "step9.goff-variation-text.json"
+}

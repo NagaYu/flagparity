@@ -1,0 +1,200 @@
+{
+ "schema": "flagparity.fidelity/v1",
+ "semantics": {
+  "flagd/G1": {
+   "failures": [],
+   "format": "flagd",
+   "kind": "version",
+   "label": "flagd <= v0.14.x (float percentage bucketing)",
+   "official_vectors_by_preregistration": true,
+   "order": 1,
+   "results": {
+    "applicable": 206,
+    "fail": 0,
+    "g1_excluded_untagged_fractional": 35,
+    "not_applicable_version": 220,
+    "out_of_scope": 117,
+    "out_of_scope_by_reason": {
+     "context enrichment (provider)": 4,
+     "deprecated RPC protocol mapping (ProtoVersionKey)": 7
+    },
+    "pass": 206
+   },
+   "sources": [
+    "https://github.com/open-feature/flagd/blob/b9c099cb7fa002a509a82c81b467f5e784c27e82/core/pkg/evaluator/fractional.go"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flagd-testbed@7690b548:G1"
+   ]
+  },
+  "flagd/G2": {
+   "failures": [],
+   "format": "flagd",
+   "kind": "version",
+   "label": "flagd v0.15.0-v0.17.x (integer (h*W)>>32, string input)",
+   "official_vectors_by_preregistration": true,
+   "order": 2,
+   "results": {
+    "applicable": 253,
+    "fail": 0,
+    "not_applicable_version": 173,
+    "out_of_scope": 117,
+    "out_of_scope_by_reason": {
+     "context enrichment (provider)": 4,
+     "deprecated RPC protocol mapping (ProtoVersionKey)": 7
+    },
+    "pass": 253
+   },
+   "sources": [
+    "https://github.com/open-feature/flagd/blob/0c5b766d365676e413ff31044a9d02ad83b356cc/core/pkg/evaluator/fractional.go"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flagd-testbed@7690b548:G2"
+   ]
+  },
+  "flagd/G3": {
+   "failures": [],
+   "format": "flagd",
+   "kind": "version",
+   "label": "flagd >= v0.18.0 (integer, CBOR input)",
+   "official_vectors_by_preregistration": true,
+   "order": 3,
+   "results": {
+    "applicable": 354,
+    "fail": 0,
+    "not_applicable_version": 72,
+    "out_of_scope": 117,
+    "out_of_scope_by_reason": {
+     "context enrichment (provider)": 4,
+     "deprecated RPC protocol mapping (ProtoVersionKey)": 7
+    },
+    "pass": 354
+   },
+   "sources": [
+    "https://github.com/open-feature/flagd/blob/ac826d8e9cf3f5b14ad56f6e9eeeb981f45321eb/core/pkg/evaluator/fractional.go",
+    "https://github.com/open-feature/flagd/blob/flagd/v0.19.0/core/pkg/evaluator/fractional.go"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flagd-testbed@7690b548:G3"
+   ]
+  },
+  "flipt/rust-client": {
+   "failures": [],
+   "format": "flipt",
+   "kind": "engine",
+   "label": "Flipt client-side Rust engine (normalised, round())",
+   "official_vectors_by_preregistration": true,
+   "order": 3,
+   "results": {
+    "applicable": 38,
+    "fail": 0,
+    "pass": 38
+   },
+   "sources": [
+    "https://github.com/flipt-io/flipt-client-sdks/blob/19e546523ed82a49123b681d086fadbe07833e78/flipt-evaluation/src/lib.rs"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flipt-rust@19e54652",
+    "flipt-constraints-rust@19e54652"
+   ]
+  },
+  "flipt/server-legacy": {
+   "failures": [],
+   "format": "flipt",
+   "kind": "version",
+   "label": "Flipt server v1.x and v2 < v2.9.0 (no normalisation)",
+   "official_vectors_by_preregistration": true,
+   "order": 1,
+   "results": {
+    "applicable": 96,
+    "fail": 0,
+    "pass": 96
+   },
+   "sources": [
+    "https://github.com/flipt-io/flipt/blob/v1.62.1/internal/server/evaluation/legacy_evaluator.go",
+    "https://github.com/flipt-io/flipt/blob/v1.62.1/internal/server/evaluation/evaluation.go"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flipt-go@v1.62.1",
+    "flipt-constraints-go@v1.62.1"
+   ]
+  },
+  "flipt/server-v2.9+": {
+   "failures": [],
+   "format": "flipt",
+   "kind": "version",
+   "label": "Flipt server v2 >= v2.9.0 (normalised, int())",
+   "official_vectors_by_preregistration": true,
+   "order": 2,
+   "results": {
+    "applicable": 92,
+    "fail": 0,
+    "pass": 92
+   },
+   "sources": [
+    "https://github.com/flipt-io/flipt/blob/v2.14.2/internal/server/evaluation/evaluation.go",
+    "https://github.com/flipt-io/flipt/pull/5581"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "flipt-go@v2.14.2",
+    "flipt-constraints-go@v2.14.2"
+   ]
+  },
+  "goff/pre-v1.32": {
+   "failures": [],
+   "format": "goff",
+   "kind": "version",
+   "label": "GO Feature Flag v1.0.0-v1.31.x (sum must be 100)",
+   "official_vectors_by_preregistration": false,
+   "order": 1,
+   "results": {
+    "applicable": 0,
+    "fail": 0,
+    "pass": 0
+   },
+   "sources": [
+    "https://github.com/thomaspoignant/go-feature-flag/blob/v1.31.2/internal/flag/rule.go",
+    "https://github.com/thomaspoignant/go-feature-flag/blob/v1.31.2/internal/flag/internal_flag.go"
+   ],
+   "status": "source-only",
+   "vector_suites": []
+  },
+  "goff/v1.32+": {
+   "failures": [],
+   "format": "goff",
+   "kind": "version",
+   "label": "GO Feature Flag >= v1.32.0 (silent normalisation)",
+   "official_vectors_by_preregistration": true,
+   "order": 2,
+   "results": {
+    "applicable": 176,
+    "fail": 0,
+    "pass": 176
+   },
+   "sources": [
+    "https://github.com/thomaspoignant/go-feature-flag/blob/v1.59.1/modules/core/flag/rule.go",
+    "https://github.com/thomaspoignant/go-feature-flag/blob/v1.59.1/modules/core/utils/hash.go",
+    "https://github.com/thomaspoignant/go-feature-flag/pull/2136"
+   ],
+   "status": "vector-verified",
+   "vector_suites": [
+    "goff-unit@v1.59.1",
+    "goff-rules@e9704fa7"
+   ]
+  }
+ },
+ "supplement": {
+  "flagd/G1": {
+   "failing_examples": [],
+   "failures_all_in_untagged_fractional_scenarios": true
+  },
+  "flagd/G1_note": "applicability per DECISIONS P1-Z-5 (owner decision A, 2026-11-25); under the original P1-Z-2 rule G1 was 223/241 (FAILED)",
+  "goff/v1.32+_note": "official vectors per DECISIONS P1-Z-6 (owner decision B, 2026-11-25); source-only before that decision"
+ }
+}

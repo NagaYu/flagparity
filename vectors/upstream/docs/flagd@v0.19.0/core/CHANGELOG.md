@@ -1,0 +1,1178 @@
+# Changelog
+
+## [0.19.3](https://github.com/open-feature/flagd/compare/core/v0.19.2...core/v0.19.3) (2026-11-17)
+
+
+### 🐛 Bug Fixes
+
+* debug logging for op errs, sample logging ([#2019](https://github.com/open-feature/flagd/issues/2019)) ([50d0f55](https://github.com/open-feature/flagd/commit/50d0f559adbd2318ffc2c2cc83ebf229ec034e70))
+* **security:** bump jsonlogic to v3.10.2 (GHSA-mw4w-7w23-cg45) ([#2129](https://github.com/open-feature/flagd/issues/2129)) ([bf85e04](https://github.com/open-feature/flagd/commit/bf85e04d95c1b850a28fe883cde767db969cf37d))
+* **security:** update module github.com/go-jose/go-jose/v4 to v4.1.6 [security] ([#2114](https://github.com/open-feature/flagd/issues/2114)) ([bf167aa](https://github.com/open-feature/flagd/commit/bf167aaa7686f78bcd206f8b76365d4babfb5a5d))
+
+## [0.19.2](https://github.com/open-feature/flagd/compare/core/v0.19.1...core/v0.19.2) (2026-10-28)
+
+
+### 🐛 Bug Fixes
+
+* bump flagd-schemas to v0.2.15 ([#2113](https://github.com/open-feature/flagd/issues/2113)) ([7c949bd](https://github.com/open-feature/flagd/commit/7c949bd8065429eddc8940f64dcdcb82e39c2eac))
+* **sync:** watch only the configured FeatureFlag in kubernetes sync ([#2095](https://github.com/open-feature/flagd/issues/2095)) ([1cf2e5d](https://github.com/open-feature/flagd/commit/1cf2e5d8ca8d2e04049a322e0cfda880452b50eb))
+
+## [0.19.1](https://github.com/open-feature/flagd/compare/core/v0.19.0...core/v0.19.1) (2026-10-26)
+
+
+### 🐛 Bug Fixes
+
+* bound evaluation HTTP metric labels ([#2092](https://github.com/open-feature/flagd/issues/2092)) ([f2e7713](https://github.com/open-feature/flagd/commit/f2e7713ae4fe682cb8bdd2293ecf2ae1717d6b3a))
+* record OFREP and sync HTTP metrics once ([#2103](https://github.com/open-feature/flagd/issues/2103)) ([0a39a29](https://github.com/open-feature/flagd/commit/0a39a29144187fd6db3246fcc0ef16ad230801d3))
+
+
+### ✨ New Features
+
+* add flag set ID to evaluation metrics ([#2078](https://github.com/open-feature/flagd/issues/2078)) ([10f2ca0](https://github.com/open-feature/flagd/commit/10f2ca00c67bf81499f67235f9cb3fc1c51d4ee4))
+* strict numeric range opt, TYPE_MISMATCH on precision loss ([#2100](https://github.com/open-feature/flagd/issues/2100)) ([5cf6fff](https://github.com/open-feature/flagd/commit/5cf6fff17b9ba3604f0c1ec77170d81eb02bbaed))
+
+## [0.19.0](https://github.com/open-feature/flagd/compare/core/v0.18.1...core/v0.19.0) (2026-10-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* bucket on any context type; (fractional re-assignment) ([#2011](https://github.com/open-feature/flagd/issues/2011))
+
+### ✨ New Features
+
+* bucket on any context type; (fractional re-assignment) ([#2011](https://github.com/open-feature/flagd/issues/2011)) ([0e344d2](https://github.com/open-feature/flagd/commit/0e344d2d49c2ddbd8cc6908d2331a284aafb71b3))
+
+
+### 🧹 Chore
+
+* bump golangci-lint to v2.14.0, fail lint on any module error ([109e3a0](https://github.com/open-feature/flagd/commit/109e3a04112eee309cc112de03f44ab81fd55187))
+
+## [0.18.1](https://github.com/open-feature/flagd/compare/core/v0.18.0...core/v0.18.1) (2026-10-06)
+
+
+### 🧹 Chore
+
+* **deps:** update opentelemetry-go monorepo ([#2081](https://github.com/open-feature/flagd/issues/2081)) ([b9c8b7e](https://github.com/open-feature/flagd/commit/b9c8b7e20a99e166059d2629395e73e1f643dbcf))
+* **deps:** update opentelemetry-go-contrib monorepo to v0.71.0 ([#2082](https://github.com/open-feature/flagd/issues/2082)) ([ad43dc4](https://github.com/open-feature/flagd/commit/ad43dc4bb624a313099552934af085e41e872dbf))
+* **deps:** update opentelemetry-go-contrib monorepo to v0.72.0 ([#2084](https://github.com/open-feature/flagd/issues/2084)) ([c8ff57a](https://github.com/open-feature/flagd/commit/c8ff57a106f442cccebe7f59a08725f94b1915e5))
+
+## [0.18.0](https://github.com/open-feature/flagd/compare/core/v0.17.0...core/v0.18.0) (2026-09-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **sync:** server-side sync metrics renamed (client metrics added alongside):   feature_flag.flagd.sync.active_streams  -> feature_flag.flagd.sync.server.active_streams   feature_flag.flagd.sync.stream.duration -> feature_flag.flagd.sync.server.stream.duration
+
+### 🐛 Bug Fixes
+
+* **security:** update module go.opentelemetry.io/otel/sdk to v1.45.0 [security] ([#2056](https://github.com/open-feature/flagd/issues/2056)) ([904232a](https://github.com/open-feature/flagd/commit/904232a03b89f55a632aea35733777e98f678382))
+
+
+### ✨ New Features
+
+* enable override of `TraceProvider` in JSON evaluations ([#2070](https://github.com/open-feature/flagd/issues/2070)) ([d090fa7](https://github.com/open-feature/flagd/commit/d090fa742884034a4733d94c40b3d9187b93e389))
+* **sync:** instrument the outbound sync channel (flagd as client) ([#2051](https://github.com/open-feature/flagd/issues/2051)) ([ad63aad](https://github.com/open-feature/flagd/commit/ad63aad303abc1f78f62765e01a6dd216c50dbad))
+
+## [0.17.0](https://github.com/open-feature/flagd/compare/core/v0.16.2...core/v0.17.0) (2026-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* make file poll interval configurable ([#2045](https://github.com/open-feature/flagd/issues/2045))
+
+### 🐛 Bug Fixes
+
+* **security:** update module google.golang.org/grpc to v1.83.1 [security] ([#2043](https://github.com/open-feature/flagd/issues/2043)) ([e17886a](https://github.com/open-feature/flagd/commit/e17886a01f1960b4d36e3d79ea7474f129abb2b7))
+
+
+### ✨ New Features
+
+* Create additional FIPS 140-3 mode ([#2039](https://github.com/open-feature/flagd/issues/2039)) ([22128a1](https://github.com/open-feature/flagd/commit/22128a1519d7e603fa6402eb9264ccf390ff23a8))
+* HTTP fetch equivalent of the gRPC FetchAllFlags ([#2037](https://github.com/open-feature/flagd/issues/2037)) ([48be8de](https://github.com/open-feature/flagd/commit/48be8de6209e15fe8a8aa7c57ff93ea770ec74cd))
+* make file poll interval configurable ([#2045](https://github.com/open-feature/flagd/issues/2045)) ([58a47b9](https://github.com/open-feature/flagd/commit/58a47b9f81a0802ec3c5e8a9ef81a8146e900aec))
+* SSE support for OFREP endpoints ([#2012](https://github.com/open-feature/flagd/issues/2012)) ([aa042fe](https://github.com/open-feature/flagd/commit/aa042fe42669710364c40e6a1c29093baa3cf863))
+
+## [0.16.2](https://github.com/open-feature/flagd/compare/core/v0.16.1...core/v0.16.2) (2026-08-14)
+
+
+### 🐛 Bug Fixes
+
+* **core:** register the OFO scheme at package init, not inside Sync.Init ([#2024](https://github.com/open-feature/flagd/issues/2024)) ([cf2db36](https://github.com/open-feature/flagd/commit/cf2db36492c405be68b717da5c32a3451915dd84))
+* **flagd-proxy:** set gRPC keepalive enforcement policy on the sync server ([#2022](https://github.com/open-feature/flagd/issues/2022)) ([5591fa8](https://github.com/open-feature/flagd/commit/5591fa8cff504f063d97bab83af18a40798d4dc9))
+* possible race on eventstream connection ([#2025](https://github.com/open-feature/flagd/issues/2025)) ([e38ecb7](https://github.com/open-feature/flagd/commit/e38ecb738513ad8d7d6d1081c7851125925194a0))
+
+## [0.16.1](https://github.com/open-feature/flagd/compare/core/v0.16.0...core/v0.16.1) (2026-07-27)
+
+
+### 🐛 Bug Fixes
+
+* **certreloader:** re-check reload condition under write lock ([#1994](https://github.com/open-feature/flagd/issues/1994)) ([86489da](https://github.com/open-feature/flagd/commit/86489da5f435c7cbd5b63b3ca146a5e3bda8f28c))
+* handle invalid selector errors ([#1976](https://github.com/open-feature/flagd/issues/1976)) ([409a62e](https://github.com/open-feature/flagd/commit/409a62e913966c1e1356fcfc24fcb960aa567007))
+* readyz never true of multiple gRPC syncs are used ([#1985](https://github.com/open-feature/flagd/issues/1985)) ([29833e8](https://github.com/open-feature/flagd/commit/29833e83087bbe9a7cad94161ab19b9194e260ad))
+* **security:** update module google.golang.org/grpc to v1.82.1 [security] ([#2005](https://github.com/open-feature/flagd/issues/2005)) ([4281adf](https://github.com/open-feature/flagd/commit/4281adf2952234db14cbd2bce6b727dce3146ee0))
+* **security:** update vulnerability-updates [security] ([#1984](https://github.com/open-feature/flagd/issues/1984)) ([2a5a6b6](https://github.com/open-feature/flagd/commit/2a5a6b62b1ccf8d17f095bee4dd8f797436f2abc))
+* **sync:** avoid send on closed channel in fileinfo watcher Close ([#1992](https://github.com/open-feature/flagd/issues/1992)) ([a7339ea](https://github.com/open-feature/flagd/commit/a7339ea37ab75c1494e4660548154024852e0d45))
+* **sync:** handle non-string YAML map keys in config parsing ([#1990](https://github.com/open-feature/flagd/issues/1990)) ([3c72e6f](https://github.com/open-feature/flagd/commit/3c72e6f7bcb9b7ac4cf5ba66b5d468a803516f31))
+* **sync:** re-establish file watch after delete and restore ([#2001](https://github.com/open-feature/flagd/issues/2001)) ([d434adf](https://github.com/open-feature/flagd/commit/d434adf89c82413c185fad2e8a9a68a99769f8c1))
+* **sync:** synchronize readiness state ([#2006](https://github.com/open-feature/flagd/issues/2006)) ([317a7e0](https://github.com/open-feature/flagd/commit/317a7e0208f9af6d8bcb9113adb589ffa7af564a))
+
+
+### ✨ New Features
+
+* improve ETag and body hash support to blob/http sync ([#1991](https://github.com/open-feature/flagd/issues/1991)) ([1e210d4](https://github.com/open-feature/flagd/commit/1e210d4ccb24f94b5e2d8ce40a16ddac9397bca5))
+
+
+### 🧹 Chore
+
+* fix flaky test ([7ff137d](https://github.com/open-feature/flagd/commit/7ff137d158fab657cc43746ac4a04ca44730efe4))
+
+## [0.16.0](https://github.com/open-feature/flagd/compare/core/v0.15.8...core/v0.16.0) (2026-06-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* DISABLED is a successful evaluation (still defaults) ([#1968](https://github.com/open-feature/flagd/issues/1968))
+  * Disabled flags now resolve successfully with `reason=DISABLED` instead of returning a `FLAG_DISABLED` error. See the [ADR](https://github.com/open-feature/flagd/blob/main/docs/architecture-decisions/disabled-flag-evaluation.md).
+  * Breaking, but barely: resolved values are unchanged (SDKs still surface the caller-provided default).
+  * The break is only observable for consumers that inspect `reason` / `errorCode`, call flagd directly over gRPC / OFREP, or import `core/pkg/model`.
+
+### ✨ New Features
+
+* DISABLED is a successful evaluation (still defaults) ([#1968](https://github.com/open-feature/flagd/issues/1968)) ([3c1d00b](https://github.com/open-feature/flagd/commit/3c1d00bea2a258ca5f1cd724a31be45c4fe685d2))
+  * Disabled flags now resolve successfully with `reason=DISABLED` instead of returning a `FLAG_DISABLED` error. See the [ADR](https://github.com/open-feature/flagd/blob/main/docs/architecture-decisions/disabled-flag-evaluation.md).
+  * Breaking, but barely: resolved values are unchanged (SDKs still surface the caller-provided default).
+  * The break is only observable for consumers that inspect `reason` / `errorCode`, call flagd directly over gRPC / OFREP, or import `core/pkg/model`.
+
+## [0.15.8](https://github.com/open-feature/flagd/compare/core/v0.15.7...core/v0.15.8) (2026-05-29)
+
+
+### 🐛 Bug Fixes
+
+* **sync:** panic on s3 URI with query string ([#1974](https://github.com/open-feature/flagd/issues/1974)) ([82040ff](https://github.com/open-feature/flagd/commit/82040ff47a33e914e0c4a91a9db321cc1e9510a4))
+
+## [0.15.7](https://github.com/open-feature/flagd/compare/core/v0.15.6...core/v0.15.7) (2026-05-28)
+
+
+### ✨ New Features
+
+* **sync:** forward S3 URI query parameters to the bucket URL ([#1971](https://github.com/open-feature/flagd/issues/1971)) ([7e253f9](https://github.com/open-feature/flagd/commit/7e253f9211bc8fbbb1d665bacb0d3c0a77283680)), closes [#1961](https://github.com/open-feature/flagd/issues/1961)
+
+## [0.15.6](https://github.com/open-feature/flagd/compare/core/v0.15.5...core/v0.15.6) (2026-05-21)
+
+
+### ✨ New Features
+
+* add custom headers support for sync providers ([#1960](https://github.com/open-feature/flagd/issues/1960)) ([65d3796](https://github.com/open-feature/flagd/commit/65d37965db5fe287552e2376ce35b63cfcbb2cdf))
+
+## [0.15.5](https://github.com/open-feature/flagd/compare/core/v0.15.4...core/v0.15.5) (2026-04-30)
+
+
+### 🐛 Bug Fixes
+
+* handle missing/null targeting keys in fractional evaluator ([#1949](https://github.com/open-feature/flagd/issues/1949)) ([651c7bb](https://github.com/open-feature/flagd/commit/651c7bb814eb70f72414ce164e1d2560e6055526))
+* override otel service name and version ([#1956](https://github.com/open-feature/flagd/issues/1956)) ([ec4ff12](https://github.com/open-feature/flagd/commit/ec4ff12e3f8dd37b61d6c7852a1f7dd2a8572d3a))
+* update jsonlogic for and/or bug ([#1957](https://github.com/open-feature/flagd/issues/1957)) ([6edd6e8](https://github.com/open-feature/flagd/commit/6edd6e83e56d7407dc925afe39deae795487dd8c))
+* various custom operator conformance fixes ([#1950](https://github.com/open-feature/flagd/issues/1950)) ([670c91c](https://github.com/open-feature/flagd/commit/670c91cdca80c29fd1cee378d1ea228c4ef36935))
+
+
+### 🧹 Chore
+
+* resolve open dependabot security alerts ([#1954](https://github.com/open-feature/flagd/issues/1954)) ([c5adbb7](https://github.com/open-feature/flagd/commit/c5adbb7e9aefc16dfb69852a3d5f67b4473d4305))
+
+## [0.15.4](https://github.com/open-feature/flagd/compare/core/v0.15.3...core/v0.15.4) (2026-04-15)
+
+
+### ✨ New Features
+
+* add intervalSeed source option ([#1945](https://github.com/open-feature/flagd/issues/1945)) ([7c501eb](https://github.com/open-feature/flagd/commit/7c501eb862c0eeb8eb27129cb0e6edd45125e699))
+
+## [0.15.3](https://github.com/open-feature/flagd/compare/core/v0.15.2...core/v0.15.3) (2026-04-14)
+
+
+### 🐛 Bug Fixes
+
+* allow single entry in fractional operator ([#1935](https://github.com/open-feature/flagd/issues/1935)) ([5fa86c6](https://github.com/open-feature/flagd/commit/5fa86c6a4b7fcb8f8b7ffcc696f889d2ebf33b1f))
+* web and cli docs do not mention s3 ([#1941](https://github.com/open-feature/flagd/issues/1941)) ([49ff1cf](https://github.com/open-feature/flagd/commit/49ff1cfe2d5543feead69d363dc63ea18c718bc0))
+
+
+### ✨ New Features
+
+* metadata support in the kubernetes_sync ([#1905](https://github.com/open-feature/flagd/issues/1905)) ([f8173a4](https://github.com/open-feature/flagd/commit/f8173a4c974128df1b423ff3fff0fb9409f7dcda))
+
+## [0.15.2](https://github.com/open-feature/flagd/compare/core/v0.15.1...core/v0.15.2) (2026-04-09)
+
+
+### 🐛 Bug Fixes
+
+* **security:** update vulnerability-updates [security] ([#1933](https://github.com/open-feature/flagd/issues/1933)) ([04338dc](https://github.com/open-feature/flagd/commit/04338dc21358b80f96da7a5ac736107f08093d60))
+* **security:** update vulnerability-updates [security] ([#1934](https://github.com/open-feature/flagd/issues/1934)) ([40d444a](https://github.com/open-feature/flagd/commit/40d444abac6b0a40a1b5190c2205540eaaaa0b55))
+
+
+### ✨ New Features
+
+* gRPC sync experimental incremental updates ([#1922](https://github.com/open-feature/flagd/issues/1922)) ([d785557](https://github.com/open-feature/flagd/commit/d785557d2df6b89c9b86e886b6b923991dd44696))
+
+## [0.15.1](https://github.com/open-feature/flagd/compare/core/v0.15.0...core/v0.15.1) (2026-04-07)
+
+
+### 🐛 Bug Fixes
+
+* mem leak due to unbounded metrics cardinality ([#1931](https://github.com/open-feature/flagd/issues/1931)) ([176866e](https://github.com/open-feature/flagd/commit/176866e71625bee9ef7770700d8ce14e8abd8110))
+* **security:** update module github.com/go-jose/go-jose/v4 to v4.1.4 [security] ([#1929](https://github.com/open-feature/flagd/issues/1929)) ([cf22a11](https://github.com/open-feature/flagd/commit/cf22a110652af6f3ef867c17b9c6ea9471c9e5f1))
+
+## [0.15.0](https://github.com/open-feature/flagd/compare/core/v0.14.3...core/v0.15.0) (2026-04-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* fractional bucketing improvements ([#1909](https://github.com/open-feature/flagd/issues/1909))
+
+### ✨ New Features
+
+* fractional bucketing improvements ([#1909](https://github.com/open-feature/flagd/issues/1909)) ([7190878](https://github.com/open-feature/flagd/commit/7190878fd0ea7a6f16fd8fbcdac68b55d9b9a2a5))
+
+## [0.14.3](https://github.com/open-feature/flagd/compare/core/v0.14.2...core/v0.14.3) (2026-03-27)
+
+
+### ✨ New Features
+
+* gRPC sync endpoint metrics ([#1861](https://github.com/open-feature/flagd/issues/1861)) ([b04dc50](https://github.com/open-feature/flagd/commit/b04dc5074a5be239914c4328653623aad36203ac))
+
+## [0.14.2](https://github.com/open-feature/flagd/compare/core/v0.14.1...core/v0.14.2) (2026-03-21)
+
+
+### 🐛 Bug Fixes
+
+* **security:** update module google.golang.org/grpc to v1.79.3 [security] ([#1907](https://github.com/open-feature/flagd/issues/1907)) ([ad51d4e](https://github.com/open-feature/flagd/commit/ad51d4e8fe0570474c824273983f54b3ca38b083))
+
+## [0.14.1](https://github.com/open-feature/flagd/compare/core/v0.14.0...core/v0.14.1) (2026-03-09)
+
+
+### 🐛 Bug Fixes
+
+* **security:** update otel deps, minimum core Go version ([#1897](https://github.com/open-feature/flagd/issues/1897)) ([6b79bf8](https://github.com/open-feature/flagd/commit/6b79bf8419da1e269ecb1d1db03760379fc201cb))
+
+
+### ✨ New Features
+
+* make max header and body size configurable, add default ([#1892](https://github.com/open-feature/flagd/issues/1892)) ([25c5fd7](https://github.com/open-feature/flagd/commit/25c5fd7e80c26eb2c00b20317b2456fe6f927ea3))
+
+## [0.14.0](https://github.com/open-feature/flagd/compare/core/v0.13.3...core/v0.14.0) (2026-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* no `defaultVariant` -> code default (previosuly FLAG_NOT_FOUND)  ([#1862](https://github.com/open-feature/flagd/issues/1862))
+
+### ✨ New Features
+
+* no `defaultVariant` -&gt; code default (previosuly FLAG_NOT_FOUND)  ([#1862](https://github.com/open-feature/flagd/issues/1862)) ([89117d8](https://github.com/open-feature/flagd/commit/89117d8eaba0e9d205b3b47544528c42d5698176))
+
+## [0.13.3](https://github.com/open-feature/flagd/compare/core/v0.13.2...core/v0.13.3) (2026-02-09)
+
+
+### 🐛 Bug Fixes
+
+* correct parameter order in histogram bucket configuration :warning:  ([#1859](https://github.com/open-feature/flagd/issues/1859)) ([335af32](https://github.com/open-feature/flagd/commit/335af32b6f1087d624b77ffb7b50dea612ef234f))
+* Enhance error logs in store's Watch func ([#1865](https://github.com/open-feature/flagd/issues/1865)) ([a58a707](https://github.com/open-feature/flagd/commit/a58a7076ac4aef66a10dee7a40aa2ee4b53c7169))
+
+## [0.13.2](https://github.com/open-feature/flagd/compare/core/v0.13.1...core/v0.13.2) (2026-01-09)
+
+
+### 🔙 Reverts
+
+* use go 1.24 in go.mod for core package ([#1844](https://github.com/open-feature/flagd/issues/1844)) ([c92a159](https://github.com/open-feature/flagd/commit/c92a159251e08ed39aa7c1dae42995e00c3186ac))
+
+## [0.13.1](https://github.com/open-feature/flagd/compare/core/v0.13.0...core/v0.13.1) (2025-12-27)
+
+
+### 🐛 Bug Fixes
+
+* **security:** update go for various stdlib CVEs ([#1840](https://github.com/open-feature/flagd/issues/1840)) ([6dcb36d](https://github.com/open-feature/flagd/commit/6dcb36d2d6b55b7fe0b6107ac9a25baf302c5cdc))
+
+## [0.13.0](https://github.com/open-feature/flagd/compare/core/v0.12.1...core/v0.13.0) (2025-12-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* enable parsing of array flag configurations for flagd ([#1797](https://github.com/open-feature/flagd/issues/1797))
+* cleanup evaluator interface ([#1793](https://github.com/open-feature/flagd/issues/1793))
+* removes the `fractionalEvaluation` operator since it has been replaced with `fractional`. ([#1704](https://github.com/open-feature/flagd/issues/1704))
+
+### 🐛 Bug Fixes
+
+* **security:** update module github.com/go-viper/mapstructure/v2 to v2.4.0 [security] ([#1784](https://github.com/open-feature/flagd/issues/1784)) ([037e30b](https://github.com/open-feature/flagd/commit/037e30b2f87897499580b25497049b88da7e386c))
+* **security:** update module golang.org/x/crypto to v0.45.0 [security] ([#1825](https://github.com/open-feature/flagd/issues/1825)) ([44edcc9](https://github.com/open-feature/flagd/commit/44edcc97e9fc11af721527cc3d30ab491ddea44e))
+* **security:** update module golang.org/x/crypto to v0.45.0 [security] ([#1826](https://github.com/open-feature/flagd/issues/1826)) ([7e0762b](https://github.com/open-feature/flagd/commit/7e0762b921ea70bed7915bcaab50e450e0a51158))
+
+
+### ✨ New Features
+
+* Add OAuth support for HTTP Sync ([#1791](https://github.com/open-feature/flagd/issues/1791)) ([268fd75](https://github.com/open-feature/flagd/commit/268fd75039588f285913bf100d9972d26c2003a6))
+* Add OTEL default variables ([#1812](https://github.com/open-feature/flagd/issues/1812)) ([c2e3fc6](https://github.com/open-feature/flagd/commit/c2e3fc62e06faf870db74e1a26b141075e6fbaa4))
+* allow null flagSetId Selector, restrict Selector to single key-value-pairs ([#1708](https://github.com/open-feature/flagd/issues/1708)) ([#1811](https://github.com/open-feature/flagd/issues/1811)) ([c12a0ae](https://github.com/open-feature/flagd/commit/c12a0ae01e2991a8365192a5cebf8cc11ff8bcd1))
+* change jsonschema parser ([#1794](https://github.com/open-feature/flagd/issues/1794)) ([bf3f722](https://github.com/open-feature/flagd/commit/bf3f7220227428715422ea9f2311e6bd5f46ed97))
+* cleanup evaluator interface ([#1793](https://github.com/open-feature/flagd/issues/1793)) ([aa504f7](https://github.com/open-feature/flagd/commit/aa504f7077093746f886248a4766d9ae5587bf3d))
+* enable parsing of array flag configurations for flagd ([#1797](https://github.com/open-feature/flagd/issues/1797)) ([97c6ffa](https://github.com/open-feature/flagd/commit/97c6ffaf2b51765ccd6aaec38c2902ed2ac8f5f3))
+* multi-project support via selectors and flagSetId namespacing ([#1702](https://github.com/open-feature/flagd/issues/1702)) ([f9ce46f](https://github.com/open-feature/flagd/commit/f9ce46f1032e7cb423e0e5c75a7c02f91ab5a88f))
+
+
+### 🧹 Chore
+
+* **refactor:** use memdb for flag storage ([#1697](https://github.com/open-feature/flagd/issues/1697)) ([5c5c1cf](https://github.com/open-feature/flagd/commit/5c5c1cfe84890c4cdd74c9b82504fd2632965221))
+* removes the `fractionalEvaluation` operator since it has been replaced with `fractional`. ([#1704](https://github.com/open-feature/flagd/issues/1704)) ([3228ad8](https://github.com/open-feature/flagd/commit/3228ad895117ed179325f80d3b0b318f575a4584))
+
+
+### 🔄 Refactoring
+
+* remove deprecated bearerToken option ([#1816](https://github.com/open-feature/flagd/issues/1816)) ([efda06a](https://github.com/open-feature/flagd/commit/efda06aa6d4cd7472a7f2f64fe69b7ce8d9fcbd1))
+* removed unused Selector from Flag and Store. ([#1747](https://github.com/open-feature/flagd/issues/1747)) ([1083005](https://github.com/open-feature/flagd/commit/108300529241de7221f4f143c60ecd62991b5c63))
+* store cleanup ([#1705](https://github.com/open-feature/flagd/issues/1705)) ([bcff8d7](https://github.com/open-feature/flagd/commit/bcff8d757b6d0ca69bccee26ba41880bdf2b5040))
+
+## [0.12.1](https://github.com/open-feature/flagd/compare/core/v0.12.0...core/v0.12.1) (2025-07-28)
+
+
+### 🧹 Chore
+
+* add back file-delete test ([#1694](https://github.com/open-feature/flagd/issues/1694)) ([750aa17](https://github.com/open-feature/flagd/commit/750aa176b5a8dd24a9daaff985ff6efeb084c758))
+* fix benchmark ([#1698](https://github.com/open-feature/flagd/issues/1698)) ([5e2d7d7](https://github.com/open-feature/flagd/commit/5e2d7d7176ba05e667cd92acd7decb531a8de2f6))
+
+## [0.12.0](https://github.com/open-feature/flagd/compare/core/v0.11.8...core/v0.12.0) (2025-07-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove sync.Type ([#1691](https://github.com/open-feature/flagd/issues/1691))
+
+### 🐛 Bug Fixes
+
+* update to latest otel semconv ([#1668](https://github.com/open-feature/flagd/issues/1668)) ([81855d7](https://github.com/open-feature/flagd/commit/81855d76f94a09251a19a05f830cc1d11ab6b566))
+
+
+### ✨ New Features
+
+* Add support for HTTP eTag header and 304 no change response ([#1645](https://github.com/open-feature/flagd/issues/1645)) ([ea3be4f](https://github.com/open-feature/flagd/commit/ea3be4f9010644132795bb60b36fb7705f901b62))
+* remove sync.Type ([#1691](https://github.com/open-feature/flagd/issues/1691)) ([ac647e0](https://github.com/open-feature/flagd/commit/ac647e065636071f5bc065a9a084461cea692166))
+
+## [0.11.8](https://github.com/open-feature/flagd/compare/core/v0.11.7...core/v0.11.8) (2025-07-15)
+
+
+### 🧹 Chore
+
+* **deps:** update github.com/open-feature/flagd-schemas digest to 08b4c52 ([#1682](https://github.com/open-feature/flagd/issues/1682)) ([68d04e2](https://github.com/open-feature/flagd/commit/68d04e21e63c63d6054fcd6aebfb864e8b3a597e))
+
+## [0.11.7](https://github.com/open-feature/flagd/compare/core/v0.11.6...core/v0.11.7) (2025-07-15)
+
+
+### 🐛 Bug Fixes
+
+* general err if targeting variant not in variants ([#1680](https://github.com/open-feature/flagd/issues/1680)) ([6cabfc8](https://github.com/open-feature/flagd/commit/6cabfc8ff3bd4ad69699a72724495e84cdec0cc3))
+
+## [0.11.6](https://github.com/open-feature/flagd/compare/core/v0.11.5...core/v0.11.6) (2025-07-10)
+
+
+### ✨ New Features
+
+* add sync_context to SyncFlags ([#1642](https://github.com/open-feature/flagd/issues/1642)) ([07a45d9](https://github.com/open-feature/flagd/commit/07a45d9b2275584fa92ff33cbe5e5c7d7864db38))
+* allowing null/missing defaultValue ([#1659](https://github.com/open-feature/flagd/issues/1659)) ([3f6b78c](https://github.com/open-feature/flagd/commit/3f6b78c8ccab75e9c07d26741c4b206fd0b722ee))
+
+## [0.11.5](https://github.com/open-feature/flagd/compare/core/v0.11.4...core/v0.11.5) (2025-06-13)
+
+
+### ✨ New Features
+
+* add server-side deadline to sync service ([#1638](https://github.com/open-feature/flagd/issues/1638)) ([b70fa06](https://github.com/open-feature/flagd/commit/b70fa06b66e1fe8a28728441a7ccd28c6fe6a0c6))
+* updating context using headers ([#1641](https://github.com/open-feature/flagd/issues/1641)) ([ba34815](https://github.com/open-feature/flagd/commit/ba348152b6e7b6bd7473bb11846aac7db316c88e))
+
+## [0.11.4](https://github.com/open-feature/flagd/compare/core/v0.11.3...core/v0.11.4) (2025-05-28)
+
+
+### 🐛 Bug Fixes
+
+* incorrect comparison used for time ([#1608](https://github.com/open-feature/flagd/issues/1608)) ([8c5ac2f](https://github.com/open-feature/flagd/commit/8c5ac2f2c31e092cbe6ddb4d3c1adeeeb04e9ef9))
+
+
+### 🧹 Chore
+
+* **deps:** update dependency go to v1.24.1 ([#1559](https://github.com/open-feature/flagd/issues/1559)) ([cd46044](https://github.com/open-feature/flagd/commit/cd4604471bba0a1df67bf87653a38df3caf9d20f))
+* **security:** upgrade dependency versions ([#1632](https://github.com/open-feature/flagd/issues/1632)) ([761d870](https://github.com/open-feature/flagd/commit/761d870a3c563b8eb1b83ee543b41316c98a1d48))
+
+
+### 🔄 Refactoring
+
+* Refactor the cron function in http sync ([#1600](https://github.com/open-feature/flagd/issues/1600)) ([babcacf](https://github.com/open-feature/flagd/commit/babcacfe4dd1244dda954823d8a3ed2019c8752b))
+* removed hardcoded metric export interval and use otel default ([#1621](https://github.com/open-feature/flagd/issues/1621)) ([81c66eb](https://github.com/open-feature/flagd/commit/81c66ebf2b82fc6874ab325569f52801d5ab8e5e))
+
+## [0.11.3](https://github.com/open-feature/flagd/compare/core/v0.11.2...core/v0.11.3) (2025-03-25)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update github.com/open-feature/flagd-schemas digest to 9b0ee43 ([#1598](https://github.com/open-feature/flagd/issues/1598)) ([0587ce4](https://github.com/open-feature/flagd/commit/0587ce44e60b643ff6960c1eaf4461f933ea95b7))
+* **deps:** update github.com/open-feature/flagd-schemas digest to e840a03 ([#1587](https://github.com/open-feature/flagd/issues/1587)) ([9ee0c57](https://github.com/open-feature/flagd/commit/9ee0c573d6dbfa0c4e9b18c9da7313094ea56916))
+* **deps:** update module connectrpc.com/otelconnect to v0.7.2 ([#1574](https://github.com/open-feature/flagd/issues/1574)) ([6094dce](https://github.com/open-feature/flagd/commit/6094dce5c0472f593b79d6d40e080f9b8d6503e5))
+* **deps:** update module github.com/google/go-cmp to v0.7.0 ([#1569](https://github.com/open-feature/flagd/issues/1569)) ([6e9dbd2](https://github.com/open-feature/flagd/commit/6e9dbd2dbf8365f839e353f53cb638847a1f05d6))
+* **deps:** update module github.com/prometheus/client_golang to v1.21.1 ([#1576](https://github.com/open-feature/flagd/issues/1576)) ([cd95193](https://github.com/open-feature/flagd/commit/cd95193f71fd465ffd1b177fa492aa84d8414a87))
+* **deps:** update module google.golang.org/grpc to v1.71.0 ([#1578](https://github.com/open-feature/flagd/issues/1578)) ([5c2c64f](https://github.com/open-feature/flagd/commit/5c2c64f878b8603dd37cbfd79b0e1588e4b5a3c6))
+* incorrect metadata returned per source ([#1599](https://github.com/open-feature/flagd/issues/1599)) ([b333e11](https://github.com/open-feature/flagd/commit/b333e11ecfe54f72c44ee61b3dcb1f2a487c94d4))
+
+
+### ✨ New Features
+
+* accept version numbers which are not strings ([#1589](https://github.com/open-feature/flagd/issues/1589)) ([6a13796](https://github.com/open-feature/flagd/commit/6a137967a258e799cbac9e3bb3927a07412c2a7b))
+
+## [0.11.2](https://github.com/open-feature/flagd/compare/core/v0.11.1...core/v0.11.2) (2025-02-21)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to 939b2ce ([#1555](https://github.com/open-feature/flagd/issues/1555)) ([23afa9c](https://github.com/open-feature/flagd/commit/23afa9c18c27885bdae0f5c4ebdc30e780e9da71))
+* **deps:** update golang.org/x/exp digest to f9890c6 ([#1551](https://github.com/open-feature/flagd/issues/1551)) ([02c4b42](https://github.com/open-feature/flagd/commit/02c4b4250131ca819c85dcf10c2d78e0c218469f))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.5-20250127221518-be6d1143b690.1 ([#1549](https://github.com/open-feature/flagd/issues/1549)) ([d3eb44e](https://github.com/open-feature/flagd/commit/d3eb44ed45a54bd9152b7477cce17be90016683c))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.7.4 ([#1556](https://github.com/open-feature/flagd/issues/1556)) ([0dfa799](https://github.com/open-feature/flagd/commit/0dfa79956695849f3a703554525759093931a01d))
+* **deps:** update module github.com/prometheus/client_golang to v1.21.0 ([#1568](https://github.com/open-feature/flagd/issues/1568)) ([a3d4162](https://github.com/open-feature/flagd/commit/a3d41625a2b79452c0732af29d0b4f320e74fe8b))
+* **deps:** update module golang.org/x/crypto to v0.33.0 ([#1552](https://github.com/open-feature/flagd/issues/1552)) ([7cef153](https://github.com/open-feature/flagd/commit/7cef153a275a4fac5099f5a52013dcd227a79bb3))
+* **deps:** update module golang.org/x/mod to v0.23.0 ([#1544](https://github.com/open-feature/flagd/issues/1544)) ([6fe7bd2](https://github.com/open-feature/flagd/commit/6fe7bd2a3e82dfc81068d9d95d8c3a4acc16456c))
+
+
+### ✨ New Features
+
+* Adding gRPC dial option override to grpc_sync.go ([#1563](https://github.com/open-feature/flagd/issues/1563)) ([1a97ca5](https://github.com/open-feature/flagd/commit/1a97ca5f81582e6d1f139a61e0e49007ad173d3f))
+
+## [0.11.1](https://github.com/open-feature/flagd/compare/core/v0.11.0...core/v0.11.1) (2025-02-04)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module golang.org/x/sync to v0.11.0 ([#1543](https://github.com/open-feature/flagd/issues/1543)) ([7d6c0dc](https://github.com/open-feature/flagd/commit/7d6c0dc6e6e6955af1e5225807deeb2b6797900b))
+
+## [0.11.0](https://github.com/open-feature/flagd/compare/core/v0.10.8...core/v0.11.0) (2025-01-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* flagSetMetadata in OFREP/ResolveAll, core refactors ([#1540](https://github.com/open-feature/flagd/issues/1540))
+
+### 🐛 Bug Fixes
+
+* **deps:** update github.com/open-feature/flagd-schemas digest to bb76343 ([#1534](https://github.com/open-feature/flagd/issues/1534)) ([8303353](https://github.com/open-feature/flagd/commit/8303353a1b503ef34b8e46d9bf77ce53c067ef3b))
+* **deps:** update golang.org/x/exp digest to 3edf0e9 ([#1538](https://github.com/open-feature/flagd/issues/1538)) ([7a06567](https://github.com/open-feature/flagd/commit/7a0656713a8c2ac3d456a3a300fe137debee0edd))
+* **deps:** update golang.org/x/exp digest to e0ece0d ([#1539](https://github.com/open-feature/flagd/issues/1539)) ([4281c6e](https://github.com/open-feature/flagd/commit/4281c6e80b233a162436fea3640bf5d061d40b96))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.5.1-20250127221518-be6d1143b690.2 ([#1536](https://github.com/open-feature/flagd/issues/1536)) ([e23060f](https://github.com/open-feature/flagd/commit/e23060f24b2a714ae748e6b37d0d06b7caa1c95c))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.4-20241220192239-696330adaff0.1 ([#1529](https://github.com/open-feature/flagd/issues/1529)) ([8881a80](https://github.com/open-feature/flagd/commit/8881a804b4055da0127a16b8fc57022d24906e1b))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.4-20250127221518-be6d1143b690.1 ([#1537](https://github.com/open-feature/flagd/issues/1537)) ([f74207b](https://github.com/open-feature/flagd/commit/f74207bc13b75bae4275bc486df51e2da569dd41))
+* **deps:** update module google.golang.org/grpc to v1.70.0 ([#1528](https://github.com/open-feature/flagd/issues/1528)) ([79b2b0a](https://github.com/open-feature/flagd/commit/79b2b0a6bbd48676dcbdd2393feb8247529bf29c))
+
+
+### ✨ New Features
+
+* flagSetMetadata in OFREP/ResolveAll, core refactors ([#1540](https://github.com/open-feature/flagd/issues/1540)) ([b49abf9](https://github.com/open-feature/flagd/commit/b49abf95069da93bdf8369c8aa0ae40e698df760))
+* support yaml in blob, file, and http syncs ([#1522](https://github.com/open-feature/flagd/issues/1522)) ([76d673a](https://github.com/open-feature/flagd/commit/76d673ae8f765512270e6498569c0ce3d54a60bf))
+
+## [0.10.8](https://github.com/open-feature/flagd/compare/core/v0.10.7...core/v0.10.8) (2025-01-19)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.7.3 ([#1520](https://github.com/open-feature/flagd/issues/1520)) ([db2f990](https://github.com/open-feature/flagd/commit/db2f99021dfd676d2fd0c6af6af7e77783ee31ce))
+* **deps:** update opentelemetry-go monorepo ([#1524](https://github.com/open-feature/flagd/issues/1524)) ([eeae9a6](https://github.com/open-feature/flagd/commit/eeae9a64caf93356fd663cc735cc422edcf9e132))
+
+## [0.10.7](https://github.com/open-feature/flagd/compare/core/v0.10.6...core/v0.10.7) (2025-01-16)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.3-20241220192239-696330adaff0.1 ([#1513](https://github.com/open-feature/flagd/issues/1513)) ([64c5787](https://github.com/open-feature/flagd/commit/64c57875b032edcef2e2d230e7735990e01b72b8))
+
+## [0.10.6](https://github.com/open-feature/flagd/compare/core/v0.10.5...core/v0.10.6) (2025-01-15)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update github.com/open-feature/flagd-schemas digest to 37baa2c ([#1499](https://github.com/open-feature/flagd/issues/1499)) ([1a853f7](https://github.com/open-feature/flagd/commit/1a853f79dc41523fd6dcb1ae6ca9745947955cbc))
+* **deps:** update github.com/open-feature/flagd-schemas digest to b81a56e ([#1391](https://github.com/open-feature/flagd/issues/1391)) ([6a3d8ac](https://github.com/open-feature/flagd/commit/6a3d8ac2511c32bd0dc77bba0169679aa9bf6ca6))
+* **deps:** update golang.org/x/exp digest to 7588d65 ([#1495](https://github.com/open-feature/flagd/issues/1495)) ([242e594](https://github.com/open-feature/flagd/commit/242e59450c71c682b56e554830ea3003bdbf9622))
+* **deps:** update golang.org/x/exp digest to b2144cd ([#1320](https://github.com/open-feature/flagd/issues/1320)) ([a692b00](https://github.com/open-feature/flagd/commit/a692b009ae8e7dc928d0fd65236b404192c99562))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.5.1-20241220192239-696330adaff0.1 ([#1489](https://github.com/open-feature/flagd/issues/1489)) ([53add83](https://github.com/open-feature/flagd/commit/53add83a491c6e00e0d9b1b64a9461e5973edca7))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.5.1-20241220192239-696330adaff0.2 ([#1492](https://github.com/open-feature/flagd/issues/1492)) ([9f1d94a](https://github.com/open-feature/flagd/commit/9f1d94a42ac00ecf5fc58c07a76c350e2e4ec2f6))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.0-20241220192239-696330adaff0.1 ([#1490](https://github.com/open-feature/flagd/issues/1490)) ([6edce72](https://github.com/open-feature/flagd/commit/6edce72e8cff01ea13cbd15d604b35ccc8337f50))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.2-20241220192239-696330adaff0.1 ([#1502](https://github.com/open-feature/flagd/issues/1502)) ([426c36e](https://github.com/open-feature/flagd/commit/426c36e838b9ded3a23f933e66e963c8110c0ddb))
+* **deps:** update module connectrpc.com/connect to v1.18.1 ([#1507](https://github.com/open-feature/flagd/issues/1507)) ([89d3259](https://github.com/open-feature/flagd/commit/89d32591db784458ce9b4cca36662ea502418bc5))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.7.0 ([#1496](https://github.com/open-feature/flagd/issues/1496)) ([e1fe149](https://github.com/open-feature/flagd/commit/e1fe1490fd1c26b9c566ff5ddef666c0fa74b2d5))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.7.1 ([#1509](https://github.com/open-feature/flagd/issues/1509)) ([9d06812](https://github.com/open-feature/flagd/commit/9d0681270f26bb91777fa2b8a792a4b0ccd07304))
+* **deps:** update module golang.org/x/crypto to v0.32.0 ([#1497](https://github.com/open-feature/flagd/issues/1497)) ([63a34d2](https://github.com/open-feature/flagd/commit/63a34d23aedcd798ff9f4cd47cdaddca35416423))
+* **deps:** update module google.golang.org/grpc to v1.69.2 ([#1484](https://github.com/open-feature/flagd/issues/1484)) ([6b40ad3](https://github.com/open-feature/flagd/commit/6b40ad34c83da4a3116e7cad4139a63a6c918097))
+* **deps:** update module google.golang.org/grpc to v1.69.4 ([#1510](https://github.com/open-feature/flagd/issues/1510)) ([76d6353](https://github.com/open-feature/flagd/commit/76d6353840ab8e7c93bdb0802eb1c49fc6fe1dc0))
+* **deps:** update opentelemetry-go monorepo ([#1470](https://github.com/open-feature/flagd/issues/1470)) ([26b0b1a](https://github.com/open-feature/flagd/commit/26b0b1af8bc4b3a393c3453784b50f167f13f743))
+
+
+### ✨ New Features
+
+* add ssl support to sync service ([#1479](https://github.com/open-feature/flagd/issues/1479)) ([#1501](https://github.com/open-feature/flagd/issues/1501)) ([d50fcc8](https://github.com/open-feature/flagd/commit/d50fcc821c1ae043cb8cf77e464f7b738e2ff755))
+* support flag metadata ([#1476](https://github.com/open-feature/flagd/issues/1476)) ([13fbbad](https://github.com/open-feature/flagd/commit/13fbbad4d849b35884f429c0e74a71ece9cce2c9))
+
+## [0.10.5](https://github.com/open-feature/flagd/compare/core/v0.10.4...core/v0.10.5) (2024-12-17)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.31.2 ([#1430](https://github.com/open-feature/flagd/issues/1430)) ([0df8622](https://github.com/open-feature/flagd/commit/0df862215563545c33f518ab7a5ad42a19bf6adb))
+* **deps:** update kubernetes packages to v0.31.3 ([#1454](https://github.com/open-feature/flagd/issues/1454)) ([f56d7b0](https://github.com/open-feature/flagd/commit/f56d7b043c2d80ae4fe27e996c05a7cc1c2c1b28))
+* **deps:** update kubernetes packages to v0.31.4 ([#1461](https://github.com/open-feature/flagd/issues/1461)) ([431fbb4](https://github.com/open-feature/flagd/commit/431fbb49513bcdb21b09845f47c26e51e7e9f21b))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.35.2-20240906125204-0a6a901b42e8.1 ([#1451](https://github.com/open-feature/flagd/issues/1451)) ([8c6d91d](https://github.com/open-feature/flagd/commit/8c6d91d538d226b10cb954c23409902e9d245cda))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.36.0-20240906125204-0a6a901b42e8.1 ([#1475](https://github.com/open-feature/flagd/issues/1475)) ([0b11c6c](https://github.com/open-feature/flagd/commit/0b11c6cf612b244bda6bab119814647f3ce8de2e))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.6.0 ([#1460](https://github.com/open-feature/flagd/issues/1460)) ([dbc1da4](https://github.com/open-feature/flagd/commit/dbc1da4ba984c06972b57cf990d1d31c4b8323df))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.6.1 ([#1473](https://github.com/open-feature/flagd/issues/1473)) ([a3d899c](https://github.com/open-feature/flagd/commit/a3d899c5f8952181a6a987436e2255c2ab9176c5))
+* **deps:** update module github.com/fsnotify/fsnotify to v1.8.0 ([#1438](https://github.com/open-feature/flagd/issues/1438)) ([949c73b](https://github.com/open-feature/flagd/commit/949c73bd6ebadb30cfa3b7573b43d722f8d2a93d))
+* **deps:** update module github.com/stretchr/testify to v1.10.0 ([#1455](https://github.com/open-feature/flagd/issues/1455)) ([8c843df](https://github.com/open-feature/flagd/commit/8c843df7714b1f2d120c5cac8e40c7220cc0c05b))
+* **deps:** update module golang.org/x/crypto to v0.29.0 ([#1443](https://github.com/open-feature/flagd/issues/1443)) ([db96dd5](https://github.com/open-feature/flagd/commit/db96dd57b9de032fc4d15931bf907a7ed962f81b))
+* **deps:** update module golang.org/x/crypto to v0.30.0 ([#1457](https://github.com/open-feature/flagd/issues/1457)) ([dbdaa19](https://github.com/open-feature/flagd/commit/dbdaa199f0667f16d2a3b91867535ce93e63373c))
+* **deps:** update module golang.org/x/crypto to v0.31.0 ([#1463](https://github.com/open-feature/flagd/issues/1463)) ([b2245d7](https://github.com/open-feature/flagd/commit/b2245d7f73f1bde859b9627d337dd09ecd2f1a31))
+* **deps:** update module golang.org/x/mod to v0.22.0 ([#1444](https://github.com/open-feature/flagd/issues/1444)) ([ed064e1](https://github.com/open-feature/flagd/commit/ed064e134fb3a5edb0ec2d976f136af7e94d7f6d))
+* **deps:** update module google.golang.org/grpc to v1.68.0 ([#1442](https://github.com/open-feature/flagd/issues/1442)) ([cd27d09](https://github.com/open-feature/flagd/commit/cd27d098e6d8d8b0f681ef42d26dba1ebac67d12))
+* **deps:** update module google.golang.org/grpc to v1.68.1 ([#1456](https://github.com/open-feature/flagd/issues/1456)) ([0b6e2a1](https://github.com/open-feature/flagd/commit/0b6e2a1cd64910226d348c921b08a6de8013ac90))
+* **deps:** update module google.golang.org/grpc to v1.69.0 ([#1469](https://github.com/open-feature/flagd/issues/1469)) ([dd4869f](https://github.com/open-feature/flagd/commit/dd4869f5e095066f80c9d82d1be83155e7504d88))
+* **deps:** update opentelemetry-go monorepo ([#1447](https://github.com/open-feature/flagd/issues/1447)) ([68b5794](https://github.com/open-feature/flagd/commit/68b5794180da84af9adc1f2cd80f929489969c1c))
+
+
+### ✨ New Features
+
+* add context-value flag ([#1448](https://github.com/open-feature/flagd/issues/1448)) ([7ca092e](https://github.com/open-feature/flagd/commit/7ca092e478c937eca0c91357394499763545dc1c))
+* s3 support for the blob sync ([#1449](https://github.com/open-feature/flagd/issues/1449)) ([a9f7261](https://github.com/open-feature/flagd/commit/a9f7261e75bc064947ae14900e5c4edc4b49bec4))
+
+## [0.10.4](https://github.com/open-feature/flagd/compare/core/v0.10.3...core/v0.10.4) (2024-10-28)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.35.1-20240906125204-0a6a901b42e8.1 ([#1420](https://github.com/open-feature/flagd/issues/1420)) ([1f06d5a](https://github.com/open-feature/flagd/commit/1f06d5a1837ea2b753974e96c2a1154d6cb3e582))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.5 ([#1425](https://github.com/open-feature/flagd/issues/1425)) ([583ba89](https://github.com/open-feature/flagd/commit/583ba894f2de794b36b6a1cc3bfceb9c46dc9d96))
+* **deps:** update module go.uber.org/mock to v0.5.0 ([#1427](https://github.com/open-feature/flagd/issues/1427)) ([0c6fd7f](https://github.com/open-feature/flagd/commit/0c6fd7fa688db992d4e58a202889cbfea07eebf6))
+* **deps:** update module gocloud.dev to v0.40.0 ([#1422](https://github.com/open-feature/flagd/issues/1422)) ([e0e4709](https://github.com/open-feature/flagd/commit/e0e4709243d8301bcbb0aaaa309be66944c1d9ed))
+* **deps:** update module golang.org/x/crypto to v0.28.0 ([#1416](https://github.com/open-feature/flagd/issues/1416)) ([fb272da](https://github.com/open-feature/flagd/commit/fb272da56e0eba12245309899888c18920b9a200))
+* **deps:** update module google.golang.org/grpc to v1.67.1 ([#1415](https://github.com/open-feature/flagd/issues/1415)) ([85a3a6b](https://github.com/open-feature/flagd/commit/85a3a6b46233fcc7cf71a0292b46c82ac8e66d7b))
+
+
+### ✨ New Features
+
+* added custom grpc resolver ([#1424](https://github.com/open-feature/flagd/issues/1424)) ([e5007e2](https://github.com/open-feature/flagd/commit/e5007e2bcb6f049a3c54e09331065bb9abe215be))
+* support azure blob sync ([#1428](https://github.com/open-feature/flagd/issues/1428)) ([5c39cfe](https://github.com/open-feature/flagd/commit/5c39cfe30a3dead4f6db2c6f9ee4c12193cd479b))
+
+## [0.10.3](https://github.com/open-feature/flagd/compare/core/v0.10.2...core/v0.10.3) (2024-09-23)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes package and controller runtime, fix proto lint ([#1290](https://github.com/open-feature/flagd/issues/1290)) ([94860d6](https://github.com/open-feature/flagd/commit/94860d6ceabe9eb7c1e5dd8ea139a796710d6d8b))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.5.1-20240906125204-0a6a901b42e8.1 ([#1400](https://github.com/open-feature/flagd/issues/1400)) ([954d972](https://github.com/open-feature/flagd/commit/954d97238210f90b650493ae76277d4a8d80788a))
+* **deps:** update module connectrpc.com/connect to v1.17.0 ([#1408](https://github.com/open-feature/flagd/issues/1408)) ([e7eb691](https://github.com/open-feature/flagd/commit/e7eb691094dfbf02e37d79c41f60f556415e7640))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.3 ([#1384](https://github.com/open-feature/flagd/issues/1384)) ([8fd16b2](https://github.com/open-feature/flagd/commit/8fd16b23b1fa8517128af36b3068ca18ebbad6c3))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.4 ([#1406](https://github.com/open-feature/flagd/issues/1406)) ([a0a6426](https://github.com/open-feature/flagd/commit/a0a64269b08251317676075fdea7bc65bea8a8dc))
+* **deps:** update module gocloud.dev to v0.39.0 ([#1404](https://github.com/open-feature/flagd/issues/1404)) ([a3184d6](https://github.com/open-feature/flagd/commit/a3184d68413749808709baac47df3bf7400f9cdc))
+* **deps:** update module golang.org/x/crypto to v0.27.0 ([#1396](https://github.com/open-feature/flagd/issues/1396)) ([f9a7d10](https://github.com/open-feature/flagd/commit/f9a7d10590d3191ea8eba0dbb340fa94d07026a4))
+* **deps:** update module golang.org/x/mod to v0.21.0 ([#1397](https://github.com/open-feature/flagd/issues/1397)) ([1507e19](https://github.com/open-feature/flagd/commit/1507e19e9304bcebfbbe4376f45e9f2e82135fd2))
+* **deps:** update module google.golang.org/grpc to v1.66.0 ([#1393](https://github.com/open-feature/flagd/issues/1393)) ([c96e9d7](https://github.com/open-feature/flagd/commit/c96e9d764aa51caf00fbde07cdc7d2de55b98b9e))
+* **deps:** update module google.golang.org/grpc to v1.66.1 ([#1402](https://github.com/open-feature/flagd/issues/1402)) ([50c9cd3](https://github.com/open-feature/flagd/commit/50c9cd3ada2f470a22374392a5a152a487636645))
+* **deps:** update module google.golang.org/grpc to v1.66.2 ([#1405](https://github.com/open-feature/flagd/issues/1405)) ([69ec28f](https://github.com/open-feature/flagd/commit/69ec28fceb597bdaad63b184943b66ccdb4af0b7))
+* **deps:** update module google.golang.org/grpc to v1.67.0 ([#1407](https://github.com/open-feature/flagd/issues/1407)) ([1ad6480](https://github.com/open-feature/flagd/commit/1ad6480a0f37c4677e53065ef455f615b26b1f17))
+* **deps:** update opentelemetry-go monorepo ([#1387](https://github.com/open-feature/flagd/issues/1387)) ([22aef5b](https://github.com/open-feature/flagd/commit/22aef5bbf030c619e48fbe22a16d83e071b11902))
+* **deps:** update opentelemetry-go monorepo ([#1403](https://github.com/open-feature/flagd/issues/1403)) ([fc4cd3e](https://github.com/open-feature/flagd/commit/fc4cd3e547f4826ea0bb8cc1bb2304807932b4e6))
+* remove dep cycle with certreloader ([#1410](https://github.com/open-feature/flagd/issues/1410)) ([5244f6f](https://github.com/open-feature/flagd/commit/5244f6f6c94f310fd80c7ab84942103cc8c18a39))
+
+
+### ✨ New Features
+
+* add mTLS support to otel exporter ([#1389](https://github.com/open-feature/flagd/issues/1389)) ([8737f53](https://github.com/open-feature/flagd/commit/8737f53444016b114ee4ae52eead0b835af0e200))
+
+## [0.10.2](https://github.com/open-feature/flagd/compare/core/v0.10.1...core/v0.10.2) (2024-08-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.5.1-20240215170432-1e611e2999cc.1 ([#1372](https://github.com/open-feature/flagd/issues/1372)) ([ae24595](https://github.com/open-feature/flagd/commit/ae2459504f7eccafebccec83fa1f72b08f41a978))
+* **deps:** update module connectrpc.com/otelconnect to v0.7.1 ([#1367](https://github.com/open-feature/flagd/issues/1367)) ([184915b](https://github.com/open-feature/flagd/commit/184915b31726729e8ed2f7999f338bf4ed684809))
+* **deps:** update module github.com/open-feature/open-feature-operator/apis to v0.2.44 ([#1368](https://github.com/open-feature/flagd/issues/1368)) ([0c68726](https://github.com/open-feature/flagd/commit/0c68726bed1cdae07f1b90447818ebbc9dc45caf))
+* **deps:** update module golang.org/x/crypto to v0.26.0 ([#1379](https://github.com/open-feature/flagd/issues/1379)) ([05f6658](https://github.com/open-feature/flagd/commit/05f6658e3dc72182adbff9197c8980641af8c53f))
+* **deps:** update module golang.org/x/mod to v0.20.0 ([#1377](https://github.com/open-feature/flagd/issues/1377)) ([797d7a4](https://github.com/open-feature/flagd/commit/797d7a4bbafc73e6882e5998df500ae4fe98fbbc))
+* **deps:** update module golang.org/x/sync to v0.8.0 ([#1378](https://github.com/open-feature/flagd/issues/1378)) ([4804c17](https://github.com/open-feature/flagd/commit/4804c17a67ea9761079ecade34ccb3446643050b))
+
+
+### ✨ New Features
+
+* add 'watcher' interface to file sync ([#1365](https://github.com/open-feature/flagd/issues/1365)) ([61fff43](https://github.com/open-feature/flagd/commit/61fff43e288daac88efb127ada20276c01ed5928))
+* added new grpc sync config option to allow setting max receive message size. ([#1358](https://github.com/open-feature/flagd/issues/1358)) ([bed077b](https://github.com/open-feature/flagd/commit/bed077bac9da3b6e3bd45ca54046e40a595fcba6))
+* Support blob type sources and GCS as an example of such source. ([#1366](https://github.com/open-feature/flagd/issues/1366)) ([21f2c9a](https://github.com/open-feature/flagd/commit/21f2c9a5d64cbfe2fc841080850a2c582e8f4ba6))
+
+
+### 🧹 Chore
+
+* **deps:** update dependency go to v1.22.6 ([#1297](https://github.com/open-feature/flagd/issues/1297)) ([50b92c1](https://github.com/open-feature/flagd/commit/50b92c17cfd872d3e6b95fef3b3d96444e563715))
+
+## [0.10.1](https://github.com/open-feature/flagd/compare/core/v0.10.0...core/v0.10.1) (2024-07-08)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.4.0-20240215170432-1e611e2999cc.2 ([#1342](https://github.com/open-feature/flagd/issues/1342)) ([efdd921](https://github.com/open-feature/flagd/commit/efdd92139903b89ac986a62ff2cf4f5cfef91cde))
+* **deps:** update module golang.org/x/crypto to v0.25.0 ([#1351](https://github.com/open-feature/flagd/issues/1351)) ([450cbc8](https://github.com/open-feature/flagd/commit/450cbc84ca55eef3fccc768003e358a8e589668e))
+* **deps:** update module golang.org/x/mod to v0.19.0 ([#1349](https://github.com/open-feature/flagd/issues/1349)) ([6ee89b4](https://github.com/open-feature/flagd/commit/6ee89b44ca4aca8f6236603fc3f969e814907bd6))
+* **deps:** update module google.golang.org/grpc to v1.65.0 ([#1346](https://github.com/open-feature/flagd/issues/1346)) ([72a6b87](https://github.com/open-feature/flagd/commit/72a6b876e880ff0b43440d9b63710c7a87536988))
+* **deps:** update opentelemetry-go monorepo ([#1347](https://github.com/open-feature/flagd/issues/1347)) ([37fb3cd](https://github.com/open-feature/flagd/commit/37fb3cd81d5436e9d8cd3ea490a3951ae5794130))
+
+## [0.10.0](https://github.com/open-feature/flagd/compare/core/v0.9.3...core/v0.10.0) (2024-06-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* support emitting errors from the bulk evaluator ([#1338](https://github.com/open-feature/flagd/issues/1338))
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.4.0-20240215170432-1e611e2999cc.1 ([#1333](https://github.com/open-feature/flagd/issues/1333)) ([494062f](https://github.com/open-feature/flagd/commit/494062fed891fab0fb659352142dbbc97c8f1492))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/protocolbuffers/go to v1.34.2-20240215170432-1e611e2999cc.2 ([#1330](https://github.com/open-feature/flagd/issues/1330)) ([32291ad](https://github.com/open-feature/flagd/commit/32291ad93d25d79299a7a02381df70e2719c4fbc))
+* **deps:** update module connectrpc.com/connect to v1.16.2 ([#1289](https://github.com/open-feature/flagd/issues/1289)) ([8bacb7c](https://github.com/open-feature/flagd/commit/8bacb7c59c17956dda3cf9d2a7bc6f139885a656))
+* **deps:** update module github.com/open-feature/open-feature-operator/apis to v0.2.43 ([#1331](https://github.com/open-feature/flagd/issues/1331)) ([fecd769](https://github.com/open-feature/flagd/commit/fecd769e5f2c4aa7bf1a0fb13f0543e7b8045af8))
+* **deps:** update module golang.org/x/crypto to v0.24.0 ([#1335](https://github.com/open-feature/flagd/issues/1335)) ([2a31a17](https://github.com/open-feature/flagd/commit/2a31a1740303991412e0169e50a064823cce0560))
+* **deps:** update module golang.org/x/mod to v0.18.0 ([#1336](https://github.com/open-feature/flagd/issues/1336)) ([5fa83f7](https://github.com/open-feature/flagd/commit/5fa83f7ab266320d8d8f1388a6c2f2cac922275a))
+* **deps:** update opentelemetry-go monorepo ([#1314](https://github.com/open-feature/flagd/issues/1314)) ([e9f1a7a](https://github.com/open-feature/flagd/commit/e9f1a7a04828f36691e694375b3c665140bc7dee))
+* readable error messages  ([#1325](https://github.com/open-feature/flagd/issues/1325)) ([7ff33ef](https://github.com/open-feature/flagd/commit/7ff33effcc47e31c5b7fdc33385d8128db2163fc))
+
+
+### ✨ New Features
+
+* add mandatory flags property in bulk response ([#1339](https://github.com/open-feature/flagd/issues/1339)) ([b20266e](https://github.com/open-feature/flagd/commit/b20266ed5e0c16bf14769f300297f7f2b0ab2dcd))
+* support emitting errors from the bulk evaluator ([#1338](https://github.com/open-feature/flagd/issues/1338)) ([b9c099c](https://github.com/open-feature/flagd/commit/b9c099cb7fa002a509a82c81b467f5e784c27e82))
+* support relative weighting for fractional evaluation ([#1313](https://github.com/open-feature/flagd/issues/1313)) ([f82c094](https://github.com/open-feature/flagd/commit/f82c094f5c47f99ef37b7392bfd39cec3ec7ba51))
+
+## [0.9.3](https://github.com/open-feature/flagd/compare/core/v0.9.2...core/v0.9.3) (2024-06-06)
+
+
+### 🐛 Bug Fixes
+
+* fixes store merge when selector is used ([#1322](https://github.com/open-feature/flagd/issues/1322)) ([ed5025d](https://github.com/open-feature/flagd/commit/ed5025d8f28fdf92a5c7dceaec7fd6df7f979e3b))
+
+
+### 🧹 Chore
+
+* adapt telemetry setup error handling ([#1315](https://github.com/open-feature/flagd/issues/1315)) ([20bcb78](https://github.com/open-feature/flagd/commit/20bcb78d11dbb16aab2b14d5869bb990a0f7bca5))
+
+## [0.9.2](https://github.com/open-feature/flagd/compare/core/v0.9.1...core/v0.9.2) (2024-05-10)
+
+
+### ✨ New Features
+
+* improve error log and add flag disabled handling for ofrep ([#1306](https://github.com/open-feature/flagd/issues/1306)) ([39ae4fe](https://github.com/open-feature/flagd/commit/39ae4fe11380af5c6e23c4aaae45b5ec17cf32d6))
+
+
+### 🧹 Chore
+
+* bump go deps to latest ([#1307](https://github.com/open-feature/flagd/issues/1307)) ([004ad08](https://github.com/open-feature/flagd/commit/004ad083dc01538791148d6233e453d2a3009fcd))
+
+## [0.9.1](https://github.com/open-feature/flagd/compare/core/v0.9.0...core/v0.9.1) (2024-04-19)
+
+
+### 🐛 Bug Fixes
+
+* missing/nil custom variables in fractional operator ([#1295](https://github.com/open-feature/flagd/issues/1295)) ([418c5cd](https://github.com/open-feature/flagd/commit/418c5cd7c07fad61674a751872a1256b5062799c))
+
+
+### ✨ New Features
+
+* move json logic operator registration to resolver ([#1291](https://github.com/open-feature/flagd/issues/1291)) ([b473457](https://github.com/open-feature/flagd/commit/b473457ddff28789fee1eeb6704491b6aa3525e3))
+
+## [0.9.0](https://github.com/open-feature/flagd/compare/core/v0.8.2...core/v0.9.0) (2024-04-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* allow custom seed when using targetingKey override for fractional op ([#1266](https://github.com/open-feature/flagd/issues/1266))
+  * This is a breaking change only to the extent that it changes the assignment of evaluated flag values.
+      Previously, flagd's `fractional` op would internally concatenate any specified bucketing property with the `flag-key`.
+      This improved apparent "randomness" by reducing the chances that users were assigned a bucket of the same ordinality across multiple flags.
+      However, sometimes it's desireable to have such predictibility, so now **flagd will use the bucketing value as is**.
+      If you are specifying a bucketing value in a `fractional` rule, and want to maintain the previous assignments, you can do this concatenation manually:
+      `{ "var": "user.name" }` => `{"cat": [{ "var": "$flagd.flagKey" }, { "var": "user.name" }]}`.
+      This will result in the same assignment as before.
+      Please note, that if you do not specify a bucketing key at all (the shorthand version of the `fractional` op), flagd still uses a concatentation of the `flag-key` and `targetingKey` as before; this behavior has not changed.
+
+### ✨ New Features
+
+* allow custom seed when using targetingKey override for fractional op ([#1266](https://github.com/open-feature/flagd/issues/1266)) ([f62bc72](https://github.com/open-feature/flagd/commit/f62bc721e8ebc07e27fbe7b9ca085a8771295d65))
+
+
+### 🧹 Chore
+
+* refactor evaluation core ([#1259](https://github.com/open-feature/flagd/issues/1259)) ([0e6604c](https://github.com/open-feature/flagd/commit/0e6604cd038dc13d7d40e622523320bf03efbcd0))
+* update go deps ([#1279](https://github.com/open-feature/flagd/issues/1279)) ([219789f](https://github.com/open-feature/flagd/commit/219789fca8a929d552e4e8d1f6b6d5cd44505f43))
+* wire evaluation ctx to store methods ([#1273](https://github.com/open-feature/flagd/issues/1273)) ([0075932](https://github.com/open-feature/flagd/commit/00759322594f309ca9236156f296805a09f5f9fe))
+
+## [0.8.2](https://github.com/open-feature/flagd/compare/core/v0.8.1...core/v0.8.2) (2024-03-27)
+
+
+### ✨ New Features
+
+* OFREP support for flagd  ([#1247](https://github.com/open-feature/flagd/issues/1247)) ([9d12fc2](https://github.com/open-feature/flagd/commit/9d12fc20702a86e8385564659be88f07ad36d9e5))
+
+## [0.8.1](https://github.com/open-feature/flagd/compare/core/v0.8.0...core/v0.8.1) (2024-03-15)
+
+
+### 🐛 Bug Fixes
+
+* occasional panic when watched YAML files change ([#1246](https://github.com/open-feature/flagd/issues/1246)) ([6249d12](https://github.com/open-feature/flagd/commit/6249d12ec452073ed881b6e5faf716332c7f132a))
+* update protobuff CVE-2024-24786 ([#1249](https://github.com/open-feature/flagd/issues/1249)) ([fd81c23](https://github.com/open-feature/flagd/commit/fd81c235fb4a09dfc42289ac316ac3a1d7eff58c))
+
+
+### 🧹 Chore
+
+* move packaging & isolate service implementations  ([#1234](https://github.com/open-feature/flagd/issues/1234)) ([b58fab3](https://github.com/open-feature/flagd/commit/b58fab3df030ef7e9e10eafa7a0141c05aa05bbd))
+
+## [0.8.0](https://github.com/open-feature/flagd/compare/core/v0.7.5...core/v0.8.0) (2024-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* new proto (flagd.sync.v1) for sync sources ([#1214](https://github.com/open-feature/flagd/issues/1214))
+
+### 🐛 Bug Fixes
+
+* **deps:** update github.com/open-feature/flagd-schemas digest to 8c72c14 ([#1212](https://github.com/open-feature/flagd/issues/1212)) ([4add9fd](https://github.com/open-feature/flagd/commit/4add9fd1c47e3e3dea818a6b262273fadb7edb81))
+* **deps:** update kubernetes packages to v0.29.2 ([#1213](https://github.com/open-feature/flagd/issues/1213)) ([b0c805f](https://github.com/open-feature/flagd/commit/b0c805f7f58979f927e60c22c94c0448af459c7d))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/connectrpc/go to v1.15.0-20240215170432-1e611e2999cc.1 ([#1219](https://github.com/open-feature/flagd/issues/1219)) ([4c4f08a](https://github.com/open-feature/flagd/commit/4c4f08afabf7d646973768500db028ab0b4c7d68))
+* **deps:** update module golang.org/x/crypto to v0.19.0 ([#1203](https://github.com/open-feature/flagd/issues/1203)) ([f0ff317](https://github.com/open-feature/flagd/commit/f0ff3177f67c832d62694cdf44b766344da5483f))
+* **deps:** update module golang.org/x/mod to v0.15.0 ([#1202](https://github.com/open-feature/flagd/issues/1202)) ([6ca8e6d](https://github.com/open-feature/flagd/commit/6ca8e6d33f6646698605fb4b5b99f8a3ee1ddbed))
+* **deps:** update module golang.org/x/net to v0.21.0 ([#1204](https://github.com/open-feature/flagd/issues/1204)) ([bccf365](https://github.com/open-feature/flagd/commit/bccf365fa2e5f443208ec70b1244bdb4f07ced04))
+* **deps:** update module google.golang.org/grpc to v1.61.1 ([#1210](https://github.com/open-feature/flagd/issues/1210)) ([10cc63e](https://github.com/open-feature/flagd/commit/10cc63e7992b4ae8d861f5296afcc78417e645cb))
+* **deps:** update opentelemetry-go monorepo ([#1199](https://github.com/open-feature/flagd/issues/1199)) ([422ebaa](https://github.com/open-feature/flagd/commit/422ebaa30b8bb0246bcdf8c0cc2be0a5870eb9e9))
+
+
+### ✨ New Features
+
+* new proto (flagd.sync.v1) for sync sources ([#1214](https://github.com/open-feature/flagd/issues/1214)) ([544234e](https://github.com/open-feature/flagd/commit/544234ebd9f9be5f54c2865a866575a7869a56c0))
+
+## [0.7.5](https://github.com/open-feature/flagd/compare/core/v0.7.4...core/v0.7.5) (2024-02-05)
+
+
+### 🐛 Bug Fixes
+
+* add signal handling to SyncFlags grpc ([#1176](https://github.com/open-feature/flagd/issues/1176)) ([5c8ed7c](https://github.com/open-feature/flagd/commit/5c8ed7c6dd29ffe43c1f1f0e2843683570873443))
+* **deps:** update kubernetes packages to v0.29.1 ([#1156](https://github.com/open-feature/flagd/issues/1156)) ([899e6b5](https://github.com/open-feature/flagd/commit/899e6b505abe63b7b599858a0d55e6a69be08993))
+* **deps:** update module buf.build/gen/go/open-feature/flagd/connectrpc/go to v1.14.0-20231031123731-ac2ec0f39838.1 ([#1170](https://github.com/open-feature/flagd/issues/1170)) ([8b3c8d6](https://github.com/open-feature/flagd/commit/8b3c8d6c87cbebd6f324771cb8aa1f6990a74cf4))
+* **deps:** update module golang.org/x/crypto to v0.18.0 ([#1138](https://github.com/open-feature/flagd/issues/1138)) ([53569d9](https://github.com/open-feature/flagd/commit/53569d9cd88de1073a7e49b1a835adee4b0e8ef2))
+* **deps:** update module golang.org/x/net to v0.20.0 ([#1139](https://github.com/open-feature/flagd/issues/1139)) ([fdb1d0c](https://github.com/open-feature/flagd/commit/fdb1d0c909373e23a8c8fca435ef77205526f730))
+* **deps:** update module google.golang.org/grpc to v1.61.0 ([#1164](https://github.com/open-feature/flagd/issues/1164)) ([11ccecd](https://github.com/open-feature/flagd/commit/11ccecd5ac2e23991ac76ee079630f527559db1d))
+* **deps:** update opentelemetry-go monorepo ([#1155](https://github.com/open-feature/flagd/issues/1155)) ([436fefe](https://github.com/open-feature/flagd/commit/436fefedf67afda1cbf97ff12f7c3071cb833d9a))
+
+
+### ✨ New Features
+
+* add targeting validation ([#1146](https://github.com/open-feature/flagd/issues/1146)) ([b727dd0](https://github.com/open-feature/flagd/commit/b727dd00c561c27e54dbe4bafff0ca2d82487a42))
+* **core:** support any auth scheme in HTTP-sync auth header ([#1152](https://github.com/open-feature/flagd/issues/1152)) ([df65966](https://github.com/open-feature/flagd/commit/df6596634e1ca960592d5e4825985aeee781a25d))
+
+
+### 🧹 Chore
+
+* update test dependencies, fix for otel api change and update renovate configuration ([#1188](https://github.com/open-feature/flagd/issues/1188)) ([3270346](https://github.com/open-feature/flagd/commit/32703464d5c637dbb06c2c857070e9f038977c01))
+
+
+### 📚 Documentation
+
+* update schemas ([#1158](https://github.com/open-feature/flagd/issues/1158)) ([396c618](https://github.com/open-feature/flagd/commit/396c618bac13c5c8eb2aadc29bb126a83fec1b56))
+
+## [0.7.4](https://github.com/open-feature/flagd/compare/core/v0.7.3...core/v0.7.4) (2024-01-04)
+
+
+### 🐛 Bug Fixes
+
+* add custom marshalling options ([#1117](https://github.com/open-feature/flagd/issues/1117)) ([e8e49de](https://github.com/open-feature/flagd/commit/e8e49de909fba6791a26e73a59d5b7ab54284499))
+* **deps:** update kubernetes packages to v0.29.0 ([#1082](https://github.com/open-feature/flagd/issues/1082)) ([751a79a](https://github.com/open-feature/flagd/commit/751a79a16571bea943aa1297c9828d1149d0c319))
+* **deps:** update module connectrpc.com/connect to v1.14.0 ([#1108](https://github.com/open-feature/flagd/issues/1108)) ([0a41aca](https://github.com/open-feature/flagd/commit/0a41acae082e65b2f0b1e1f36304556f77eba72a))
+* **deps:** update module github.com/prometheus/client_golang to v1.18.0 ([#1110](https://github.com/open-feature/flagd/issues/1110)) ([745bbb0](https://github.com/open-feature/flagd/commit/745bbb079af50f8fdb870e2234edd70c7a7a52f9))
+* **deps:** update module golang.org/x/crypto to v0.17.0 [security] ([#1090](https://github.com/open-feature/flagd/issues/1090)) ([26681de](https://github.com/open-feature/flagd/commit/26681ded7389ca4ecb3d9612aedad8c700796dc9))
+* **deps:** update module google.golang.org/protobuf to v1.32.0 ([#1106](https://github.com/open-feature/flagd/issues/1106)) ([e0d3b34](https://github.com/open-feature/flagd/commit/e0d3b34aa2fad5435a296dda896c9d430563b6ea))
+
+## [0.7.3](https://github.com/open-feature/flagd/compare/core/v0.7.2...core/v0.7.3) (2023-12-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to 6522937 ([#1032](https://github.com/open-feature/flagd/issues/1032)) ([78b23d2](https://github.com/open-feature/flagd/commit/78b23d25fcd2ea49675fc96963565afbdf0acf25))
+* **deps:** update module connectrpc.com/connect to v1.13.0 ([#1070](https://github.com/open-feature/flagd/issues/1070)) ([63f86ea](https://github.com/open-feature/flagd/commit/63f86ea699ff1f25639101a36e4fc25c76c94c1e))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.4.0 ([#1068](https://github.com/open-feature/flagd/issues/1068)) ([5c5d5ab](https://github.com/open-feature/flagd/commit/5c5d5abc38540277deb4e11f41f79ff49273d659))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.5.2 ([#1059](https://github.com/open-feature/flagd/issues/1059)) ([cefea3e](https://github.com/open-feature/flagd/commit/cefea3ee035726940ee5ac51e8f7fc92cc0eeac3))
+* **deps:** update module google.golang.org/grpc to v1.60.0 ([#1074](https://github.com/open-feature/flagd/issues/1074)) ([bf3e9d8](https://github.com/open-feature/flagd/commit/bf3e9d82b40afdc89edc519f40bc0f67af48f1bf))
+* **deps:** update module google.golang.org/grpc to v1.60.1 ([#1092](https://github.com/open-feature/flagd/issues/1092)) ([5bf1368](https://github.com/open-feature/flagd/commit/5bf1368e68012937b57bf27168646e784524ae9b))
+* make sure sync builder is initialized to avoid nil pointer access ([#1076](https://github.com/open-feature/flagd/issues/1076)) ([ebcd616](https://github.com/open-feature/flagd/commit/ebcd616e0df1ab56fd11bcf4f53fa7cf13f5e1d6))
+
+
+### ✨ New Features
+
+* support new flagd.evaluation and flagd.sync schemas ([#1083](https://github.com/open-feature/flagd/issues/1083)) ([e9728aa](https://github.com/open-feature/flagd/commit/e9728aae8352e77e6564a88e37d13f87021526ef))
+
+
+### 🧹 Chore
+
+* refactoring component structure ([#1044](https://github.com/open-feature/flagd/issues/1044)) ([0c7f78a](https://github.com/open-feature/flagd/commit/0c7f78a95fa4ad2a8b2afe2f6023b9c6d4fd48ed))
+* renaming of evaluation components ([#1064](https://github.com/open-feature/flagd/issues/1064)) ([d39f31d](https://github.com/open-feature/flagd/commit/d39f31d65b57a9b033a4976e5cea8fdab716769d))
+* use client-go library for retrieving FeatureFlag CRs ([#1077](https://github.com/open-feature/flagd/issues/1077)) ([c86dff0](https://github.com/open-feature/flagd/commit/c86dff0bd058ca65f4ccd34c0bc5c0a4ad5b11a6))
+
+## [0.7.2](https://github.com/open-feature/flagd/compare/core/v0.7.1...core/v0.7.2) (2023-12-05)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.5.0 ([#1039](https://github.com/open-feature/flagd/issues/1039)) ([eb128d9](https://github.com/open-feature/flagd/commit/eb128d97ecb8b6916f9c5a32c21c698207f82be5))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.5.1 ([#1046](https://github.com/open-feature/flagd/issues/1046)) ([0321935](https://github.com/open-feature/flagd/commit/0321935992ef50c2fc62bd659d8858c25c88efa7))
+* **deps:** update module golang.org/x/crypto to v0.16.0 ([#1033](https://github.com/open-feature/flagd/issues/1033)) ([b79aaf2](https://github.com/open-feature/flagd/commit/b79aaf2c2ca5fe9c43c1460d6cab349d5d68b7e1))
+* **deps:** update module golang.org/x/net to v0.19.0 ([#1034](https://github.com/open-feature/flagd/issues/1034)) ([c6426b2](https://github.com/open-feature/flagd/commit/c6426b20fa241066fc844a2a000812015790cf12))
+* various edge cases in targeting ([#1041](https://github.com/open-feature/flagd/issues/1041)) ([ca38c16](https://github.com/open-feature/flagd/commit/ca38c165c606ffa4517872f170375dde37f4ac5b))
+
+## [0.7.1](https://github.com/open-feature/flagd/compare/core/v0.7.0...core/v0.7.1) (2023-11-28)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.28.4 ([#1016](https://github.com/open-feature/flagd/issues/1016)) ([ae470e3](https://github.com/open-feature/flagd/commit/ae470e37f3368c81484f0c54366ccf059ea2cea6))
+* **deps:** update opentelemetry-go monorepo ([#1019](https://github.com/open-feature/flagd/issues/1019)) ([23ae555](https://github.com/open-feature/flagd/commit/23ae555ad73128dff46e911fccfef76306f5c550))
+
+
+### 🔄 Refactoring
+
+* Rename metrics-port to management-port ([#1012](https://github.com/open-feature/flagd/issues/1012)) ([5635e38](https://github.com/open-feature/flagd/commit/5635e38703cae835a53e9cce83d5bc42d00091e2))
+
+## [0.7.0](https://github.com/open-feature/flagd/compare/core/v0.6.8...core/v0.7.0) (2023-11-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* OFO APIs were updated to version v1beta1, since they are more stable now. Resources of the alpha versions are no longer supported in flagd or flagd-proxy.
+
+### ✨ New Features
+
+* support OFO v1beta1 API ([#997](https://github.com/open-feature/flagd/issues/997)) ([bb6f5bf](https://github.com/open-feature/flagd/commit/bb6f5bf0fc382ade75d80a34d209beaa2edc459d))
+
+## [0.6.8](https://github.com/open-feature/flagd/compare/core/v0.6.7...core/v0.6.8) (2023-11-13)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update golang.org/x/exp digest to 9a3e603 ([#929](https://github.com/open-feature/flagd/issues/929)) ([f8db930](https://github.com/open-feature/flagd/commit/f8db930da22f52ffddd4533bdbaf8188f89250d0))
+* **deps:** update kubernetes packages to v0.28.3 ([#974](https://github.com/open-feature/flagd/issues/974)) ([d7d205f](https://github.com/open-feature/flagd/commit/d7d205f457e46de3385610ee27db6dfd41323cd1))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.3.1 ([#971](https://github.com/open-feature/flagd/issues/971)) ([f1a40b8](https://github.com/open-feature/flagd/commit/f1a40b862e7be69b542ab65a645c29c56b8fe307))
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.3.2 ([#975](https://github.com/open-feature/flagd/issues/975)) ([b53c14a](https://github.com/open-feature/flagd/commit/b53c14afabd6b3f2403d9e2ea2bd26c8f1cfe8e4))
+* **deps:** update module github.com/fsnotify/fsnotify to v1.7.0 ([#981](https://github.com/open-feature/flagd/issues/981)) ([727b9d2](https://github.com/open-feature/flagd/commit/727b9d2046ccd998d2ab721df10d88b84445494f))
+* **deps:** update module golang.org/x/mod to v0.14.0 ([#991](https://github.com/open-feature/flagd/issues/991)) ([87bc12d](https://github.com/open-feature/flagd/commit/87bc12dd968e9fcf524eb0b69462222f29c6ba34))
+* **deps:** update module golang.org/x/net to v0.17.0 [security] ([#963](https://github.com/open-feature/flagd/issues/963)) ([7f54bd1](https://github.com/open-feature/flagd/commit/7f54bd1fb3fdbb7dff3a7b097f804ce843bb6e3a))
+* **deps:** update module golang.org/x/net to v0.18.0 ([#1000](https://github.com/open-feature/flagd/issues/1000)) ([e9347cc](https://github.com/open-feature/flagd/commit/e9347cc88a4174c984432571710588ac57665cb7))
+* **deps:** update module golang.org/x/sync to v0.5.0 ([#992](https://github.com/open-feature/flagd/issues/992)) ([bd24536](https://github.com/open-feature/flagd/commit/bd24536722f3c3c99b5946de0b62dba603992ba7))
+* **deps:** update module google.golang.org/grpc to v1.59.0 ([#972](https://github.com/open-feature/flagd/issues/972)) ([7d0f1f2](https://github.com/open-feature/flagd/commit/7d0f1f225ebfe83681c83cf38bf5c253a7b0ebef))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.16.3 ([#976](https://github.com/open-feature/flagd/issues/976)) ([b33c9c9](https://github.com/open-feature/flagd/commit/b33c9c97cf21eb317e4b0b1f452571d85de145b1))
+* **deps:** update opentelemetry-go monorepo ([#1001](https://github.com/open-feature/flagd/issues/1001)) ([9798aeb](https://github.com/open-feature/flagd/commit/9798aeb248764400128048b65ba27baba71b07e6))
+
+
+### 🔄 Refactoring
+
+* migrate to connectrpc/connect-go ([#990](https://github.com/open-feature/flagd/issues/990)) ([7dd5b2b](https://github.com/open-feature/flagd/commit/7dd5b2b4c284481bcba5a9c45bd6c85ad1dc6d33))
+
+## [0.6.7](https://github.com/open-feature/flagd/compare/core/v0.6.6...core/v0.6.7) (2023-10-12)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/prometheus/client_golang to v1.17.0 ([#939](https://github.com/open-feature/flagd/issues/939)) ([9065cba](https://github.com/open-feature/flagd/commit/9065cba599ac07225b613c5acd9403ab24462078))
+* **deps:** update module github.com/rs/cors to v1.10.1 ([#946](https://github.com/open-feature/flagd/issues/946)) ([1c39862](https://github.com/open-feature/flagd/commit/1c39862297746e66189ece87892b6e4694294fb6))
+* **deps:** update module go.uber.org/zap to v1.26.0 ([#917](https://github.com/open-feature/flagd/issues/917)) ([e57e206](https://github.com/open-feature/flagd/commit/e57e206c937d5b11b81d46ee57b3e92cc454dd88))
+* **deps:** update module golang.org/x/mod to v0.13.0 ([#952](https://github.com/open-feature/flagd/issues/952)) ([be61450](https://github.com/open-feature/flagd/commit/be61450ec3fab3c294c9813df193c98e374900aa))
+* **deps:** update module golang.org/x/sync to v0.4.0 ([#949](https://github.com/open-feature/flagd/issues/949)) ([faa24a6](https://github.com/open-feature/flagd/commit/faa24a6c6f34330364e1ba0c3a847943f4e55150))
+* **deps:** update module google.golang.org/grpc to v1.58.1 ([#915](https://github.com/open-feature/flagd/issues/915)) ([06d95de](https://github.com/open-feature/flagd/commit/06d95ded9b69c9c598d08f8a6ef73ec598a817af))
+* **deps:** update module google.golang.org/grpc to v1.58.2 ([#928](https://github.com/open-feature/flagd/issues/928)) ([90f1878](https://github.com/open-feature/flagd/commit/90f1878ae482ea4a684615f733392a38301de68d))
+* **deps:** update module google.golang.org/grpc to v1.58.3 ([#960](https://github.com/open-feature/flagd/issues/960)) ([fee1558](https://github.com/open-feature/flagd/commit/fee1558da4f5418499fb09fe356d16f008423eb7))
+* **deps:** update opentelemetry-go monorepo ([#943](https://github.com/open-feature/flagd/issues/943)) ([e7cee41](https://github.com/open-feature/flagd/commit/e7cee41630e5684999b3689dbf1ab66234c65f6e))
+* erroneous warning about prop overwrite ([#924](https://github.com/open-feature/flagd/issues/924)) ([673b76a](https://github.com/open-feature/flagd/commit/673b76aeff5c27e8e031e59da5f0ed1871d3f749))
+
+
+### ✨ New Features
+
+* add `$flagd.timestamp` to json evaluator ([#958](https://github.com/open-feature/flagd/issues/958)) ([a1b04e7](https://github.com/open-feature/flagd/commit/a1b04e778df4d2f6beb881183a82161018151479))
+
+## [0.6.6](https://github.com/open-feature/flagd/compare/core/v0.6.5...core/v0.6.6) (2023-09-14)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.28.2 ([#911](https://github.com/open-feature/flagd/issues/911)) ([2eda6ab](https://github.com/open-feature/flagd/commit/2eda6ab5e528f12a9ce6b6818e08abb0d783b23d))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.16.2 ([#907](https://github.com/open-feature/flagd/issues/907)) ([9976851](https://github.com/open-feature/flagd/commit/9976851d792ff3eb5fde18f19e397738eb7cacaf))
+* **deps:** update opentelemetry-go monorepo ([#906](https://github.com/open-feature/flagd/issues/906)) ([5a41226](https://github.com/open-feature/flagd/commit/5a4122658039aafcf080fcc6655c2a679622ed69))
+* use 32bit murmur calculation (64 is not stable) ([#913](https://github.com/open-feature/flagd/issues/913)) ([db8dca4](https://github.com/open-feature/flagd/commit/db8dca421cb0dba2968d47e5cc162d81401298db))
+
+## [0.6.5](https://github.com/open-feature/flagd/compare/core/v0.6.4...core/v0.6.5) (2023-09-08)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/rs/cors to v1.10.0 ([#893](https://github.com/open-feature/flagd/issues/893)) ([fe61fbe](https://github.com/open-feature/flagd/commit/fe61fbe47a4e58562cbcb1c5201281fae1adafaf))
+* **deps:** update module golang.org/x/crypto to v0.13.0 ([#888](https://github.com/open-feature/flagd/issues/888)) ([1a9037a](https://github.com/open-feature/flagd/commit/1a9037a5b058e44fa844392d0110696b032eff6e))
+* **deps:** update module golang.org/x/net to v0.15.0 ([#889](https://github.com/open-feature/flagd/issues/889)) ([233d976](https://github.com/open-feature/flagd/commit/233d97694826d0e018be19a78259188802aba37f))
+* **deps:** update module google.golang.org/grpc to v1.58.0 ([#896](https://github.com/open-feature/flagd/issues/896)) ([853b76d](https://github.com/open-feature/flagd/commit/853b76dfa3babfebd8bdbcd3e0913380f077b8ab))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.16.1 ([#882](https://github.com/open-feature/flagd/issues/882)) ([ca3d85a](https://github.com/open-feature/flagd/commit/ca3d85a51c0ed1c1def54d7304d4b9fe69622662))
+* **deps:** update opentelemetry-go monorepo ([#868](https://github.com/open-feature/flagd/issues/868)) ([d48317f](https://github.com/open-feature/flagd/commit/d48317f61d7db7ba0398dc9ab7cdd174a0b87555))
+
+
+### 🧹 Chore
+
+* upgrade to go 1.20 ([#891](https://github.com/open-feature/flagd/issues/891)) ([977167f](https://github.com/open-feature/flagd/commit/977167fb8db330b62726097616dcd691267199ad))
+
+## [0.6.4](https://github.com/open-feature/flagd/compare/core/v0.6.3...core/v0.6.4) (2023-08-30)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.28.0 ([#841](https://github.com/open-feature/flagd/issues/841)) ([cc195e1](https://github.com/open-feature/flagd/commit/cc195e1dde052d583656d5e5b49caec50f832365))
+* **deps:** update kubernetes packages to v0.28.1 ([#860](https://github.com/open-feature/flagd/issues/860)) ([f3237c2](https://github.com/open-feature/flagd/commit/f3237c2d324fbb15fd5f7fe337a0601af3b537bb))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.2.36 ([#799](https://github.com/open-feature/flagd/issues/799)) ([fa4da4b](https://github.com/open-feature/flagd/commit/fa4da4b0115e9fb40ab038b996e1e32b9f6a47ab))
+* **deps:** update module golang.org/x/crypto to v0.12.0 ([#797](https://github.com/open-feature/flagd/issues/797)) ([edae3fd](https://github.com/open-feature/flagd/commit/edae3fd466c0be62a0256c268e85cb337c9536f2))
+* **deps:** update module golang.org/x/net to v0.14.0 ([#798](https://github.com/open-feature/flagd/issues/798)) ([92c2f26](https://github.com/open-feature/flagd/commit/92c2f2676163688130737b34a115374cb5631247))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.15.1 ([#795](https://github.com/open-feature/flagd/issues/795)) ([13d62fd](https://github.com/open-feature/flagd/commit/13d62fd0fc4749f19dba0a18e1fda46a723380c5))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.16.0 ([#856](https://github.com/open-feature/flagd/issues/856)) ([88d832a](https://github.com/open-feature/flagd/commit/88d832a9d49a4bc1d6156849a59227ecab07f96e))
+
+
+### ✨ New Features
+
+* add flag key to hash in fractional evaluation ([#847](https://github.com/open-feature/flagd/issues/847)) ([ca6a35f](https://github.com/open-feature/flagd/commit/ca6a35fd72462177f45a116e9009fc30b3588b83))
+* add gRPC healthchecks ([#863](https://github.com/open-feature/flagd/issues/863)) ([da30b7b](https://github.com/open-feature/flagd/commit/da30b7babffd8487c992fa41519787c8d78ebdba))
+* support nested props in fractional evaluator ([#869](https://github.com/open-feature/flagd/issues/869)) ([50ff739](https://github.com/open-feature/flagd/commit/50ff739178fb732e38a220bb6a071260af1f2469))
+
+
+### 🧹 Chore
+
+* deprecate fractionalEvaluation for fractional ([#873](https://github.com/open-feature/flagd/issues/873)) ([243fef9](https://github.com/open-feature/flagd/commit/243fef9e1f0ed00ccf5d9a389e10d9ad6a197fb1))
+* replace xxh3 with murmur3 in bucket algorithm ([#846](https://github.com/open-feature/flagd/issues/846)) ([c3c9e4e](https://github.com/open-feature/flagd/commit/c3c9e4e40aeae7e75b1b9ab13bb9a40264be84e5))
+
+## [0.6.3](https://github.com/open-feature/flagd/compare/core/v0.6.2...core/v0.6.3) (2023-08-04)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/diegoholiveira/jsonlogic/v3 to v3.3.0 ([#785](https://github.com/open-feature/flagd/issues/785)) ([ee9c54b](https://github.com/open-feature/flagd/commit/ee9c54b6b5cd51b947aae1ff6309ffae07ce89eb))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.2.35 ([#783](https://github.com/open-feature/flagd/issues/783)) ([9ff0b5b](https://github.com/open-feature/flagd/commit/9ff0b5b1bd3bb95581eab83f944aa60e179b207a))
+* **deps:** update module go.uber.org/zap to v1.25.0 ([#786](https://github.com/open-feature/flagd/issues/786)) ([40d0aa6](https://github.com/open-feature/flagd/commit/40d0aa66cf422db6811206d777b55396a96f330f))
+* **deps:** update module golang.org/x/net to v0.13.0 ([#784](https://github.com/open-feature/flagd/issues/784)) ([f57d023](https://github.com/open-feature/flagd/commit/f57d023174d9cc74b7d8260055f82b84a2bdcc52))
+* metric descriptions match the otel spec ([#789](https://github.com/open-feature/flagd/issues/789)) ([34befcd](https://github.com/open-feature/flagd/commit/34befcdfedc5f0479cb0ae77fe148849c341d33e))
+
+
+### ✨ New Features
+
+* add new configuration "sync-interval" which controls the HTTP polling interval ([#404](https://github.com/open-feature/flagd/issues/404)) ([ace62c7](https://github.com/open-feature/flagd/commit/ace62c7a6ab2b5b5d26642286deb6db406391d8f))
+* include falsy json fields ([#792](https://github.com/open-feature/flagd/issues/792)) ([37d91a0](https://github.com/open-feature/flagd/commit/37d91a09836f07e07b12acd13850ea5c7c9252cd))
+
+## [0.6.2](https://github.com/open-feature/flagd/compare/core/v0.6.1...core/v0.6.2) (2023-07-28)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module buf.build/gen/go/open-feature/flagd/grpc/go to v1.3.0-20230720212818-3675556880a1.1 ([#747](https://github.com/open-feature/flagd/issues/747)) ([fb17bc6](https://github.com/open-feature/flagd/commit/fb17bc6a5c715f507b2838c150dc8a2f139a38fb))
+* **deps:** update module golang.org/x/net to v0.12.0 ([#734](https://github.com/open-feature/flagd/issues/734)) ([777b28b](https://github.com/open-feature/flagd/commit/777b28b1d512245b0046d11197f6dfa341b317d2))
+
+
+### ✨ New Features
+
+* grpc selector as scope ([#761](https://github.com/open-feature/flagd/issues/761)) ([7246e6d](https://github.com/open-feature/flagd/commit/7246e6dce648c6445f90d71fc172bbab209d9928))
+
+## [0.6.1](https://github.com/open-feature/flagd/compare/core/v0.6.0...core/v0.6.1) (2023-07-27)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.27.4 ([#756](https://github.com/open-feature/flagd/issues/756)) ([dcc10f3](https://github.com/open-feature/flagd/commit/dcc10f33f5fd9a8936241725ea811b90b4f136be))
+* **deps:** update module github.com/bufbuild/connect-go to v1.10.0 ([#771](https://github.com/open-feature/flagd/issues/771)) ([c74103f](https://github.com/open-feature/flagd/commit/c74103faec068f14c87ad3ec227f5b802dbfac43))
+* **deps:** update module google.golang.org/grpc to v1.57.0 ([#773](https://github.com/open-feature/flagd/issues/773)) ([be8bf04](https://github.com/open-feature/flagd/commit/be8bf045093d89099eead2cccb86a5a7275e25d5))
+
+
+### ✨ New Features
+
+* **flagd-proxy:** introduce zero-downtime ([#752](https://github.com/open-feature/flagd/issues/752)) ([ed5e6e5](https://github.com/open-feature/flagd/commit/ed5e6e5f3ee0a923c33dbf1a8bf20f80adec71bd))
+* **flagd:** custom error handling for OTel errors ([#769](https://github.com/open-feature/flagd/issues/769)) ([bda1a92](https://github.com/open-feature/flagd/commit/bda1a92785c4348fe306a1d259b7bea91bd01c41))
+
+## [0.6.0](https://github.com/open-feature/flagd/compare/core/v0.5.4...core/v0.6.0) (2023-07-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename metrics and service ([#730](https://github.com/open-feature/flagd/issues/730))
+
+### 🔄 Refactoring
+
+* remove protobuf dependency from eval package ([#701](https://github.com/open-feature/flagd/issues/701)) ([34ffafd](https://github.com/open-feature/flagd/commit/34ffafd9a777da3f11bd3bfa81565e774cc63214))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.27.3 ([#708](https://github.com/open-feature/flagd/issues/708)) ([5bf3a69](https://github.com/open-feature/flagd/commit/5bf3a69aa4bf95ce77ad08491bcce420620525d3))
+* **deps:** update module github.com/bufbuild/connect-go to v1.9.0 ([#722](https://github.com/open-feature/flagd/issues/722)) ([75223e2](https://github.com/open-feature/flagd/commit/75223e2fc01c4dcd0291b46a0d50b8815b31654c))
+* **deps:** update module github.com/bufbuild/connect-opentelemetry-go to v0.4.0 ([#739](https://github.com/open-feature/flagd/issues/739)) ([713e2a9](https://github.com/open-feature/flagd/commit/713e2a9834546963615046de1b6125e7fa6bf20d))
+* **deps:** update module github.com/prometheus/client_golang to v1.16.0 ([#709](https://github.com/open-feature/flagd/issues/709)) ([b8bedd2](https://github.com/open-feature/flagd/commit/b8bedd2b895026eace8204ae4ffcff771f7e8e97))
+* **deps:** update module golang.org/x/crypto to v0.10.0 ([#647](https://github.com/open-feature/flagd/issues/647)) ([7f1d7e6](https://github.com/open-feature/flagd/commit/7f1d7e66669b88b2c56b32f9cdd9be354ebcfc8e))
+* **deps:** update module golang.org/x/mod to v0.11.0 ([#705](https://github.com/open-feature/flagd/issues/705)) ([42813be](https://github.com/open-feature/flagd/commit/42813bef092ba7fffed0dd94166bfd01ea8a7582))
+* **deps:** update module golang.org/x/mod to v0.12.0 ([#729](https://github.com/open-feature/flagd/issues/729)) ([7b109c7](https://github.com/open-feature/flagd/commit/7b109c705aceb652ac2675bd0ffe82420983798b))
+* **deps:** update module golang.org/x/net to v0.11.0 ([#706](https://github.com/open-feature/flagd/issues/706)) ([27d893f](https://github.com/open-feature/flagd/commit/27d893fe78417f7b8418003edc401ab5a6c21fb9))
+* **deps:** update module golang.org/x/sync to v0.3.0 ([#707](https://github.com/open-feature/flagd/issues/707)) ([7852efb](https://github.com/open-feature/flagd/commit/7852efb84e9f071b2b482b1968d799888b6882dc))
+* **deps:** update module google.golang.org/grpc to v1.56.1 ([#710](https://github.com/open-feature/flagd/issues/710)) ([8f16573](https://github.com/open-feature/flagd/commit/8f165739aee8f28800e200b357203e88a3fd5938))
+* **deps:** update module google.golang.org/grpc to v1.56.2 ([#738](https://github.com/open-feature/flagd/issues/738)) ([521cc30](https://github.com/open-feature/flagd/commit/521cc30cde1971be000ec10d93f6d70b9b2260ee))
+* **deps:** update module google.golang.org/protobuf to v1.31.0 ([#720](https://github.com/open-feature/flagd/issues/720)) ([247239e](https://github.com/open-feature/flagd/commit/247239e76b9de1a619aad9e957ed8b44ae534b77))
+* **deps:** update opentelemetry-go monorepo ([#648](https://github.com/open-feature/flagd/issues/648)) ([c12dad8](https://github.com/open-feature/flagd/commit/c12dad89a8e761154f57739ded594b2783a14f8a))
+
+
+### ✨ New Features
+
+* **flagD:** support zero downtime during upgrades ([#731](https://github.com/open-feature/flagd/issues/731)) ([7df8d39](https://github.com/open-feature/flagd/commit/7df8d3994b75991b5e49a65728ef5e4b24a85dde))
+* rename metrics and service ([#730](https://github.com/open-feature/flagd/issues/730)) ([09c0198](https://github.com/open-feature/flagd/commit/09c0198f76a200b1b6a1f48e9c94ec0547283ca2))
+
+## [0.5.4](https://github.com/open-feature/flagd/compare/core/v0.5.3...core/v0.5.4) (2023-06-07)
+
+
+### ✨ New Features
+
+* add `sem_ver` jsonLogic evaluator ([#675](https://github.com/open-feature/flagd/issues/675)) ([a8d8ab6](https://github.com/open-feature/flagd/commit/a8d8ab6b4495457a40a2c32b8bd5be48b1fd6941))
+* add `starts_with` and `ends_with` json evaluators ([#658](https://github.com/open-feature/flagd/issues/658)) ([f932b8f](https://github.com/open-feature/flagd/commit/f932b8f4c834a5ebe27ebb860c26fdea8da20598))
+* telemetry improvements ([#653](https://github.com/open-feature/flagd/issues/653)) ([ea02cba](https://github.com/open-feature/flagd/commit/ea02cba24bde982d55956fe54de1e8f27226bfc6))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/bufbuild/connect-go to v1.8.0 ([#683](https://github.com/open-feature/flagd/issues/683)) ([13bb13d](https://github.com/open-feature/flagd/commit/13bb13daa11068481ba97f3432ae08de78392a91))
+* **deps:** update module github.com/bufbuild/connect-opentelemetry-go to v0.3.0 ([#669](https://github.com/open-feature/flagd/issues/669)) ([e899435](https://github.com/open-feature/flagd/commit/e899435c29c32264ea2477436e69ce92c7775ee9))
+* **deps:** update module github.com/prometheus/client_golang to v1.15.1 ([#636](https://github.com/open-feature/flagd/issues/636)) ([b22279d](https://github.com/open-feature/flagd/commit/b22279df469dc78f9d3e5bc4a59ab6baf539a8ae))
+* **deps:** update module github.com/stretchr/testify to v1.8.3 ([#662](https://github.com/open-feature/flagd/issues/662)) ([2e06d58](https://github.com/open-feature/flagd/commit/2e06d582ee9c8abfd57f8945d91261eab6cf9854))
+* **deps:** update module github.com/stretchr/testify to v1.8.4 ([#678](https://github.com/open-feature/flagd/issues/678)) ([ca8c9d6](https://github.com/open-feature/flagd/commit/ca8c9d66a0c6b21129c4c36a3c10dcf3be869ee7))
+* **deps:** update module golang.org/x/mod to v0.10.0 ([#682](https://github.com/open-feature/flagd/issues/682)) ([16199ce](https://github.com/open-feature/flagd/commit/16199ceac9ebbae68dafbd6c21239f64f8c32511))
+* **deps:** update module golang.org/x/net to v0.10.0 ([#644](https://github.com/open-feature/flagd/issues/644)) ([ccd9d35](https://github.com/open-feature/flagd/commit/ccd9d351df153039a124064f30e5829610773f27))
+* **deps:** update module golang.org/x/sync to v0.2.0 ([#638](https://github.com/open-feature/flagd/issues/638)) ([7f4a7db](https://github.com/open-feature/flagd/commit/7f4a7db8139294a21b3415710c143f182d93264a))
+* **deps:** update module google.golang.org/grpc to v1.55.0 ([#640](https://github.com/open-feature/flagd/issues/640)) ([c0d7328](https://github.com/open-feature/flagd/commit/c0d732866262240e340fe10f8ac0f6ff2a5c4f8c))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.15.0 ([#665](https://github.com/open-feature/flagd/issues/665)) ([9490ed6](https://github.com/open-feature/flagd/commit/9490ed62e2fc589af8ae7ee26bfd559797a1f83c))
+* fix connect error code handling for disabled flags ([#670](https://github.com/open-feature/flagd/issues/670)) ([86a8012](https://github.com/open-feature/flagd/commit/86a8012efcfeb3e967657f6143c143b457d64ca2))
+* remove disabled flags from bulk evaluation ([#672](https://github.com/open-feature/flagd/issues/672)) ([d2ce988](https://github.com/open-feature/flagd/commit/d2ce98838edf63b88ee9fb5ae6f8d534e1112e7e))
+
+
+### 🔄 Refactoring
+
+* introduce additional linting rules + fix discrepancies ([#616](https://github.com/open-feature/flagd/issues/616)) ([aef0b90](https://github.com/open-feature/flagd/commit/aef0b9042dcbe5b3f9a7e97960b27366fe50adfe))
+* introduce isyncstore interface ([#660](https://github.com/open-feature/flagd/issues/660)) ([c0e2fa0](https://github.com/open-feature/flagd/commit/c0e2fa00736d46db98f72114a449b2e2bf998e3d))
+
+
+### 🧹 Chore
+
+* refactor json logic evaluator to pass custom operators as options ([#691](https://github.com/open-feature/flagd/issues/691)) ([1c9bff9](https://github.com/open-feature/flagd/commit/1c9bff9a523037c3654b592dc08c193aa3295e9e))
+* update otel dependencies ([#649](https://github.com/open-feature/flagd/issues/649)) ([2114e41](https://github.com/open-feature/flagd/commit/2114e41c38951247866c0b408e5f933282902e70))
+
+## [0.5.3](https://github.com/open-feature/flagd/compare/core/v0.5.2...core/v0.5.3) (2023-05-04)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/bufbuild/connect-go to v1.6.0 ([#585](https://github.com/open-feature/flagd/issues/585)) ([8f2f467](https://github.com/open-feature/flagd/commit/8f2f467af52a3686196a821eec61954d89d3f71d))
+* **deps:** update module github.com/bufbuild/connect-go to v1.7.0 ([#625](https://github.com/open-feature/flagd/issues/625)) ([1b24fc9](https://github.com/open-feature/flagd/commit/1b24fc923a405b337634009831ef0b9792953ce5))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.2.34 ([#604](https://github.com/open-feature/flagd/issues/604)) ([3e6a84b](https://github.com/open-feature/flagd/commit/3e6a84b455a330f541784b346d3b6199f8b423f7))
+* **deps:** update module github.com/prometheus/client_golang to v1.15.0 ([#608](https://github.com/open-feature/flagd/issues/608)) ([0597a8f](https://github.com/open-feature/flagd/commit/0597a8f23d0914b26f06b1335b49fe7c18ecb4f9))
+* **deps:** update module github.com/rs/cors to v1.9.0 ([#609](https://github.com/open-feature/flagd/issues/609)) ([97066c1](https://github.com/open-feature/flagd/commit/97066c107d14777eaad8a05b3bb051639af3179c))
+* **deps:** update module github.com/rs/xid to v1.5.0 ([#614](https://github.com/open-feature/flagd/issues/614)) ([e3dfbc6](https://github.com/open-feature/flagd/commit/e3dfbc6753bddc9e2f5c4a2633a7010123cf2f97))
+* **deps:** update module golang.org/x/crypto to v0.8.0 ([#595](https://github.com/open-feature/flagd/issues/595)) ([36016d7](https://github.com/open-feature/flagd/commit/36016d7940fa772c01dd61b071b2c9ec753cfb75))
+
+
+### ✨ New Features
+
+* Introduce connect traces ([#624](https://github.com/open-feature/flagd/issues/624)) ([28bac6a](https://github.com/open-feature/flagd/commit/28bac6a54aed79cb8d84a147ffea296c36f5bd51))
+
+
+### 🧹 Chore
+
+* add instructions for windows and fix failing unit tests ([#632](https://github.com/open-feature/flagd/issues/632)) ([6999d67](https://github.com/open-feature/flagd/commit/6999d6722581ab8e2e14bfd4b2d0341fe5216684))
+
+## [0.5.2](https://github.com/open-feature/flagd/compare/core/v0.5.1...core/v0.5.2) (2023-04-13)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.2.32 [security] ([#606](https://github.com/open-feature/flagd/issues/606)) ([6f721af](https://github.com/open-feature/flagd/commit/6f721af379fcb0f1a74410637a313477148ef863))
+* eventing configuration setup ([#605](https://github.com/open-feature/flagd/issues/605)) ([edfbe51](https://github.com/open-feature/flagd/commit/edfbe5191651f25da991b507a3feedcbbe3c66f1))
+
+
+### ✨ New Features
+
+* introduce metrics for failed evaluations ([#584](https://github.com/open-feature/flagd/issues/584)) ([77664cd](https://github.com/open-feature/flagd/commit/77664cdf53a868f56ca040bdfe3f4930cd9a8fb4))
+* otel traces for flag evaluation ([#598](https://github.com/open-feature/flagd/issues/598)) ([1757035](https://github.com/open-feature/flagd/commit/175703548f88469f25d749e320ee48030c9f9074))
+
+## [0.5.1](https://github.com/open-feature/flagd/compare/core/v0.5.0...core/v0.5.1) (2023-04-12)
+
+
+### 🧹 Chore
+
+* move startServer functions into errGroups ([#566](https://github.com/open-feature/flagd/issues/566)) ([0223c23](https://github.com/open-feature/flagd/commit/0223c23fbd72322cf6ecbe6736968b3e6c6132bb))
+
+
+### ✨ New Features
+
+* flagd OTEL collector ([#586](https://github.com/open-feature/flagd/issues/586)) ([494bec3](https://github.com/open-feature/flagd/commit/494bec33dcc1ddf0fa5cd0866f06265618408f5e))
+
+
+### 🔄 Refactoring
+
+* remove connect-go from flagd-proxy and replace with grpc ([#589](https://github.com/open-feature/flagd/issues/589)) ([425de9a](https://github.com/open-feature/flagd/commit/425de9a1c2d1574779b905ac6debb9edfc156b15))
+
+
+### 🐛 Bug Fixes
+
+* flagd-proxy locking bug fix ([#592](https://github.com/open-feature/flagd/issues/592)) ([b166122](https://github.com/open-feature/flagd/commit/b1661225c912ee11ba4749f7ef157a0335e8781f))
+
+## [0.5.0](https://github.com/open-feature/flagd/compare/core/v0.4.5...core/v0.5.0) (2023-03-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename `kube-flagd-proxy` to `flagd-proxy` ([#576](https://github.com/open-feature/flagd/issues/576))
+* unify sources configuration handling ([#560](https://github.com/open-feature/flagd/issues/560))
+
+### 🧹 Chore
+
+* move credential builder for grpc sync into seperate component ([#536](https://github.com/open-feature/flagd/issues/536)) ([7314fee](https://github.com/open-feature/flagd/commit/7314feea8c7bc90aac0528a9e1be0759a7a60c15))
+* refactor configuration handling for startup ([#551](https://github.com/open-feature/flagd/issues/551)) ([8dfbde5](https://github.com/open-feature/flagd/commit/8dfbde5bbffd16fb66797a750d15f0226edf54a7))
+* refactor middleware setup in server ([#554](https://github.com/open-feature/flagd/issues/554)) ([01016c7](https://github.com/open-feature/flagd/commit/01016c7df7c5f653cdadf151539432f692f36251))
+* refactor service configuration objects ([#545](https://github.com/open-feature/flagd/issues/545)) ([c7b29ed](https://github.com/open-feature/flagd/commit/c7b29edcfe9dab61eaa585011a690d47829601b6)), closes [#524](https://github.com/open-feature/flagd/issues/524)
+* unify sources configuration handling ([#560](https://github.com/open-feature/flagd/issues/560)) ([7f4888a](https://github.com/open-feature/flagd/commit/7f4888a1676e49acecf328685623566ea057ffcf))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module google.golang.org/grpc to v1.54.0 ([#548](https://github.com/open-feature/flagd/issues/548)) ([99ba5ec](https://github.com/open-feature/flagd/commit/99ba5ece76d98124c108bc6280bee03a5c0cd25d))
+* **deps:** update module sigs.k8s.io/controller-runtime to v0.14.6 ([#572](https://github.com/open-feature/flagd/issues/572)) ([bed9458](https://github.com/open-feature/flagd/commit/bed94584a30bb6752284ece152cb114a102cbe8a))
+* fixing silent lint failures ([#550](https://github.com/open-feature/flagd/issues/550)) ([30c8022](https://github.com/open-feature/flagd/commit/30c8022e891d1d278c096dd2438137ced7552678))
+* nil pointer fix + export constructors ([#555](https://github.com/open-feature/flagd/issues/555)) ([78adb81](https://github.com/open-feature/flagd/commit/78adb81f4eb7a5b7fdb7075fa0bf8afa6d03dc72))
+
+
+### ✨ New Features
+
+* expose Impression metric ([#556](https://github.com/open-feature/flagd/issues/556)) ([77e0a33](https://github.com/open-feature/flagd/commit/77e0a33be24dcd0b6e239e5ed709167167c14171))
+* Introduce kube-proxy-metrics ([#558](https://github.com/open-feature/flagd/issues/558)) ([ad0baeb](https://github.com/open-feature/flagd/commit/ad0baeb08fa67c94356d6a3f298283373bd5211b))
+* rename `kube-flagd-proxy` to `flagd-proxy` ([#576](https://github.com/open-feature/flagd/issues/576)) ([223de99](https://github.com/open-feature/flagd/commit/223de99ee3efbcd601bf75ab1f6258eeac0c426e))
+* refactor core module into multiple packages ([#530](https://github.com/open-feature/flagd/issues/530)) ([9d68d0b](https://github.com/open-feature/flagd/commit/9d68d0b45815facdf6079ffcd7864f720ccb8475))
+
+## [0.4.5](https://github.com/open-feature/flagd/compare/core/v0.4.4...core/v0.4.5) (2023-03-20)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update kubernetes packages to v0.26.3 ([#533](https://github.com/open-feature/flagd/issues/533)) ([6ddd5b2](https://github.com/open-feature/flagd/commit/6ddd5b29806f3101cf122bfc4196ba7d0ef4c025))
+* **deps:** update module github.com/open-feature/open-feature-operator to v0.2.31 ([#527](https://github.com/open-feature/flagd/issues/527)) ([7928130](https://github.com/open-feature/flagd/commit/7928130b10906b10f4501630f16a71bdd8e4e365))
+* **deps:** update module google.golang.org/protobuf to v1.29.1 [security] ([#504](https://github.com/open-feature/flagd/issues/504)) ([59db0bb](https://github.com/open-feature/flagd/commit/59db0bba43a9c002378fdced2fcf4729d619e28b))
+* **deps:** update module google.golang.org/protobuf to v1.30.0 ([#499](https://github.com/open-feature/flagd/issues/499)) ([f650338](https://github.com/open-feature/flagd/commit/f650338e01e721a9d24e2ed6f6fe585dbb6beb42))
+
+
+### ✨ New Features
+
+* grpc connection options to flagd configuration options ([#532](https://github.com/open-feature/flagd/issues/532)) ([aa74951](https://github.com/open-feature/flagd/commit/aa74951f43b662ff2df53e68d347fc10e6d23bb8))
+* Introduce flagd kube proxy ([#495](https://github.com/open-feature/flagd/issues/495)) ([440864c](https://github.com/open-feature/flagd/commit/440864ce87174618321c9d5146221490d8f07b24))
+
+## [0.4.4](https://github.com/open-feature/flagd/compare/core-v0.4.3...core/v0.4.4) (2023-03-10)
+
+
+### ✨ New Features
+
+* Restructure for monorepo setup ([#486](https://github.com/open-feature/flagd/issues/486)) ([ed2993c](https://github.com/open-feature/flagd/commit/ed2993cd67b8a46db3beb6bb8a360e1aa20349da))

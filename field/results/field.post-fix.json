@@ -1,0 +1,1422 @@
+{
+ "detector_dir": "FlagBound",
+ "files_by_group_and_path": {
+  "non-sample|fixture-path": 90,
+  "non-sample|other-path": 213,
+  "sample|fixture-path": 169,
+  "sample|other-path": 187
+ },
+ "files_with_detection_by_group_and_path": {
+  "F1": {
+   "non-sample|fixture-path": 3,
+   "non-sample|other-path": 1,
+   "sample|fixture-path": 13,
+   "sample|other-path": 1
+  },
+  "F2": {
+   "non-sample|fixture-path": 2,
+   "non-sample|other-path": 2,
+   "sample|fixture-path": 8,
+   "sample|other-path": 3
+  },
+  "F3": {
+   "non-sample|fixture-path": 11,
+   "non-sample|other-path": 26,
+   "sample|fixture-path": 75,
+   "sample|other-path": 50
+  },
+  "F4": {
+   "non-sample|fixture-path": 7,
+   "non-sample|other-path": 15,
+   "sample|fixture-path": 12,
+   "sample|other-path": 35
+  },
+  "F7": {
+   "non-sample|other-path": 3
+  }
+ },
+ "files_with_detection_by_strict_provenance": {
+  "F1|non-sample": 4,
+  "F1|sample:duplicate-of-sample": 1,
+  "F1|sample:provider-mirror": 12,
+  "F1|sample:provider-owned": 1,
+  "F2|non-sample": 4,
+  "F2|sample:duplicate-of-sample": 1,
+  "F2|sample:provider-mirror": 6,
+  "F2|sample:provider-owned": 2,
+  "F2|sample:tutorial": 2,
+  "F3|non-sample": 37,
+  "F3|sample:duplicate-of-sample": 34,
+  "F3|sample:provider-mirror": 29,
+  "F3|sample:provider-owned": 27,
+  "F3|sample:tutorial": 35,
+  "F4|non-sample": 22,
+  "F4|sample:duplicate-of-sample": 3,
+  "F4|sample:provider-mirror": 5,
+  "F4|sample:provider-owned": 11,
+  "F4|sample:tutorial": 28,
+  "F7|non-sample": 3
+ },
+ "outside_bench_source_repos": {
+  "files_by_group_and_path": {
+   "non-sample|fixture-path": 33,
+   "non-sample|other-path": 130,
+   "sample|fixture-path": 110,
+   "sample|other-path": 167
+  },
+  "files_with_detection_by_group_and_path": {
+   "F1": {
+    "sample|fixture-path": 3,
+    "sample|other-path": 1
+   },
+   "F2": {
+    "sample|fixture-path": 3
+   },
+   "F3": {
+    "non-sample|fixture-path": 4,
+    "non-sample|other-path": 15,
+    "sample|fixture-path": 52,
+    "sample|other-path": 49
+   },
+   "F4": {
+    "non-sample|fixture-path": 1,
+    "non-sample|other-path": 7,
+    "sample|fixture-path": 10,
+    "sample|other-path": 25
+   },
+   "F7": {}
+  }
+ },
+ "per_class": {
+  "F1": {
+   "non-sample": {
+    "files_with_detection": 4,
+    "flags_detected": 4,
+    "flags_not_judgeable": 32
+   },
+   "sample": {
+    "files_with_detection": 14,
+    "flags_detected": 26,
+    "flags_not_judgeable": 45
+   }
+  },
+  "F2": {
+   "non-sample": {
+    "files_with_detection": 4,
+    "flags_detected": 5,
+    "flags_not_judgeable": 3
+   },
+   "sample": {
+    "files_with_detection": 11,
+    "flags_detected": 16,
+    "flags_not_judgeable": 9
+   }
+  },
+  "F3": {
+   "non-sample": {
+    "files_with_detection": 37,
+    "flags_detected": 88,
+    "flags_not_judgeable": 21
+   },
+   "sample": {
+    "files_with_detection": 125,
+    "flags_detected": 345,
+    "flags_not_judgeable": 33
+   }
+  },
+  "F4": {
+   "non-sample": {
+    "files_with_detection": 22,
+    "flags_detected": 60,
+    "flags_not_judgeable": 3
+   },
+   "sample": {
+    "files_with_detection": 47,
+    "flags_detected": 111,
+    "flags_not_judgeable": 13
+   }
+  },
+  "F7": {
+   "non-sample": {
+    "files_with_detection": 3,
+    "flags_detected": 6,
+    "flags_not_judgeable": 0
+   },
+   "sample": {
+    "files_with_detection": 0,
+    "flags_detected": 0,
+    "flags_not_judgeable": 0
+   }
+  }
+ },
+ "population": {
+  "by_group": {
+   "non-sample": 303,
+   "sample": 356
+  },
+  "census": 634,
+  "file_status": {
+   "judged": 659,
+   "not-judgeable": 0
+  },
+  "files": 659,
+  "formats": {
+   "flagd": 375,
+   "flipt": 145,
+   "goff": 139
+  },
+  "never_fetched": 25
+ },
+ "representatives": {
+  "F1": {
+   "non-sample": [
+    {
+     "fixture_path": false,
+     "flag": "apiDisabled",
+     "path": "pkg/feature/ff_ga.yaml",
+     "provenance_strict": "non-sample",
+     "ref": "2d9570c25ac30820677a6d4a761e2d7b0ebdc153",
+     "repo": "kyma-project/cloud-manager",
+     "sha256": "49e3fba4dbe2e40ab67bee1f31ce62d0a4e369b510d5b0aa3efc46086e1f9dc2",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/kyma-project/cloud-manager/2d9570c25ac30820677a6d4a761e2d7b0ebdc153/pkg/feature/ff_ga.yaml",
+     "verdict": {
+      "basis": "exhaustive over 17325 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "rule 9 'Disable RedisCluster on AliCloud' -> disabled",
+        "rule": "targeting[8]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "build_canary",
+     "path": "scripts/check-flags/test/fixtures/dev-with-targeting/dev.flagd.json",
+     "provenance_strict": "non-sample",
+     "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+     "repo": "EconGraph/econ-graph",
+     "sha256": "b03a0b3bdfcc78a85922a441422b81884bfe77b466b3e4b48b9e15a210b23e75",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/dev-with-targeting/dev.flagd.json",
+     "verdict": {
+      "basis": "exhaustive over 1 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "returns 'off'",
+        "rule": "/if[2]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "equal-greater-lesser-version-flag",
+     "path": "tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/custom-ops.json",
+     "provenance_strict": "non-sample",
+     "ref": "e198ed5e3cd667e5e92968c54717d345662e080e",
+     "repo": "jordanwallwork/flagon",
+     "sha256": "ec56817dccd9c1f177c4b132d28b82759e2c312433d19e635dfc46c9df95626b",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/jordanwallwork/flagon/e198ed5e3cd667e5e92968c54717d345662e080e/tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/custom-ops.json",
+     "verdict": {
+      "basis": "exhaustive over 17 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "returns 'fail'",
+        "rule": "/if[2]/if[2]/if[2]/if[1]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    }
+   ],
+   "sample": [
+    {
+     "fixture_path": true,
+     "flag": "flag_boolean",
+     "path": "internal/oci/testdata/default.yml",
+     "provenance_strict": "sample:provider-mirror",
+     "ref": "5ae642bc9675fd51f37e0842cbf40337e6c6682c",
+     "repo": "gitbito/flipt",
+     "sha256": "06ec220380eb566cd08b0bdc4b496f5dcd3524a4afc11624dfbf194d22e810f8",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/gitbito/flipt/5ae642bc9675fd51f37e0842cbf40337e6c6682c/internal/oci/testdata/default.yml",
+     "verdict": {
+      "basis": "exhaustive over 8 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "rollout 6 (threshold) -> True",
+        "rule": "rollouts[5]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       },
+       {
+        "label": "rollout 7 (threshold) -> True",
+        "rule": "rollouts[6]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "flag1",
+     "path": "internal/ext/testdata/export_default_and_foo.yml",
+     "provenance_strict": "sample:provider-mirror",
+     "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+     "repo": "blitzy-showcase/flipt",
+     "sha256": "07f9ab7e9da7f806b07adec2444e7c470aee772c349f87315a2ba73fd0582d99",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/internal/ext/testdata/export_default_and_foo.yml",
+     "verdict": {
+      "basis": "exhaustive over 25 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "rule 2 with no positive distribution -> default variant",
+        "rule": "rules[1]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "flag1",
+     "path": "internal/ext/testdata/export_all_namespaces.yml",
+     "provenance_strict": "sample:provider-mirror",
+     "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+     "repo": "blitzy-showcase/flipt",
+     "sha256": "166188d30d0fa4b991deb6a54edb9b881ab628d5a3f604c57019647ff5484294",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/internal/ext/testdata/export_all_namespaces.yml",
+     "verdict": {
+      "basis": "exhaustive over 25 representative contexts (complete for the operators used)",
+      "findings": [
+       {
+        "label": "rule 2 with no positive distribution -> default variant",
+        "rule": "rules[1]",
+        "why": "no context reaches it: earlier rules capture every context that satisfies its condition, or its condition is unsatisfiable"
+       }
+      ],
+      "reproduce": "evaluate the flag with any context; the listed rule is never the first match",
+      "status": "detected"
+     }
+    }
+   ]
+  },
+  "F2": {
+   "non-sample": [
+    {
+     "fixture_path": true,
+     "flag": "fractional-negative-weight-flag",
+     "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+     "provenance_strict": "non-sample",
+     "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+     "repo": "fireflyframework/fireflyframework-php",
+     "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "/fractional",
+        "effect": "G2/G3 clamp to 0 silently; G1 subtracts it from the total",
+        "kind": "negative-weight",
+        "variant": "one",
+        "weight": -50
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "enable-redis-cache-rollout",
+     "path": "flipt/features.yaml",
+     "provenance_strict": "non-sample",
+     "ref": "762adb7100f48f19539415989b5450a262a683a8",
+     "repo": "defnotalexrios/mmd",
+     "sha256": "adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/defnotalexrios/mmd/762adb7100f48f19539415989b5450a262a683a8/flipt/features.yaml",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "rules[1]/distributions",
+        "declared": [
+         [
+          "on",
+          10.0
+         ]
+        ],
+        "declared_sum": 10.0,
+        "effect": "remainder 90% silently falls to the flag default (legacy); v2.9+/Rust rescale every share by 100/10",
+        "effective_per_mille": {
+         "flipt/server-legacy": {
+          "(no match -> default variant None)": 900,
+          "on": 100
+         },
+         "flipt/server-v2.9+ and rust-client": "normalised to sum 100"
+        },
+        "kind": "rollout-sum-not-100",
+        "note": "declared on a BOOLEAN_FLAG_TYPE flag: the engine never evaluates these rules (F7-a)"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "world_map",
+     "path": "scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json",
+     "provenance_strict": "non-sample",
+     "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+     "repo": "EconGraph/econ-graph",
+     "sha256": "d70bd3ffe2a01b1c27d1d3941361231a2ecf863a166dba4ca5e65645b8cb62d4",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "/fractional",
+        "effect": "G2/G3 clamp to 0 silently; G1 subtracts it from the total",
+        "kind": "negative-weight",
+        "variant": "on",
+        "weight": -5
+       },
+       {
+        "allocation": "/fractional",
+        "effect": "fractional returns null: 100% fall to defaultVariant (off)",
+        "kind": "zero-total-weight"
+       }
+      ],
+      "status": "detected"
+     }
+    }
+   ],
+   "sample": [
+    {
+     "fixture_path": false,
+     "flag": "flag_cumulative_rounding",
+     "path": "venus/features.yml",
+     "provenance_strict": "sample:provider-owned",
+     "ref": "cdfdf148b239901a6f8b3bcc458431e79b25eb75",
+     "repo": "flipt-io/flipt-test-corpus",
+     "sha256": "27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/flipt-io/flipt-test-corpus/cdfdf148b239901a6f8b3bcc458431e79b25eb75/venus/features.yml",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "rules[0]/distributions",
+        "declared": [
+         [
+          "variant1",
+          33.33
+         ],
+         [
+          "variant2",
+          33.33
+         ],
+         [
+          "variant3",
+          33.33
+         ]
+        ],
+        "declared_sum": 99.99,
+        "effect": "remainder 0.01% silently falls to the flag default (legacy); v2.9+/Rust rescale every share by 100/99.99",
+        "effective_per_mille": {
+         "flipt/server-legacy": {
+          "(no match -> default variant None)": 1,
+          "variant1": 333,
+          "variant2": 333,
+          "variant3": 333
+         },
+         "flipt/server-v2.9+ and rust-client": "normalised to sum 100"
+        },
+        "kind": "rollout-sum-not-100"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "flipt",
+     "path": "core/validation/testdata/invalid_yaml_stream.yaml",
+     "provenance_strict": "sample:provider-mirror",
+     "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+     "repo": "blitzy-showcase/flipt",
+     "sha256": "4572dfab41d6564646b51b8d2c4e2e8e50a01904b311edeb7340fde707c5a339",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/core/validation/testdata/invalid_yaml_stream.yaml",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "rules[1]/distributions",
+        "declared": [
+         [
+          "fromFlipt2",
+          110.0
+         ]
+        ],
+        "declared_sum": 110.0,
+        "effect": "excess 10% silently dropped (legacy); v2.9+/Rust rescale by 100/110",
+        "effective_per_mille": {
+         "flipt/server-legacy": {
+          "fromFlipt2": 1000
+         },
+         "flipt/server-v2.9+ and rust-client": "normalised to sum 100"
+        },
+        "kind": "rollout-sum-not-100"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "fractional-negative-weight-flag",
+     "path": "test/testbed/testdata/allFlags.after-two-changes.json",
+     "provenance_strict": "sample:provider-mirror",
+     "ref": "7eb4ce09ef656da8890988ab0268b966a73c57eb",
+     "repo": "open-feature-forking/openfeature-relay",
+     "sha256": "4592bfc8a26865b5541238e1e89eb40fa28e88dedef1f06904a58ceb5d40a445",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/open-feature-forking/openfeature-relay/7eb4ce09ef656da8890988ab0268b966a73c57eb/test/testbed/testdata/allFlags.after-two-changes.json",
+     "verdict": {
+      "findings": [
+       {
+        "allocation": "/fractional",
+        "effect": "G2/G3 clamp to 0 silently; G1 subtracts it from the total",
+        "kind": "negative-weight",
+        "variant": "one",
+        "weight": -50
+       }
+      ],
+      "status": "detected"
+     }
+    }
+   ]
+  },
+  "F3": {
+   "non-sample": [
+    {
+     "fixture_path": false,
+     "flag": "payment-delay-ms",
+     "path": "deploy/helm/sprocketry/files/flagd/faults.json",
+     "provenance_strict": "non-sample",
+     "ref": "ba12a611f48af4fd729eb315771b66e3b4a89267",
+     "repo": "mchittineni/sprocketry",
+     "sha256": "0519791ba003fe0e42df1f5bca4a0ed8e1368bd43538e0d263b9f0e7fa75b18d",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/mchittineni/sprocketry/ba12a611f48af4fd729eb315771b66e3b4a89267/deploy/helm/sprocketry/files/flagd/faults.json",
+     "verdict": {
+      "basis": "produced by reachable paths: ['1500ms', 'off']",
+      "findings": [
+       {
+        "variant": "500ms",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "flag-only-for-admin",
+     "path": "flag-config.goff.yaml",
+     "provenance_strict": "non-sample",
+     "ref": "c9a84de47cc99900bd0cff700eb298788171207f",
+     "repo": "JieeiroSst/toggle-go",
+     "sha256": "106bd01633e9b60eb398e4c4bfb90769bc5ac5d67c1ee1cce77ccdf5c52496cf",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/JieeiroSst/toggle-go/c9a84de47cc99900bd0cff700eb298788171207f/flag-config.goff.yaml",
+     "verdict": {
+      "basis": "produced by reachable paths: ['default_var', 'true_var']",
+      "findings": [
+       {
+        "variant": "false_var",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "discountPercentage",
+     "path": "tests/flags.json",
+     "provenance_strict": "non-sample",
+     "ref": "270be9d7ff2c9d521700b28906241fb2f7a22e71",
+     "repo": "aaronS7/flagd-rs",
+     "sha256": "125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/aaronS7/flagd-rs/270be9d7ff2c9d521700b28906241fb2f7a22e71/tests/flags.json",
+     "verdict": {
+      "basis": "produced by reachable paths: ['large', 'medium', 'small']",
+      "findings": [
+       {
+        "variant": "none",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    }
+   ],
+   "sample": [
+    {
+     "fixture_path": true,
+     "flag": "test-flag",
+     "path": "testdata/invalid-flag-config.yaml",
+     "provenance_strict": "sample:duplicate-of-sample",
+     "ref": "293eb64c035423e10f5439b039b77f4628a7608c",
+     "repo": "BlackbirdWorks/semaphore",
+     "sha256": "000cc3ffc8616bd470cd6892840c23e38d3cfd19d513f703035fbf45da0e4090",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/BlackbirdWorks/semaphore/293eb64c035423e10f5439b039b77f4628a7608c/testdata/invalid-flag-config.yaml",
+     "verdict": {
+      "basis": "produced by reachable paths: ['Default', 'True']",
+      "findings": [
+       {
+        "variant": "False",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "productCatalogFailure",
+     "path": "app/otel-demo/src/flagd/demo.flagd.json",
+     "provenance_strict": "sample:tutorial",
+     "ref": "42b3bed3fb8b93bdbb611a8b0e132de93a3117da",
+     "repo": "vijaysingh-dev/sentinel-rag",
+     "sha256": "0066e36b18b0319f57a0ee8944016603aaf7c4cba5842dcf673c344d8ebb462d",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/vijaysingh-dev/sentinel-rag/42b3bed3fb8b93bdbb611a8b0e132de93a3117da/app/otel-demo/src/flagd/demo.flagd.json",
+     "verdict": {
+      "basis": "produced by reachable paths: ['off']",
+      "findings": [
+       {
+        "variant": "on",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "productCatalogFailure",
+     "path": "src/flagd/demo.flagd.json",
+     "provenance_strict": "sample:tutorial",
+     "ref": "54bacd51a774677144338b6de628cb34aa62bd5a",
+     "repo": "axnasim/opentelemetry-demo",
+     "sha256": "00c6c5536afdb0c90fb83e00c451f2cb39c04946cd4011f501b4b28ad7e63aab",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/axnasim/opentelemetry-demo/54bacd51a774677144338b6de628cb34aa62bd5a/src/flagd/demo.flagd.json",
+     "verdict": {
+      "basis": "produced by reachable paths: ['off']",
+      "findings": [
+       {
+        "variant": "on",
+        "why": "no reachable rule, positive-weight allocation or default produces it"
+       }
+      ],
+      "status": "detected"
+     }
+    }
+   ]
+  },
+  "F4": {
+   "non-sample": [
+    {
+     "fixture_path": false,
+     "flag": "invoicing.new-pdf-renderer",
+     "path": "config/flags/flags.json",
+     "provenance_strict": "non-sample",
+     "ref": "60158253ff08d8a4cc6befa6ca6729aaf39eaeba",
+     "repo": "Mahan-film/roxira-platform",
+     "sha256": "0401a11f710c302f7e36b660da4f323eee8139bff0fdbda07f09d629ae510af5",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/Mahan-film/roxira-platform/60158253ff08d8a4cc6befa6ca6729aaf39eaeba/config/flags/flags.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "off": 905,
+          "on": 95
+         },
+         "flagd/G2": {
+          "off": 879,
+          "on": 121
+         },
+         "flagd/G3": {
+          "off": 916,
+          "on": 84
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "off -> on": 69,
+           "on -> off": 43
+          },
+          "example": {
+           "flagd/G1": "off",
+           "flagd/G2": "on",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.112,
+          "flips": 112,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 76,
+           "on -> off": 87
+          },
+          "example": {
+           "flagd/G1": "off",
+           "flagd/G3": "on",
+           "targetingKey": "user-0001"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.163,
+          "flips": 163,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 73,
+           "on -> off": 110
+          },
+          "example": {
+           "flagd/G2": "on",
+           "flagd/G3": "off",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.183,
+          "flips": 183,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "new-routing-algorithm",
+     "path": "components/camel-openfeature/src/test/resources/openfeature/flags.json",
+     "provenance_strict": "non-sample",
+     "ref": "3aa7ad6c1b82fe8a5a682e654fc9099d9cf8f987",
+     "repo": "codacy-open-source-projects-scans/camel",
+     "sha256": "08ccf683995657012950a64923400e7050b2d992e4bea87b46b9f4e89cd4648e",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/codacy-open-source-projects-scans/camel/3aa7ad6c1b82fe8a5a682e654fc9099d9cf8f987/components/camel-openfeature/src/test/resources/openfeature/flags.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "legacy": 910,
+          "new": 90
+         },
+         "flagd/G2": {
+          "legacy": 903,
+          "new": 97
+         },
+         "flagd/G3": {
+          "legacy": 920,
+          "new": 80
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "legacy -> new": 97,
+           "new -> legacy": 90
+          },
+          "example": {
+           "flagd/G1": "legacy",
+           "flagd/G2": "new",
+           "targetingKey": "user-0010"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.187,
+          "flips": 187,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "legacy -> new": 72,
+           "new -> legacy": 82
+          },
+          "example": {
+           "flagd/G1": "new",
+           "flagd/G3": "legacy",
+           "targetingKey": "user-0018"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.154,
+          "flips": 154,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "legacy -> new": 71,
+           "new -> legacy": 88
+          },
+          "example": {
+           "flagd/G2": "new",
+           "flagd/G3": "legacy",
+           "targetingKey": "user-0010"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.159,
+          "flips": 159,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": true,
+     "flag": "experimentalFeature",
+     "path": "tests/flags.json",
+     "provenance_strict": "non-sample",
+     "ref": "270be9d7ff2c9d521700b28906241fb2f7a22e71",
+     "repo": "aaronS7/flagd-rs",
+     "sha256": "125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/aaronS7/flagd-rs/270be9d7ff2c9d521700b28906241fb2f7a22e71/tests/flags.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "control": 891,
+          "treatment": 109
+         },
+         "flagd/G2": {
+          "control": 901,
+          "treatment": 99
+         },
+         "flagd/G3": {
+          "control": 902,
+          "treatment": 98
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "control -> treatment": 99,
+           "treatment -> control": 109
+          },
+          "example": {
+           "flagd/G1": "treatment",
+           "flagd/G2": "control",
+           "targetingKey": "user-0002"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.208,
+          "flips": 208,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "control -> treatment": 86,
+           "treatment -> control": 97
+          },
+          "example": {
+           "flagd/G1": "control",
+           "flagd/G3": "treatment",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.183,
+          "flips": 183,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "control -> treatment": 88,
+           "treatment -> control": 89
+          },
+          "example": {
+           "flagd/G2": "control",
+           "flagd/G3": "treatment",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.177,
+          "flips": 177,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    }
+   ],
+   "sample": [
+    {
+     "fixture_path": false,
+     "flag": "coin-flip",
+     "path": "flagd/demo.flagd.json",
+     "provenance_strict": "sample:tutorial",
+     "ref": "5312e12935f3985389812659761b91fabbea1e40",
+     "repo": "cgolobic/openfeature-demo",
+     "sha256": "026bb7ee7d9502dc28fb2b247406962dddb533abd3147e521501c80510020945",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/cgolobic/openfeature-demo/5312e12935f3985389812659761b91fabbea1e40/flagd/demo.flagd.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "heads": 488,
+          "tails": 512
+         },
+         "flagd/G2": {
+          "heads": 498,
+          "tails": 502
+         },
+         "flagd/G3": {
+          "heads": 491,
+          "tails": 509
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "heads -> tails": 241,
+           "tails -> heads": 251
+          },
+          "example": {
+           "flagd/G1": "heads",
+           "flagd/G2": "tails",
+           "targetingKey": "user-0002"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.492,
+          "flips": 492,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "heads -> tails": 263,
+           "tails -> heads": 266
+          },
+          "example": {
+           "flagd/G1": "tails",
+           "flagd/G3": "heads",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.529,
+          "flips": 529,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "heads -> tails": 246,
+           "tails -> heads": 239
+          },
+          "example": {
+           "flagd/G2": "tails",
+           "flagd/G3": "heads",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.485,
+          "flips": 485,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "notifications-v2",
+     "path": "demo/flags.json",
+     "provenance_strict": "sample:tutorial",
+     "ref": "5970abce380d2b34825d557fefc2352fcc8f4405",
+     "repo": "justinabrahms/flagd-ui",
+     "sha256": "25fadce51b2557da4d047d6f826b0118f4f14201221e8206ca3ae086442b6bd6",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/justinabrahms/flagd-ui/5970abce380d2b34825d557fefc2352fcc8f4405/demo/flags.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "off": 739,
+          "on": 261
+         },
+         "flagd/G2": {
+          "off": 728,
+          "on": 272
+         },
+         "flagd/G3": {
+          "off": 768,
+          "on": 232
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "off -> on": 133,
+           "on -> off": 122
+          },
+          "example": {
+           "flagd/G1": "off",
+           "flagd/G2": "on",
+           "targetingKey": "user-0002"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.255,
+          "flips": 255,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 178,
+           "on -> off": 207
+          },
+          "example": {
+           "flagd/G1": "on",
+           "flagd/G3": "off",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.385,
+          "flips": 385,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 168,
+           "on -> off": 208
+          },
+          "example": {
+           "flagd/G2": "on",
+           "flagd/G3": "off",
+           "targetingKey": "user-0000"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.376,
+          "flips": 376,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "LOGIN_PAGE",
+     "path": "3.02-feature-flags/flagd-demo/flags.json",
+     "provenance_strict": "sample:tutorial",
+     "ref": "65a1cf181473d162b617d430e7d30effcff88099",
+     "repo": "deibsoncogo/pos-graduacao-ftr",
+     "sha256": "2664368bb68d50e68271fdd375a2a282063217f3e174d69bde0698647ff5246a",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/deibsoncogo/pos-graduacao-ftr/65a1cf181473d162b617d430e7d30effcff88099/3.02-feature-flags/flagd-demo/flags.json",
+     "verdict": {
+      "allocations": [
+       {
+        "allocation": "/fractional",
+        "assignment_counts": {
+         "flagd/G1": {
+          "off": 891,
+          "on": 109
+         },
+         "flagd/G2": {
+          "off": 901,
+          "on": 99
+         },
+         "flagd/G3": {
+          "off": 904,
+          "on": 96
+         }
+        },
+        "divergent_pairs": [
+         {
+          "breakdown": {
+           "off -> on": 50,
+           "on -> off": 60
+          },
+          "example": {
+           "flagd/G1": "on",
+           "flagd/G2": "off",
+           "targetingKey": "user-0013"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G2": "vector-verified"
+          },
+          "flip_rate": 0.11,
+          "flips": 110,
+          "pair": [
+           "flagd/G1",
+           "flagd/G2"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 87,
+           "on -> off": 100
+          },
+          "example": {
+           "flagd/G1": "on",
+           "flagd/G3": "off",
+           "targetingKey": "user-0013"
+          },
+          "fidelity": {
+           "flagd/G1": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.187,
+          "flips": 187,
+          "pair": [
+           "flagd/G1",
+           "flagd/G3"
+          ]
+         },
+         {
+          "breakdown": {
+           "off -> on": 85,
+           "on -> off": 88
+          },
+          "example": {
+           "flagd/G2": "on",
+           "flagd/G3": "off",
+           "targetingKey": "user-0020"
+          },
+          "fidelity": {
+           "flagd/G2": "vector-verified",
+           "flagd/G3": "vector-verified"
+          },
+          "flip_rate": 0.173,
+          "flips": 173,
+          "pair": [
+           "flagd/G2",
+           "flagd/G3"
+          ]
+         }
+        ],
+        "rule_path": "/"
+       }
+      ],
+      "contexts": "D-6: N=1000, targetingKey user-0000..user-0999; every attribute an allocation's bucketing expression references is set to the targetingKey string; no other attributes.",
+      "divergent_pairs": [
+       "flagd/G1 ~ flagd/G2",
+       "flagd/G1 ~ flagd/G3",
+       "flagd/G2 ~ flagd/G3"
+      ],
+      "reproduce": "for each targetingKey in user-0000..user-0999 evaluate the allocation under each listed semantics",
+      "status": "detected"
+     }
+    }
+   ]
+  },
+  "F7": {
+   "non-sample": [
+    {
+     "fixture_path": false,
+     "flag": "newHomeUI",
+     "path": "flipt/features.yml",
+     "provenance_strict": "non-sample",
+     "ref": "b9e1636cc35666e0ed59e722bce7f60e2abb1e8f",
+     "repo": "dev-alxv/openfeature-flipt-angular",
+     "sha256": "4a7577d009bfcb7442e50774ed541e37b6606cebe2ddf1fb66b62814ea476208",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/dev-alxv/openfeature-flipt-angular/b9e1636cc35666e0ed59e722bce7f60e2abb1e8f/flipt/features.yml",
+     "verdict": {
+      "findings": [
+       {
+        "entry": "F7-a",
+        "evidence": [
+         "flipt@v2.14.2 internal/server/evaluation/evaluation.go L314, L338",
+         "flipt@v1.62.1 internal/server/evaluation/evaluation.go L134-",
+         "flipt-client-sdks@19e54652 flipt-evaluation/src/lib.rs L302"
+        ],
+        "ignored": [
+         {
+          "distributions": [],
+          "rule": 1,
+          "segments": [
+           "client-1"
+          ]
+         },
+         {
+          "distributions": [],
+          "rule": 2,
+          "segments": [
+           "client-2"
+          ]
+         }
+        ],
+        "what": "BOOLEAN_FLAG_TYPE flag has 2 rule(s); boolean evaluation reads only rollouts"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "enable-redis-cache-rollout",
+     "path": "flipt/features.yaml",
+     "provenance_strict": "non-sample",
+     "ref": "762adb7100f48f19539415989b5450a262a683a8",
+     "repo": "defnotalexrios/mmd",
+     "sha256": "adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/defnotalexrios/mmd/762adb7100f48f19539415989b5450a262a683a8/flipt/features.yaml",
+     "verdict": {
+      "findings": [
+       {
+        "entry": "F7-a",
+        "evidence": [
+         "flipt@v2.14.2 internal/server/evaluation/evaluation.go L314, L338",
+         "flipt@v1.62.1 internal/server/evaluation/evaluation.go L134-",
+         "flipt-client-sdks@19e54652 flipt-evaluation/src/lib.rs L302"
+        ],
+        "ignored": [
+         {
+          "distributions": [
+           [
+            "on",
+            100.0
+           ]
+          ],
+          "rule": 1,
+          "segments": [
+           "internal-users"
+          ]
+         },
+         {
+          "distributions": [
+           [
+            "on",
+            10.0
+           ]
+          ],
+          "rule": 2,
+          "segments": [
+           "all-users"
+          ]
+         }
+        ],
+        "what": "BOOLEAN_FLAG_TYPE flag has 2 rule(s); boolean evaluation reads only rollouts"
+       }
+      ],
+      "status": "detected"
+     }
+    },
+    {
+     "fixture_path": false,
+     "flag": "newRevenueChart",
+     "path": "staging/default/features.yaml",
+     "provenance_strict": "non-sample",
+     "ref": "b9e1636cc35666e0ed59e722bce7f60e2abb1e8f",
+     "repo": "dev-alxv/openfeature-flipt-angular",
+     "sha256": "f2dc81bc190e3f1d2fe327618fe86461f17fdf8a82f7514d086ef925de2ca4b5",
+     "source": "census",
+     "url": "https://raw.githubusercontent.com/dev-alxv/openfeature-flipt-angular/b9e1636cc35666e0ed59e722bce7f60e2abb1e8f/staging/default/features.yaml",
+     "verdict": {
+      "findings": [
+       {
+        "entry": "F7-a",
+        "evidence": [
+         "flipt@v2.14.2 internal/server/evaluation/evaluation.go L314, L338",
+         "flipt@v1.62.1 internal/server/evaluation/evaluation.go L134-",
+         "flipt-client-sdks@19e54652 flipt-evaluation/src/lib.rs L302"
+        ],
+        "ignored": [
+         {
+          "distributions": [],
+          "rule": 1,
+          "segments": [
+           "client-1"
+          ]
+         }
+        ],
+        "what": "BOOLEAN_FLAG_TYPE flag has 1 rule(s); boolean evaluation reads only rollouts"
+       }
+      ],
+      "status": "detected"
+     }
+    }
+   ],
+   "sample": []
+  }
+ },
+ "schema": "flagbound.field-audit/v1"
+}

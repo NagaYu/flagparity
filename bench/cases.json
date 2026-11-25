@@ -1,0 +1,2971 @@
+{
+ "cases": [
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f.json",
+   "flag": "ml.ranking_model",
+   "id": "F4-pos-001",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "Phase 0 smoke 2 (52.1% G2->G3 flips); fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-smoke",
+   "source": {
+    "path": "system_tests/flags/ab_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/ab_flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/fea63dc40105ae5681facf1d90d68c1a44a18ffd22e675867fdd19b56b6258e9.json",
+   "flag": "airflow.task.executor",
+   "id": "F4-pos-002",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "system_tests/flags/k8s_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "fea63dc40105ae5681facf1d90d68c1a44a18ffd22e675867fdd19b56b6258e9",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/k8s_flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/f354d32b27562f2a9a6e3a91af931a9727aa7087aceb30cff765aabeee1467e8.json",
+   "flag": "experiment.compute.fastpath",
+   "id": "F4-pos-003",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "system_tests/flags/measure_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "f354d32b27562f2a9a6e3a91af931a9727aa7087aceb30cff765aabeee1467e8",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/measure_flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63.json",
+   "flag": "experimentalFeature",
+   "id": "F4-pos-004",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "tests/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "270be9d7ff2c9d521700b28906241fb2f7a22e71",
+    "repo": "aaronS7/flagd-rs",
+    "sha256": "125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63",
+    "url": "https://raw.githubusercontent.com/aaronS7/flagd-rs/270be9d7ff2c9d521700b28906241fb2f7a22e71/tests/flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/65db9b19967637dfa1ae08909a0cdd5e317b54e4e0fd6cf8cf72ce9d1c66dade.json",
+   "flag": "new-routing-algorithm",
+   "id": "F4-pos-005",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "components/camel-openfeature/src/test/resources/openfeature/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "04428ed47f2c17e7a2a86c913bb5237898b50d77",
+    "repo": "apache/camel",
+    "sha256": "65db9b19967637dfa1ae08909a0cdd5e317b54e4e0fd6cf8cf72ce9d1c66dade",
+    "url": "https://raw.githubusercontent.com/apache/camel/04428ed47f2c17e7a2a86c913bb5237898b50d77/components/camel-openfeature/src/test/resources/openfeature/flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/63c0151ec9d0ff5a2cb5f785fcf6a03730eba6411150e328315516d93f5f761f.json",
+   "flag": "checkout-canary-rollout",
+   "id": "F4-pos-006",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "projeto-pratico-cicd-argo-rollouts/flags/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "4c2d438ea9f221a84bdd6bb6e758f01cb5c7e5bb",
+    "repo": "camilla-m/alura-aiops",
+    "sha256": "63c0151ec9d0ff5a2cb5f785fcf6a03730eba6411150e328315516d93f5f761f",
+    "url": "https://raw.githubusercontent.com/camilla-m/alura-aiops/4c2d438ea9f221a84bdd6bb6e758f01cb5c7e5bb/projeto-pratico-cicd-argo-rollouts/flags/flags.flagd.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-01",
+   "id": "F4-pos-007",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-02",
+   "id": "F4-pos-008",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-03",
+   "id": "F4-pos-009",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-04",
+   "id": "F4-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-05",
+   "id": "F4-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3",
+    "flagd/G2 ~ flagd/G3"
+   ],
+   "file": "files/real/18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad.json",
+   "flag": "fractional-06",
+   "id": "F4-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds flips for ['flagd/G1 ~ flagd/G2', 'flagd/G1 ~ flagd/G3', 'flagd/G2 ~ flagd/G3'] over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "benchmarks/flags/benchmark-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6311285748d6dfba929b0229bc3c88c5aa18180a",
+    "repo": "DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments",
+    "sha256": "18ea088d84171d516eb66a03c6b9c95fc6e24d8718930d78a5a09cd5c0385dad",
+    "url": "https://raw.githubusercontent.com/DevCycleHQ-Sandbox/flagd-ofrep-cf-worker-experiments/6311285748d6dfba929b0229bc3c88c5aa18180a/benchmarks/flags/benchmark-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/d70bd3ffe2a01b1c27d1d3941361231a2ecf863a166dba4ca5e65645b8cb62d4.json",
+   "flag": "world_map",
+   "id": "F4-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds no flip between G1/G2/G3 over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+    "repo": "EconGraph/econ-graph",
+    "sha256": "d70bd3ffe2a01b1c27d1d3941361231a2ecf863a166dba4ca5e65645b8cb62d4",
+    "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "fractional-single-entry-flag",
+   "former_id": "F4-neg-002",
+   "id": "F4-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "G1 (flagd@b9c099cb fractional.go L55-L56) rejects a one-entry fractional ('length under 2') -> nil -> defaultVariant; G2/G3 return 'single' (relabelled by owner decision P1-Z-7; Phase 0 oracle simplified G1)",
+   "route": "source-reading",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flagd/G1 ~ flagd/G2",
+    "flagd/G1 ~ flagd/G3"
+   ],
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "fractional-zero-weights-flag",
+   "former_id": "F4-neg-003",
+   "id": "F4-pos-020",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "all weights 0: G1 returns \"\" (L147), not a variant -> error; G2/G3 return nil (totalWeight 0) -> defaultVariant (relabelled by owner decision P1-Z-7; Phase 0 oracle simplified G1)",
+   "route": "source-reading",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/cea1d123ace3b8349b606ac668a753824db0f474ad0eb38b33f49c35f981d81d.json",
+   "flag": "simulate-server-error",
+   "id": "F4-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "fractional; Phase 0 smoke oracle finds no flip between G1/G2/G3 over the D-6 set",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "flags/simulation.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8eddee50e8b8f4968a43672ed42f9c7f418f04c3",
+    "repo": "hermogenes/monitoramento-nodejs",
+    "sha256": "cea1d123ace3b8349b606ac668a753824db0f474ad0eb38b33f49c35f981d81d",
+    "url": "https://raw.githubusercontent.com/hermogenes/monitoramento-nodejs/8eddee50e8b8f4968a43672ed42f9c7f418f04c3/flags/simulation.flagd.json"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "variant-flag-1",
+   "id": "F4-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('key-1', 100.0)]]; oracle: identical assignment on all three engines",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "string-variant-flag-1",
+   "id": "F4-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('string-variant-1', 100.0)]]; oracle: identical assignment on all three engines",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "int-variant-flag-1",
+   "id": "F4-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('13', 100.0)]]; oracle: identical assignment on all three engines",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "double-variant-flag-1",
+   "id": "F4-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('17.1', 100.0)]]; oracle: identical assignment on all three engines",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-legacy ~ flipt/server-v2.9+"
+   ],
+   "file": "files/real/27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d.yml",
+   "flag": "flag_no_distribution",
+   "id": "F4-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('variant1', 10.0), ('variant2', 20.0)]]; Phase 0 engines oracle finds flips for ['flipt/server-legacy ~ flipt/rust-client', 'flipt/server-legacy ~ flipt/server-v2.9+']",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "venus/features.yml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "cdfdf148b239901a6f8b3bcc458431e79b25eb75",
+    "repo": "flipt-io/flipt-test-corpus",
+    "sha256": "27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d",
+    "url": "https://raw.githubusercontent.com/flipt-io/flipt-test-corpus/cdfdf148b239901a6f8b3bcc458431e79b25eb75/venus/features.yml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "flipt/server-legacy ~ flipt/rust-client",
+    "flipt/server-v2.9+ ~ flipt/rust-client"
+   ],
+   "file": "files/real/5a8940501515aec5d3ad7e850de222cf659d17f503f846f5f6de6278737a730e.yml",
+   "flag": "language",
+   "id": "F4-pos-014",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "Flipt rule distributions [[('es', 33.34), ('en', 33.33), ('fr', 33.33)]]; Phase 0 engines oracle finds flips for ['flipt/server-legacy ~ flipt/rust-client', 'flipt/server-v2.9+ ~ flipt/rust-client']",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "examples/nextjs/app-router/flipt.yml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "5ae642bc9675fd51f37e0842cbf40337e6c6682c",
+    "repo": "gitbito/flipt",
+    "sha256": "5a8940501515aec5d3ad7e850de222cf659d17f503f846f5f6de6278737a730e",
+    "url": "https://raw.githubusercontent.com/gitbito/flipt/5ae642bc9675fd51f37e0842cbf40337e6c6682c/examples/nextjs/app-router/flipt.yml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "flag": "local-feature-flag",
+   "id": "F4-neg-009",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'my-new-feature': 40.0, 'my-old-feature': 60.0}, {'my-new-feature': 20.0, 'my-old-feature': 80.0}] sum to 100: identical buckets pre/post v1.32",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2.yaml",
+   "flag": "test-flag",
+   "id": "F4-neg-010",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'False': 0.0, 'True': 100.0}] sum to 100: identical buckets pre/post v1.32",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [],
+   "file": "files/real/939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2.yaml",
+   "flag": "test-flag2",
+   "id": "F4-neg-011",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'False': 0.0, 'True': 100.0}] sum to 100: identical buckets pre/post v1.32",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "file": "files/real/de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc.yaml",
+   "flag": "color-box",
+   "id": "F4-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'green_var': 5.0, 'red_var': 10.0, 'default_var': 35.0}]; sum != 100 so pre-v1.32 errors while v1.32+ normalises",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "color/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/color/demo-flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "file": "files/real/e496868c053fcfa1080b0096ca29522c935c341901a381d3c1d3cb2061ba90b6.yaml",
+   "flag": "my-new-flag-a-moi",
+   "id": "F4-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'ghfds': 80.0, 'vfdvdfscs': 10.0}]; sum != 100 so pre-v1.32 errors while v1.32+ normalises",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "server/testdata/flag.yaml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "2752f4aeb134531bcd6ec6a3e681369d902800c8",
+    "repo": "go-feature-flag/flag-management",
+    "sha256": "e496868c053fcfa1080b0096ca29522c935c341901a381d3c1d3cb2061ba90b6",
+    "url": "https://raw.githubusercontent.com/go-feature-flag/flag-management/2752f4aeb134531bcd6ec6a3e681369d902800c8/server/testdata/flag.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "file": "files/real/84a941bbe816a2903aea650beaaee0a45e5bd60bf101d78b2fe15038ec0ccef6.yaml",
+   "flag": "checkout-mode",
+   "id": "F4-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'control': 1.0, 'treatment': 1.0}]; sum != 100 so pre-v1.32 errors while v1.32+ normalises",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "examples/go-codegen/basic/gen/prod.goff.yaml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "f13b10e4bf75d63232786bb95baedebdb29914d3",
+    "repo": "satorunooshie/ffcraft",
+    "sha256": "84a941bbe816a2903aea650beaaee0a45e5bd60bf101d78b2fe15038ec0ccef6",
+    "url": "https://raw.githubusercontent.com/satorunooshie/ffcraft/f13b10e4bf75d63232786bb95baedebdb29914d3/examples/go-codegen/basic/gen/prod.goff.yaml"
+   }
+  },
+  {
+   "class": "F4",
+   "expected_pairs": [
+    "goff/pre-v1.32 ~ goff/v1.32+"
+   ],
+   "file": "files/real/fe9cc6a76be07227d6c5c7c1eba235934d62dabb0ec7216e1d482c4b34bab56f.yaml",
+   "flag": "homepage_theme",
+   "id": "F4-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "GOFF percentages [{'default': 5.0, 'high_contrast': 1.0, 'modern': 4.0}]; sum != 100 so pre-v1.32 errors while v1.32+ normalises",
+   "route": "phase0-oracle",
+   "source": {
+    "path": "examples/go-codegen/rollout/gen/prod.goff.yaml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "f13b10e4bf75d63232786bb95baedebdb29914d3",
+    "repo": "satorunooshie/ffcraft",
+    "sha256": "fe9cc6a76be07227d6c5c7c1eba235934d62dabb0ec7216e1d482c4b34bab56f",
+    "url": "https://raw.githubusercontent.com/satorunooshie/ffcraft/f13b10e4bf75d63232786bb95baedebdb29914d3/examples/go-codegen/rollout/gen/prod.goff.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f.json",
+   "flag": "ml.ranking_model",
+   "id": "F2-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "fractional weights [50, 50]: non-negative integers, positive total (relative weights; no implicit remainder)",
+   "route": "declared",
+   "source": {
+    "path": "system_tests/flags/ab_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/ab_flags.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/fea63dc40105ae5681facf1d90d68c1a44a18ffd22e675867fdd19b56b6258e9.json",
+   "flag": "airflow.task.executor",
+   "id": "F2-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "fractional weights [25, 75]: non-negative integers, positive total (relative weights; no implicit remainder)",
+   "route": "declared",
+   "source": {
+    "path": "system_tests/flags/k8s_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "fea63dc40105ae5681facf1d90d68c1a44a18ffd22e675867fdd19b56b6258e9",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/k8s_flags.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63.json",
+   "flag": "experimentalFeature",
+   "id": "F2-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "fractional weights [90, 10]: non-negative integers, positive total (relative weights; no implicit remainder)",
+   "route": "declared",
+   "source": {
+    "path": "tests/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "270be9d7ff2c9d521700b28906241fb2f7a22e71",
+    "repo": "aaronS7/flagd-rs",
+    "sha256": "125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63",
+    "url": "https://raw.githubusercontent.com/aaronS7/flagd-rs/270be9d7ff2c9d521700b28906241fb2f7a22e71/tests/flags.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "variant-flag-1",
+   "id": "F2-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "every rule's rollouts sum to 100: [100.0]",
+   "route": "declared",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "string-variant-flag-1",
+   "id": "F2-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "every rule's rollouts sum to 100: [100.0]",
+   "route": "declared",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "flag": "int-variant-flag-1",
+   "id": "F2-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "every rule's rollouts sum to 100: [100.0]",
+   "route": "declared",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "flag": "local-feature-flag",
+   "id": "F2-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "percentages sum to 100: [100, 100]",
+   "route": "declared",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2.yaml",
+   "flag": "test-flag",
+   "id": "F2-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "percentages sum to 100: [100]",
+   "route": "declared",
+   "source": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2.yaml",
+   "flag": "test-flag2",
+   "id": "F2-neg-009",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "percentages sum to 100: [100]",
+   "route": "declared",
+   "source": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc.yaml",
+   "flag": "color-box",
+   "id": "F2-pos-001",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "percentage sums [50]",
+   "route": "declared",
+   "source": {
+    "path": "color/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/color/demo-flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04.yaml",
+   "flag": "enable-redis-cache-rollout",
+   "id": "F2-pos-002",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule rollout sums [100.0, 10.0] (Phase 0 F2 scan route)",
+   "route": "declared",
+   "source": {
+    "path": "flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "762adb7100f48f19539415989b5450a262a683a8",
+    "repo": "defnotalexrios/mmd",
+    "sha256": "adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04",
+    "url": "https://raw.githubusercontent.com/defnotalexrios/mmd/762adb7100f48f19539415989b5450a262a683a8/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/d70bd3ffe2a01b1c27d1d3941361231a2ecf863a166dba4ca5e65645b8cb62d4.json",
+   "flag": "world_map",
+   "id": "F2-pos-003",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional weights [-5]: negative / non-integer / zero total",
+   "route": "declared",
+   "source": {
+    "path": "scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+    "repo": "EconGraph/econ-graph",
+    "sha256": "d70bd3ffe2a01b1c27d1d3941361231a2ecf863a166dba4ca5e65645b8cb62d4",
+    "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/schema-bad-targeting/flags.flagd.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "fractional-negative-weight-flag",
+   "id": "F2-pos-004",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional weights [-50, 100]: negative / non-integer / zero total",
+   "route": "declared",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "fractional-zero-weights-flag",
+   "id": "F2-pos-005",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "fractional weights [0, 0]: negative / non-integer / zero total",
+   "route": "declared",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/9c969ffb7c05a8aaa78c5d0f78f4aa2b76c8ce4962f0ee7bf407efb2f8cbe6b0.yaml",
+   "flag": "flipt",
+   "id": "F2-pos-006",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "Phase 0 smoke 1 (rollout 110%); rule rollout sums [100.0, 110.0] (Phase 0 F2 scan route)",
+   "route": "phase0-smoke",
+   "source": {
+    "path": "core/validation/testdata/invalid.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+    "repo": "blitzy-showcase/flipt",
+    "sha256": "9c969ffb7c05a8aaa78c5d0f78f4aa2b76c8ce4962f0ee7bf407efb2f8cbe6b0",
+    "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/core/validation/testdata/invalid.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/4572dfab41d6564646b51b8d2c4e2e8e50a01904b311edeb7340fde707c5a339.yaml",
+   "flag": "flipt",
+   "id": "F2-pos-007",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule rollout sums [100.0, 110.0] (Phase 0 F2 scan route)",
+   "route": "declared",
+   "source": {
+    "path": "core/validation/testdata/invalid_yaml_stream.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+    "repo": "blitzy-showcase/flipt",
+    "sha256": "4572dfab41d6564646b51b8d2c4e2e8e50a01904b311edeb7340fde707c5a339",
+    "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/core/validation/testdata/invalid_yaml_stream.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/a5ba4868d37d827aa46f5e74773005c34c5e3be06b99cc547fd4f94e80b8ce8b.yml",
+   "flag": "apple",
+   "id": "F2-pos-008",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule rollout sums [50.0] (Phase 0 F2 scan route)",
+   "route": "declared",
+   "source": {
+    "path": "internal/storage/fs/testdata/invalid/variant_flag_distribution/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "5ae642bc9675fd51f37e0842cbf40337e6c6682c",
+    "repo": "gitbito/flipt",
+    "sha256": "a5ba4868d37d827aa46f5e74773005c34c5e3be06b99cc547fd4f94e80b8ce8b",
+    "url": "https://raw.githubusercontent.com/gitbito/flipt/5ae642bc9675fd51f37e0842cbf40337e6c6682c/internal/storage/fs/testdata/invalid/variant_flag_distribution/features.yml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d.yml",
+   "flag": "flag_cumulative_rounding",
+   "id": "F2-pos-009",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule rollout sums [99.99] (Phase 0 F2 scan route)",
+   "route": "declared",
+   "source": {
+    "path": "venus/features.yml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "cdfdf148b239901a6f8b3bcc458431e79b25eb75",
+    "repo": "flipt-io/flipt-test-corpus",
+    "sha256": "27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d",
+    "url": "https://raw.githubusercontent.com/flipt-io/flipt-test-corpus/cdfdf148b239901a6f8b3bcc458431e79b25eb75/venus/features.yml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d.yml",
+   "flag": "flag_no_distribution",
+   "id": "F2-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule rollout sums [30.0] (Phase 0 F2 scan route)",
+   "route": "declared",
+   "source": {
+    "path": "venus/features.yml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "cdfdf148b239901a6f8b3bcc458431e79b25eb75",
+    "repo": "flipt-io/flipt-test-corpus",
+    "sha256": "27b81eb552844902aea6dc39ecd493a64f8f4d1d1878cc5995caa0d8d6d7204d",
+    "url": "https://raw.githubusercontent.com/flipt-io/flipt-test-corpus/cdfdf148b239901a6f8b3bcc458431e79b25eb75/venus/features.yml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/e496868c053fcfa1080b0096ca29522c935c341901a381d3c1d3cb2061ba90b6.yaml",
+   "flag": "my-new-flag-a-moi",
+   "id": "F2-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "percentage sums [90]",
+   "route": "declared",
+   "source": {
+    "path": "server/testdata/flag.yaml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "2752f4aeb134531bcd6ec6a3e681369d902800c8",
+    "repo": "go-feature-flag/flag-management",
+    "sha256": "e496868c053fcfa1080b0096ca29522c935c341901a381d3c1d3cb2061ba90b6",
+    "url": "https://raw.githubusercontent.com/go-feature-flag/flag-management/2752f4aeb134531bcd6ec6a3e681369d902800c8/server/testdata/flag.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/84a941bbe816a2903aea650beaaee0a45e5bd60bf101d78b2fe15038ec0ccef6.yaml",
+   "flag": "checkout-mode",
+   "id": "F2-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "percentage sums [2]",
+   "route": "declared",
+   "source": {
+    "path": "examples/go-codegen/basic/gen/prod.goff.yaml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "f13b10e4bf75d63232786bb95baedebdb29914d3",
+    "repo": "satorunooshie/ffcraft",
+    "sha256": "84a941bbe816a2903aea650beaaee0a45e5bd60bf101d78b2fe15038ec0ccef6",
+    "url": "https://raw.githubusercontent.com/satorunooshie/ffcraft/f13b10e4bf75d63232786bb95baedebdb29914d3/examples/go-codegen/basic/gen/prod.goff.yaml"
+   }
+  },
+  {
+   "class": "F2",
+   "file": "files/real/fe9cc6a76be07227d6c5c7c1eba235934d62dabb0ec7216e1d482c4b34bab56f.yaml",
+   "flag": "homepage_theme",
+   "id": "F2-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "percentage sums [10]",
+   "route": "declared",
+   "source": {
+    "path": "examples/go-codegen/rollout/gen/prod.goff.yaml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "f13b10e4bf75d63232786bb95baedebdb29914d3",
+    "repo": "satorunooshie/ffcraft",
+    "sha256": "fe9cc6a76be07227d6c5c7c1eba235934d62dabb0ec7216e1d482c4b34bab56f",
+    "url": "https://raw.githubusercontent.com/satorunooshie/ffcraft/f13b10e4bf75d63232786bb95baedebdb29914d3/examples/go-codegen/rollout/gen/prod.goff.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   },
+   "file": "files/constructed/F1-pos-001.json",
+   "flag": "airflow.rollout.ready",
+   "id": "F1-pos-001",
+   "label": "positive",
+   "mutation": "duplicate the first condition as a second branch: if[C, A, C, B, B]",
+   "origin": "constructed",
+   "rationale": "the second branch repeats condition C, which the first branch already captures",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "system_tests/flags/gates_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "36e66cac6e733b1babbd4832729de8fbac85e70f80e682650af658f6af672296",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/gates_flags.json"
+   },
+   "file": "files/constructed/F1-pos-002.json",
+   "flag": "airflow.executor.k8s_concurrent_pod_creation",
+   "id": "F1-pos-002",
+   "label": "positive",
+   "mutation": "duplicate the first condition as a second branch: if[C, A, C, B, B]",
+   "origin": "constructed",
+   "rationale": "the second branch repeats condition C, which the first branch already captures",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "system_tests/flags/matrix_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1e6fad4b5ab94e7d3da5d9cfcd5dfeec931396d49024605762b2692c36f41cd2",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/matrix_flags.json"
+   },
+   "file": "files/constructed/F1-pos-003.json",
+   "flag": "airflow.task.pool",
+   "id": "F1-pos-003",
+   "label": "positive",
+   "mutation": "duplicate the first condition as a second branch: if[C, A, C, B, B]",
+   "origin": "constructed",
+   "rationale": "the second branch repeats condition C, which the first branch already captures",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "system_tests/flags/real_data_flow_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1367972e3cd09861837c556ff59b12d95069503ef3ae6e069434c390ddf5bb99",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/real_data_flow_flags.json"
+   },
+   "file": "files/constructed/F1-pos-004.json",
+   "flag": "airflow.task.pool",
+   "id": "F1-pos-004",
+   "label": "positive",
+   "mutation": "duplicate the first condition as a second branch: if[C, A, C, B, B]",
+   "origin": "constructed",
+   "rationale": "the second branch repeats condition C, which the first branch already captures",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "tests/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "270be9d7ff2c9d521700b28906241fb2f7a22e71",
+    "repo": "aaronS7/flagd-rs",
+    "sha256": "125817c2bee130d2617bb29c0221763090cbe0920b5ef38846c787d724fded63",
+    "url": "https://raw.githubusercontent.com/aaronS7/flagd-rs/270be9d7ff2c9d521700b28906241fb2f7a22e71/tests/flags.json"
+   },
+   "file": "files/constructed/F1-pos-005.json",
+   "flag": "featureConfig",
+   "id": "F1-pos-005",
+   "label": "positive",
+   "mutation": "add if[region==eu AND region==us -> v0, region==eu -> v1, null]",
+   "origin": "constructed",
+   "rationale": "first branch condition is contradictory (eq 'eu' and eq 'us')",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flags/canonical-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "baa87a069bb72c465e14d7078ff25d83b10a6137",
+    "repo": "aepfli/flagsmith-tck-testbed",
+    "sha256": "8011b9a1fd4f5dd5b06095875feaba337b42696d8038fe353450a97a511df2cc",
+    "url": "https://raw.githubusercontent.com/aepfli/flagsmith-tck-testbed/baa87a069bb72c465e14d7078ff25d83b10a6137/flags/canonical-flags.json"
+   },
+   "file": "files/constructed/F1-pos-006.json",
+   "flag": "boolean-flag",
+   "id": "F1-pos-006",
+   "label": "positive",
+   "mutation": "add if[region==eu AND region==us -> v0, region==eu -> v1, null]",
+   "origin": "constructed",
+   "rationale": "first branch condition is contradictory (eq 'eu' and eq 'us')",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flagd.flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "d43a3a157b96f37bfb4074cbebc1a6bfbbc52cca",
+    "repo": "agardnerIT/OddFiles",
+    "sha256": "2ce90d7a39d0c0635761c161986f1f6d0f01c5b758af585b8ba925bef2dc2813",
+    "url": "https://raw.githubusercontent.com/agardnerIT/OddFiles/d43a3a157b96f37bfb4074cbebc1a6bfbbc52cca/flagd.flags.json"
+   },
+   "file": "files/constructed/F1-pos-007.json",
+   "flag": "myBoolFlag",
+   "id": "F1-pos-007",
+   "label": "positive",
+   "mutation": "add if[region==eu AND region==us -> v0, region==eu -> v1, null]",
+   "origin": "constructed",
+   "rationale": "first branch condition is contradictory (eq 'eu' and eq 'us')",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   },
+   "file": "files/constructed/F1-pos-008.yaml",
+   "flag": "variant-flag-1",
+   "id": "F1-pos-008",
+   "label": "positive",
+   "mutation": "prepend a rule on a constraint-less ALL segment",
+   "origin": "constructed",
+   "rationale": "every original rule is now preceded by a rule that matches every context",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "config/flipt/storage/development.features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9f7c000411ae45ecef37e68eb1278fe36d8cebab",
+    "repo": "eccentricnode/landan_mymove",
+    "sha256": "42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433",
+    "url": "https://raw.githubusercontent.com/eccentricnode/landan_mymove/9f7c000411ae45ecef37e68eb1278fe36d8cebab/config/flipt/storage/development.features.yaml"
+   },
+   "file": "files/constructed/F1-pos-009.yaml",
+   "flag": "multi_variant",
+   "id": "F1-pos-009",
+   "label": "positive",
+   "mutation": "prepend a rule on a constraint-less ALL segment",
+   "origin": "constructed",
+   "rationale": "every original rule is now preceded by a rule that matches every context",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b82e81eabefadcc6e23ec86090af34fa565c1ef1",
+    "repo": "feliperromao/flipt-scm",
+    "sha256": "75a23a2fc616b9a7f86b19418a3274effc2ba7d507658fde7329cc2e1dcab4f6",
+    "url": "https://raw.githubusercontent.com/feliperromao/flipt-scm/b82e81eabefadcc6e23ec86090af34fa565c1ef1/default/features.yaml"
+   },
+   "file": "files/constructed/F1-pos-010.yaml",
+   "flag": "email_v2",
+   "id": "F1-pos-010",
+   "label": "positive",
+   "mutation": "prepend a rule on a constraint-less ALL segment",
+   "origin": "constructed",
+   "rationale": "every original rule is now preceded by a rule that matches every context",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flags/dev/consider-a-recall/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "a0976b5570300521d56b11213c71f0092823ee4322b513ab49a6103cb4a44526",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/flags/dev/consider-a-recall/features.yml"
+   },
+   "file": "files/constructed/F1-pos-011.yml",
+   "flag": "api-part-a-template-version",
+   "id": "F1-pos-011",
+   "label": "positive",
+   "mutation": "prepend a rule on a constraint-less ALL segment",
+   "origin": "constructed",
+   "rationale": "every original rule is now preceded by a rule that matches every context",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   },
+   "file": "files/constructed/F1-pos-012.yaml",
+   "flag": "local-feature-flag",
+   "id": "F1-pos-012",
+   "label": "positive",
+   "mutation": "duplicate targeting[0] (same query) right after it",
+   "origin": "constructed",
+   "rationale": "the copy has the same query as the rule before it",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6a829704f9e64d15e22359fa03049cb009826c88",
+    "repo": "BenAychh/ff-test",
+    "sha256": "155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8",
+    "url": "https://raw.githubusercontent.com/BenAychh/ff-test/6a829704f9e64d15e22359fa03049cb009826c88/flags.goff.yaml"
+   },
+   "file": "files/constructed/F1-pos-013.yaml",
+   "flag": "test-flag-1",
+   "id": "F1-pos-013",
+   "label": "positive",
+   "mutation": "duplicate targeting[0] (same query) right after it",
+   "origin": "constructed",
+   "rationale": "the copy has the same query as the rule before it",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   },
+   "file": "files/constructed/F1-pos-014.yaml",
+   "flag": "test-flag",
+   "id": "F1-pos-014",
+   "label": "positive",
+   "mutation": "duplicate targeting[0] (same query) right after it",
+   "origin": "constructed",
+   "rationale": "the copy has the same query as the rule before it",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "derived_from": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "61811b8bb59a12c6484521329fe952f0ffcb5ad6",
+    "repo": "ForumViriumHelsinki/R4C-Cesium-Viewer",
+    "sha256": "249da16f0d5a8f24d68d67b5de4671a23fbbc951e0737b4ac1e5529c8fd6fa67",
+    "url": "https://raw.githubusercontent.com/ForumViriumHelsinki/R4C-Cesium-Viewer/61811b8bb59a12c6484521329fe952f0ffcb5ad6/flags.goff.yaml"
+   },
+   "file": "files/constructed/F1-pos-015.yaml",
+   "flag": "r4c-ambient-occlusion",
+   "id": "F1-pos-015",
+   "label": "positive",
+   "mutation": "duplicate targeting[0] (same query) right after it",
+   "origin": "constructed",
+   "rationale": "the copy has the same query as the rule before it",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "core/validation/testdata/valid_zero_values.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+    "repo": "blitzy-showcase/flipt",
+    "sha256": "be1a29e29790f8958b8fd8dab94a8556391b474ba95f325402e3ad285f6f554e",
+    "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/core/validation/testdata/valid_zero_values.yaml"
+   },
+   "file": "files/constructed/F2-pos-014.yaml",
+   "flag": "test_variant_flag",
+   "id": "F2-pos-014",
+   "label": "positive",
+   "mutation": "rules[0].distributions[0].rollout -/+ 10",
+   "origin": "constructed",
+   "rationale": "rule 1 rollouts no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "hosted/flipt.yaml",
+    "provenance_prereg": "sample:tutorial",
+    "provenance_strict": "sample:tutorial",
+    "ref": "eaec1784ca141ebd4c30b6ede95b5bc539ef0a8e",
+    "repo": "1fanwang/airflow-provider-openfeature-example",
+    "sha256": "af292416ef9999f161d785d7167b0c1e0f3a600f1579a001d6df6be79c7e8e13",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature-example/eaec1784ca141ebd4c30b6ede95b5bc539ef0a8e/hosted/flipt.yaml"
+   },
+   "file": "files/constructed/F2-pos-015.yaml",
+   "flag": "airflow.task.pool",
+   "id": "F2-pos-015",
+   "label": "positive",
+   "mutation": "rules[0].distributions[0].rollout -/+ 10",
+   "origin": "constructed",
+   "rationale": "rule 1 rollouts no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "build/testing/integration/testdata/namespaces/alternative/features.yaml",
+    "provenance_prereg": "sample:provider-owned",
+    "provenance_strict": "sample:provider-owned",
+    "ref": "e98febd579aeeced549ae812fccd0064ac8811d7",
+    "repo": "flipt-io/flipt",
+    "sha256": "28ea558aede8d44976cc824dabe612d06f77e31436791d2868a9a778d04db6f8",
+    "url": "https://raw.githubusercontent.com/flipt-io/flipt/e98febd579aeeced549ae812fccd0064ac8811d7/build/testing/integration/testdata/namespaces/alternative/features.yaml"
+   },
+   "file": "files/constructed/F2-pos-016.yaml",
+   "flag": "flag_001",
+   "id": "F2-pos-016",
+   "label": "positive",
+   "mutation": "rules[0].distributions[0].rollout -/+ 10",
+   "origin": "constructed",
+   "rationale": "rule 1 rollouts no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   },
+   "file": "files/constructed/F2-pos-017.yaml",
+   "flag": "local-feature-flag",
+   "id": "F2-pos-017",
+   "label": "positive",
+   "mutation": "defaultRule.percentage[my-new-feature] += 15",
+   "origin": "constructed",
+   "rationale": "percentages no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "color/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/color/demo-flags.goff.yaml"
+   },
+   "file": "files/constructed/F2-pos-018.yaml",
+   "flag": "color-box",
+   "id": "F2-pos-018",
+   "label": "positive",
+   "mutation": "defaultRule.percentage[default_var] += 15",
+   "origin": "constructed",
+   "rationale": "percentages no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "projects/blue/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "afd6e2d942b4e4872eced85170f9390f5f621e2947c8e9d5546729923277e232",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/projects/blue/demo-flags.goff.yaml"
+   },
+   "file": "files/constructed/F2-pos-019.yaml",
+   "flag": "color-box",
+   "id": "F2-pos-019",
+   "label": "positive",
+   "mutation": "defaultRule.percentage[blue_var] += 15",
+   "origin": "constructed",
+   "rationale": "percentages no longer sum to 100",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "system_tests/flags/ab_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/ab_flags.json"
+   },
+   "file": "files/constructed/F2-pos-020.json",
+   "flag": "ml.ranking_model",
+   "id": "F2-pos-020",
+   "label": "positive",
+   "mutation": "fractional[0] weight made negative",
+   "origin": "constructed",
+   "rationale": "negative weight (clamped to 0 by G2/G3)",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "components/camel-openfeature/src/test/resources/openfeature/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "04428ed47f2c17e7a2a86c913bb5237898b50d77",
+    "repo": "apache/camel",
+    "sha256": "65db9b19967637dfa1ae08909a0cdd5e317b54e4e0fd6cf8cf72ce9d1c66dade",
+    "url": "https://raw.githubusercontent.com/apache/camel/04428ed47f2c17e7a2a86c913bb5237898b50d77/components/camel-openfeature/src/test/resources/openfeature/flags.json"
+   },
+   "file": "files/constructed/F2-pos-021.json",
+   "flag": "new-routing-algorithm",
+   "id": "F2-pos-021",
+   "label": "positive",
+   "mutation": "all fractional weights set to 0",
+   "origin": "constructed",
+   "rationale": "zero total weight: fractional returns null for everyone",
+   "route": "mutation"
+  },
+  {
+   "class": "F2",
+   "derived_from": {
+    "path": "projeto-pratico-cicd-argo-rollouts/flags/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "4c2d438ea9f221a84bdd6bb6e758f01cb5c7e5bb",
+    "repo": "camilla-m/alura-aiops",
+    "sha256": "63c0151ec9d0ff5a2cb5f785fcf6a03730eba6411150e328315516d93f5f761f",
+    "url": "https://raw.githubusercontent.com/camilla-m/alura-aiops/4c2d438ea9f221a84bdd6bb6e758f01cb5c7e5bb/projeto-pratico-cicd-argo-rollouts/flags/flags.flagd.json"
+   },
+   "file": "files/constructed/F2-pos-022.json",
+   "flag": "checkout-canary-rollout",
+   "id": "F2-pos-022",
+   "label": "positive",
+   "mutation": "fractional[0] weight made negative",
+   "origin": "constructed",
+   "rationale": "negative weight (clamped to 0 by G2/G3)",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "system_tests/flags/ab_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "aaaf8ef930515f0270583945b1a27d79cc53646bfc9e2d9ff73fc9a35d1ffc3f",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/ab_flags.json"
+   },
+   "file": "files/constructed/F3-pos-001.json",
+   "flag": "ml.ranking_model",
+   "id": "F3-pos-001",
+   "label": "positive",
+   "mutation": "add variant 'fb-unused-variant' (same type) referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule, allocation or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   },
+   "file": "files/constructed/F3-pos-002.json",
+   "flag": "airflow.rollout.ready",
+   "id": "F3-pos-002",
+   "label": "positive",
+   "mutation": "add variant 'fb-unused-variant' (same type) referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule, allocation or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "system_tests/flags/gates_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "36e66cac6e733b1babbd4832729de8fbac85e70f80e682650af658f6af672296",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/gates_flags.json"
+   },
+   "file": "files/constructed/F3-pos-003.json",
+   "flag": "airflow.executor.k8s_concurrent_pod_creation",
+   "id": "F3-pos-003",
+   "label": "positive",
+   "mutation": "add variant 'fb-unused-variant' (same type) referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule, allocation or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   },
+   "file": "files/constructed/F3-pos-004.yaml",
+   "flag": "variant-flag-1",
+   "id": "F3-pos-004",
+   "label": "positive",
+   "mutation": "append variant 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule distribution or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "config/flipt/storage/development.features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9f7c000411ae45ecef37e68eb1278fe36d8cebab",
+    "repo": "eccentricnode/landan_mymove",
+    "sha256": "42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433",
+    "url": "https://raw.githubusercontent.com/eccentricnode/landan_mymove/9f7c000411ae45ecef37e68eb1278fe36d8cebab/config/flipt/storage/development.features.yaml"
+   },
+   "file": "files/constructed/F3-pos-005.yaml",
+   "flag": "multi_variant",
+   "id": "F3-pos-005",
+   "label": "positive",
+   "mutation": "append variant 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule distribution or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b82e81eabefadcc6e23ec86090af34fa565c1ef1",
+    "repo": "feliperromao/flipt-scm",
+    "sha256": "75a23a2fc616b9a7f86b19418a3274effc2ba7d507658fde7329cc2e1dcab4f6",
+    "url": "https://raw.githubusercontent.com/feliperromao/flipt-scm/b82e81eabefadcc6e23ec86090af34fa565c1ef1/default/features.yaml"
+   },
+   "file": "files/constructed/F3-pos-006.yaml",
+   "flag": "email_v2",
+   "id": "F3-pos-006",
+   "label": "positive",
+   "mutation": "append variant 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule distribution or default names the added variant",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   },
+   "file": "files/constructed/F3-pos-007.yaml",
+   "flag": "local-feature-flag",
+   "id": "F3-pos-007",
+   "label": "positive",
+   "mutation": "add variation 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule or default names the added variation",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6a829704f9e64d15e22359fa03049cb009826c88",
+    "repo": "BenAychh/ff-test",
+    "sha256": "155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8",
+    "url": "https://raw.githubusercontent.com/BenAychh/ff-test/6a829704f9e64d15e22359fa03049cb009826c88/flags.goff.yaml"
+   },
+   "file": "files/constructed/F3-pos-008.yaml",
+   "flag": "test-flag-1",
+   "id": "F3-pos-008",
+   "label": "positive",
+   "mutation": "add variation 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule or default names the added variation",
+   "route": "mutation"
+  },
+  {
+   "class": "F3",
+   "derived_from": {
+    "path": "flag-config.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "49d3d571cd7267757139aec0a1a1292d06e8769c",
+    "repo": "cbweixin/postgresql-tsdb-research",
+    "sha256": "939d1bbbe68d9f94b26aa8ef35df9c203c1b4619806f2a668627f8c1ea7b33a2",
+    "url": "https://raw.githubusercontent.com/cbweixin/postgresql-tsdb-research/49d3d571cd7267757139aec0a1a1292d06e8769c/flag-config.yaml"
+   },
+   "file": "files/constructed/F3-pos-009.yaml",
+   "flag": "test-flag",
+   "id": "F3-pos-009",
+   "label": "positive",
+   "mutation": "add variation 'fb-unused-variant' referenced nowhere",
+   "origin": "constructed",
+   "rationale": "no rule or default names the added variation",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   },
+   "file": "files/constructed/F7-pos-001.yaml",
+   "flag": "boolean-flag-1",
+   "id": "F7-pos-001",
+   "label": "positive",
+   "mutation": "add a rules entry to a BOOLEAN_FLAG_TYPE flag",
+   "origin": "constructed",
+   "rationale": "F7-a by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "762adb7100f48f19539415989b5450a262a683a8",
+    "repo": "defnotalexrios/mmd",
+    "sha256": "adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04",
+    "url": "https://raw.githubusercontent.com/defnotalexrios/mmd/762adb7100f48f19539415989b5450a262a683a8/flipt/features.yaml"
+   },
+   "file": "files/constructed/F7-pos-002.yaml",
+   "flag": "enable-redis-cache",
+   "id": "F7-pos-002",
+   "label": "positive",
+   "mutation": "add a rules entry to a BOOLEAN_FLAG_TYPE flag",
+   "origin": "constructed",
+   "rationale": "F7-a by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "staging/default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b9e1636cc35666e0ed59e722bce7f60e2abb1e8f",
+    "repo": "dev-alxv/openfeature-flipt-angular",
+    "sha256": "f2dc81bc190e3f1d2fe327618fe86461f17fdf8a82f7514d086ef925de2ca4b5",
+    "url": "https://raw.githubusercontent.com/dev-alxv/openfeature-flipt-angular/b9e1636cc35666e0ed59e722bce7f60e2abb1e8f/staging/default/features.yaml"
+   },
+   "file": "files/constructed/F7-pos-003.yaml",
+   "flag": "newHomeUI",
+   "id": "F7-pos-003",
+   "label": "positive",
+   "mutation": "add a rules entry to a BOOLEAN_FLAG_TYPE flag",
+   "origin": "constructed",
+   "rationale": "F7-a by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "config/flipt/storage/development.features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9f7c000411ae45ecef37e68eb1278fe36d8cebab",
+    "repo": "eccentricnode/landan_mymove",
+    "sha256": "42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433",
+    "url": "https://raw.githubusercontent.com/eccentricnode/landan_mymove/9f7c000411ae45ecef37e68eb1278fe36d8cebab/config/flipt/storage/development.features.yaml"
+   },
+   "file": "files/constructed/F7-pos-004.yaml",
+   "flag": "multi_variant",
+   "id": "F7-pos-004",
+   "label": "positive",
+   "mutation": "add a threshold rollout to a variant flag",
+   "origin": "constructed",
+   "rationale": "F7-e by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b82e81eabefadcc6e23ec86090af34fa565c1ef1",
+    "repo": "feliperromao/flipt-scm",
+    "sha256": "75a23a2fc616b9a7f86b19418a3274effc2ba7d507658fde7329cc2e1dcab4f6",
+    "url": "https://raw.githubusercontent.com/feliperromao/flipt-scm/b82e81eabefadcc6e23ec86090af34fa565c1ef1/default/features.yaml"
+   },
+   "file": "files/constructed/F7-pos-005.yaml",
+   "flag": "email_v2",
+   "id": "F7-pos-005",
+   "label": "positive",
+   "mutation": "add a threshold rollout to a variant flag",
+   "origin": "constructed",
+   "rationale": "F7-e by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "flags/dev/consider-a-recall/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "a0976b5570300521d56b11213c71f0092823ee4322b513ab49a6103cb4a44526",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/flags/dev/consider-a-recall/features.yml"
+   },
+   "file": "files/constructed/F7-pos-006.yml",
+   "flag": "api-part-a-template-version",
+   "id": "F7-pos-006",
+   "label": "positive",
+   "mutation": "add a threshold rollout to a variant flag",
+   "origin": "constructed",
+   "rationale": "F7-e by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "fixtures/goff/local-flags.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "2f9c28c83e370bed2b1f5e309dd0b6ec56026f89",
+    "repo": "abannachGrafana/msw-playwright-repro",
+    "sha256": "f28a4a9d472151333c80b48847d98a1907e358737bf76cc6f4da087a53ce78ed",
+    "url": "https://raw.githubusercontent.com/abannachGrafana/msw-playwright-repro/2f9c28c83e370bed2b1f5e309dd0b6ec56026f89/fixtures/goff/local-flags.yml"
+   },
+   "file": "files/constructed/F7-pos-007.yml",
+   "flag": "include-email",
+   "id": "F7-pos-007",
+   "label": "positive",
+   "mutation": "set defaultRule.disable: true",
+   "origin": "constructed",
+   "rationale": "F7-d by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   },
+   "file": "files/constructed/F7-pos-008.yaml",
+   "flag": "local-feature-flag",
+   "id": "F7-pos-008",
+   "label": "positive",
+   "mutation": "add variation next to percentage in defaultRule",
+   "origin": "constructed",
+   "rationale": "F7-b by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "devenv/frontend-service/goff-flags.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "4657664f7b798f98c67f1ee3c0f2ac153920ac79",
+    "repo": "Anselm04/Grafana-Source-Code-Reference",
+    "sha256": "6220060213f139645586cf6a1505493bf039de70d1cf886abe7752bd4a7d5544",
+    "url": "https://raw.githubusercontent.com/Anselm04/Grafana-Source-Code-Reference/4657664f7b798f98c67f1ee3c0f2ac153920ac79/devenv/frontend-service/goff-flags.yaml"
+   },
+   "file": "files/constructed/F7-pos-009.yaml",
+   "flag": "compiledBootScript",
+   "id": "F7-pos-009",
+   "label": "positive",
+   "mutation": "set defaultRule.disable: true",
+   "origin": "constructed",
+   "rationale": "F7-d by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "upstream/devenv/frontend-service/goff-flags.rspack.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "dc305bd8a5ff91e3db818d7230776dd04a4fa552",
+    "repo": "appolon1908/Codestra-Grafana-",
+    "sha256": "ae87f225bf2dc3112bc8148c206ecc3a1822492478396ab839188c0f83dad23b",
+    "url": "https://raw.githubusercontent.com/appolon1908/Codestra-Grafana-/dc305bd8a5ff91e3db818d7230776dd04a4fa552/upstream/devenv/frontend-service/goff-flags.rspack.yaml"
+   },
+   "file": "files/constructed/F7-pos-010.yaml",
+   "flag": "grafana.rspackBuild",
+   "id": "F7-pos-010",
+   "label": "positive",
+   "mutation": "set defaultRule.disable: true",
+   "origin": "constructed",
+   "rationale": "F7-d by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "upstream/devenv/frontend-service/goff-flags.webpack.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "dc305bd8a5ff91e3db818d7230776dd04a4fa552",
+    "repo": "appolon1908/Codestra-Grafana-",
+    "sha256": "8145cf1208bfcbe574ffd9f34357c00701f473442256296563dc02d17aec97d5",
+    "url": "https://raw.githubusercontent.com/appolon1908/Codestra-Grafana-/dc305bd8a5ff91e3db818d7230776dd04a4fa552/upstream/devenv/frontend-service/goff-flags.webpack.yaml"
+   },
+   "file": "files/constructed/F7-pos-011.yaml",
+   "flag": "grafana.rspackBuild",
+   "id": "F7-pos-011",
+   "label": "positive",
+   "mutation": "add progressiveRollout next to variation in defaultRule",
+   "origin": "constructed",
+   "rationale": "F7-c by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "upstream/devenv/frontend-service/goff-flags.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "dc305bd8a5ff91e3db818d7230776dd04a4fa552",
+    "repo": "appolon1908/Codestra-Grafana-",
+    "sha256": "2ec0b61abc27c6d75763b17c0d86eab12f8236907e34bf683fce03da9d4d3780",
+    "url": "https://raw.githubusercontent.com/appolon1908/Codestra-Grafana-/dc305bd8a5ff91e3db818d7230776dd04a4fa552/upstream/devenv/frontend-service/goff-flags.yaml"
+   },
+   "file": "files/constructed/F7-pos-012.yaml",
+   "flag": "compiledBootScript",
+   "id": "F7-pos-012",
+   "label": "positive",
+   "mutation": "add progressiveRollout next to variation in defaultRule",
+   "origin": "constructed",
+   "rationale": "F7-c by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "color/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/color/demo-flags.goff.yaml"
+   },
+   "file": "files/constructed/F7-pos-013.yaml",
+   "flag": "color-box",
+   "id": "F7-pos-013",
+   "label": "positive",
+   "mutation": "add variation next to percentage in defaultRule",
+   "origin": "constructed",
+   "rationale": "F7-b by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F7",
+   "derived_from": {
+    "path": "projects/blue/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "afd6e2d942b4e4872eced85170f9390f5f621e2947c8e9d5546729923277e232",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/projects/blue/demo-flags.goff.yaml"
+   },
+   "file": "files/constructed/F7-pos-014.yaml",
+   "flag": "color-box",
+   "id": "F7-pos-014",
+   "label": "positive",
+   "mutation": "add variation next to percentage in defaultRule",
+   "origin": "constructed",
+   "rationale": "F7-b by construction",
+   "route": "mutation"
+  },
+  {
+   "class": "F1",
+   "file": "files/real/fca4466e554109a41829f8186e4f2f8fa1810a9edba88bafeb5a9a4c6762aa71.json",
+   "flag": "build_canary",
+   "id": "F1-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "targeting if[true, 'on', 'off']: the else branch can never be taken",
+   "route": "detector+manual",
+   "source": {
+    "path": "scripts/check-flags/test/fixtures/build-with-targeting/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+    "repo": "EconGraph/econ-graph",
+    "sha256": "fca4466e554109a41829f8186e4f2f8fa1810a9edba88bafeb5a9a4c6762aa71",
+    "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/build-with-targeting/flags.flagd.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/49e3fba4dbe2e40ab67bee1f31ce62d0a4e369b510d5b0aa3efc46086e1f9dc2.yaml",
+   "flag": "apiDisabled",
+   "id": "F1-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule 9 (feature == rediscluster and provider == alicloud) is subsumed by rule 3 (feature == rediscluster), which comes first",
+   "route": "detector+manual",
+   "source": {
+    "path": "pkg/feature/ff_ga.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "2d9570c25ac30820677a6d4a761e2d7b0ebdc153",
+    "repo": "kyma-project/cloud-manager",
+    "sha256": "49e3fba4dbe2e40ab67bee1f31ce62d0a4e369b510d5b0aa3efc46086e1f9dc2",
+    "url": "https://raw.githubusercontent.com/kyma-project/cloud-manager/2d9570c25ac30820677a6d4a761e2d7b0ebdc153/pkg/feature/ff_ga.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/ec56817dccd9c1f177c4b132d28b82759e2c312433d19e635dfc46c9df95626b.json",
+   "flag": "equal-greater-lesser-version-flag",
+   "id": "F1-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "last branch compares with '2.0.0.0', not a valid semver: sem_ver returns null for every context, so 'fail' is never returned",
+   "route": "detector+manual",
+   "source": {
+    "path": "tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/custom-ops.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "e198ed5e3cd667e5e92968c54717d345662e080e",
+    "repo": "jordanwallwork/flagon",
+    "sha256": "ec56817dccd9c1f177c4b132d28b82759e2c312433d19e635dfc46c9df95626b",
+    "url": "https://raw.githubusercontent.com/jordanwallwork/flagon/e198ed5e3cd667e5e92968c54717d345662e080e/tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/custom-ops.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/4c8d867b2210fae19e91fefeffd15de59b2ab1ef05d560483e939786e37629a1.json",
+   "flag": "missing-variant-targeting-flag",
+   "id": "F1-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "if[true, 'three', 'one']: else unreachable",
+   "route": "detector+manual",
+   "source": {
+    "path": "tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/edge-case-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:duplicate-of-sample",
+    "ref": "e198ed5e3cd667e5e92968c54717d345662e080e",
+    "repo": "jordanwallwork/flagon",
+    "sha256": "4c8d867b2210fae19e91fefeffd15de59b2ab1ef05d560483e939786e37629a1",
+    "url": "https://raw.githubusercontent.com/jordanwallwork/flagon/e198ed5e3cd667e5e92968c54717d345662e080e/tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/edge-case-flags.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/4c8d867b2210fae19e91fefeffd15de59b2ab1ef05d560483e939786e37629a1.json",
+   "flag": "non-string-variant-targeting-flag",
+   "id": "F1-pos-020",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "if[true, true, false]: else unreachable",
+   "route": "detector+manual",
+   "source": {
+    "path": "tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/edge-case-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:duplicate-of-sample",
+    "ref": "e198ed5e3cd667e5e92968c54717d345662e080e",
+    "repo": "jordanwallwork/flagon",
+    "sha256": "4c8d867b2210fae19e91fefeffd15de59b2ab1ef05d560483e939786e37629a1",
+    "url": "https://raw.githubusercontent.com/jordanwallwork/flagon/e198ed5e3cd667e5e92968c54717d345662e080e/tests/Jorrk.Flagon.Tests/FlagdParity/testbed/flags/edge-case-flags.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/ff1bebfc8611821588e401ed73aaa1ecb566e6ba7c63e84ab68fb3dac1ec9058.yml",
+   "flag": "flag1",
+   "id": "F1-pos-021",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule 2 requires segment1 AND segment2; rule 1 already matches every segment1 context",
+   "route": "detector+manual",
+   "source": {
+    "path": "internal/ext/testdata/export.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+    "repo": "blitzy-showcase/flipt",
+    "sha256": "ff1bebfc8611821588e401ed73aaa1ecb566e6ba7c63e84ab68fb3dac1ec9058",
+    "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/internal/ext/testdata/export.yml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/be1a29e29790f8958b8fd8dab94a8556391b474ba95f325402e3ad285f6f554e.yaml",
+   "flag": "test_boolean_flag",
+   "id": "F1-pos-022",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "threshold rollouts at 0% and 0.0%: crc32 % 100 < 0 never holds",
+   "route": "detector+manual",
+   "source": {
+    "path": "core/validation/testdata/valid_zero_values.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "9d5ed927a1e16037e5a43cb690ff5008305bbbb8",
+    "repo": "blitzy-showcase/flipt",
+    "sha256": "be1a29e29790f8958b8fd8dab94a8556391b474ba95f325402e3ad285f6f554e",
+    "url": "https://raw.githubusercontent.com/blitzy-showcase/flipt/9d5ed927a1e16037e5a43cb690ff5008305bbbb8/core/validation/testdata/valid_zero_values.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/06ec220380eb566cd08b0bdc4b496f5dcd3524a4afc11624dfbf194d22e810f8.yml",
+   "flag": "flag_boolean",
+   "id": "F1-pos-023",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "threshold rollouts 6 and 7 at 0% / 0.0%: never match",
+   "route": "detector+manual",
+   "source": {
+    "path": "internal/oci/testdata/default.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "sample:provider-mirror",
+    "ref": "5ae642bc9675fd51f37e0842cbf40337e6c6682c",
+    "repo": "gitbito/flipt",
+    "sha256": "06ec220380eb566cd08b0bdc4b496f5dcd3524a4afc11624dfbf194d22e810f8",
+    "url": "https://raw.githubusercontent.com/gitbito/flipt/5ae642bc9675fd51f37e0842cbf40337e6c6682c/internal/oci/testdata/default.yml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d.json",
+   "flag": "airflow.task.pool",
+   "id": "F1-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "Phase 0 hand check: dag_id in list -> canary, otherwise default; both branches reachable",
+   "route": "manual-negative",
+   "source": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d.json",
+   "flag": "airflow.rollout.ready",
+   "id": "F1-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "same shape: both branches reachable",
+   "route": "manual-negative",
+   "source": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8.yaml",
+   "flag": "test-flag-1",
+   "id": "F1-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "firstname eq \"Giang\" is satisfiable",
+   "route": "manual-negative",
+   "source": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6a829704f9e64d15e22359fa03049cb009826c88",
+    "repo": "BenAychh/ff-test",
+    "sha256": "155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8",
+    "url": "https://raw.githubusercontent.com/BenAychh/ff-test/6a829704f9e64d15e22359fa03049cb009826c88/flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b.yaml",
+   "flag": "targeted-flag",
+   "id": "F1-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "single rule on segment test-users (userType eq tester): reachable",
+   "route": "manual-negative",
+   "source": {
+    "path": "integration-tests/flipt/src/main/resources/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9a642041e9602b9e884c04622a5eeb5d48613e8b",
+    "repo": "quarkiverse/quarkus-openfeature",
+    "sha256": "dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b",
+    "url": "https://raw.githubusercontent.com/quarkiverse/quarkus-openfeature/9a642041e9602b9e884c04622a5eeb5d48613e8b/integration-tests/flipt/src/main/resources/features.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a.yml",
+   "flag": "template-version",
+   "id": "F1-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "single rule on smoke-testers (team eq smoke): reachable",
+   "route": "manual-negative",
+   "source": {
+    "path": "tests/fixtures/flags/test/smoke-test/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/tests/fixtures/flags/test/smoke-test/features.yml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433.yaml",
+   "flag": "multi_variant",
+   "id": "F1-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "rule 1 mil-app (applicationName eq mil), rule 2 all-entities: rule 2 reachable for other applications",
+   "route": "manual-negative",
+   "source": {
+    "path": "config/flipt/storage/development.features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9f7c000411ae45ecef37e68eb1278fe36d8cebab",
+    "repo": "eccentricnode/landan_mymove",
+    "sha256": "42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433",
+    "url": "https://raw.githubusercontent.com/eccentricnode/landan_mymove/9f7c000411ae45ecef37e68eb1278fe36d8cebab/config/flipt/storage/development.features.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "flag": "local-feature-flag",
+   "id": "F1-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "env eq production / env eq local: both satisfiable, disjoint",
+   "route": "manual-negative",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  },
+  {
+   "class": "F1",
+   "file": "files/real/49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095.yaml",
+   "flag": "new-query",
+   "id": "F1-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "name in [...] is satisfiable",
+   "route": "manual-negative",
+   "source": {
+    "path": "pkg/unify-query/featureFlag.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e",
+    "repo": "TencentBlueKing/bkmonitor-datalink",
+    "sha256": "49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095",
+    "url": "https://raw.githubusercontent.com/TencentBlueKing/bkmonitor-datalink/ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e/pkg/unify-query/featureFlag.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/2ce90d7a39d0c0635761c161986f1f6d0f01c5b758af585b8ba925bef2dc2813.json",
+   "flag": "fibAlgo",
+   "id": "F3-pos-010",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "targeting if[$ref emailWithFaas, 'binet', null]: 'memo' and 'loop' are never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "flagd.flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "d43a3a157b96f37bfb4074cbebc1a6bfbbc52cca",
+    "repo": "agardnerIT/OddFiles",
+    "sha256": "2ce90d7a39d0c0635761c161986f1f6d0f01c5b758af585b8ba925bef2dc2813",
+    "url": "https://raw.githubusercontent.com/agardnerIT/OddFiles/d43a3a157b96f37bfb4074cbebc1a6bfbbc52cca/flagd.flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc.yaml",
+   "flag": "color-box",
+   "id": "F3-pos-011",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "defaultRule percentage over green/red/default only: 8 other variations never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "color/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "de4a8570a952916b9739aafdbd46aa9399d8e8d57871bae872c1936cb9fdb6fc",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/color/demo-flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/afd6e2d942b4e4872eced85170f9390f5f621e2947c8e9d5546729923277e232.yaml",
+   "flag": "color-box",
+   "id": "F3-pos-012",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "percentage blue/default only: the other variations never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "projects/blue/demo-flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "44fe855a9b61ec76c476827901bcaebd6f329b0a",
+    "repo": "davidaparicio/microsvcs",
+    "sha256": "afd6e2d942b4e4872eced85170f9390f5f621e2947c8e9d5546729923277e232",
+    "url": "https://raw.githubusercontent.com/davidaparicio/microsvcs/44fe855a9b61ec76c476827901bcaebd6f329b0a/projects/blue/demo-flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433.yaml",
+   "flag": "multi_variant",
+   "id": "F3-pos-013",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rules produce 'one' and 'two'; 'three' is never produced (no default variant)",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "config/flipt/storage/development.features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9f7c000411ae45ecef37e68eb1278fe36d8cebab",
+    "repo": "eccentricnode/landan_mymove",
+    "sha256": "42b8712c2b54e1fe399fd4351b77ffc4b3b8767943378a2611ee9ff0589fc433",
+    "url": "https://raw.githubusercontent.com/eccentricnode/landan_mymove/9f7c000411ae45ecef37e68eb1278fe36d8cebab/config/flipt/storage/development.features.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/75a23a2fc616b9a7f86b19418a3274effc2ba7d507658fde7329cc2e1dcab4f6.yaml",
+   "flag": "email_v2",
+   "id": "F3-pos-014",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule without distributions and no default variant: the only variant 'default' is never returned",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b82e81eabefadcc6e23ec86090af34fa565c1ef1",
+    "repo": "feliperromao/flipt-scm",
+    "sha256": "75a23a2fc616b9a7f86b19418a3274effc2ba7d507658fde7329cc2e1dcab4f6",
+    "url": "https://raw.githubusercontent.com/feliperromao/flipt-scm/b82e81eabefadcc6e23ec86090af34fa565c1ef1/default/features.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "ends-with-wrong-args-flag",
+   "id": "F3-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "ends_with with one argument always yields null -> 'fallback'; 'true'/'false' never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "semver-invalid-operator-flag",
+   "id": "F3-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "operator '===' is not a sem_ver operator: always null -> 'fallback'",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "no-default-flag-null-targeting-variant",
+   "id": "F3-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "returns 'special' or null with no defaultVariant: 'normal' never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "boolean-targeted-zero-flag",
+   "id": "F3-pos-018",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "if[is_ballmer, 'zero'] with default 'zero': 'non-zero' never produced",
+   "route": "phase0-f3-scan",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b.yaml",
+   "flag": "string-flag",
+   "id": "F3-pos-019",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "rule everyone -> greeting 100%, no default: 'parting' never produced (found while reviewing a clean-set candidate)",
+   "route": "manual-negative-review",
+   "source": {
+    "path": "integration-tests/flipt/src/main/resources/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9a642041e9602b9e884c04622a5eeb5d48613e8b",
+    "repo": "quarkiverse/quarkus-openfeature",
+    "sha256": "dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b",
+    "url": "https://raw.githubusercontent.com/quarkiverse/quarkus-openfeature/9a642041e9602b9e884c04622a5eeb5d48613e8b/integration-tests/flipt/src/main/resources/features.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/6c7b85f2132ce6bc7e09f17cafcf0776294b290a3509825c887bb60eb360de98.json",
+   "flag": "allowDebug",
+   "id": "F3-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "targeting is a boolean expression: result true -> variant 'true', false -> 'false' (Phase 0 scan mislabelled it a ghost)",
+   "route": "manual-negative",
+   "source": {
+    "path": "default_flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "4038c13146410ccabd3783958ee3a985f5fd628b",
+    "repo": "alexandrainst/plana-app-flags",
+    "sha256": "6c7b85f2132ce6bc7e09f17cafcf0776294b290a3509825c887bb60eb360de98",
+    "url": "https://raw.githubusercontent.com/alexandrainst/plana-app-flags/4038c13146410ccabd3783958ee3a985f5fd628b/default_flags.flagd.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "ends-with-non-string-flag",
+   "id": "F3-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "ends_with on a string attribute yields true/false; absent/non-string -> null -> fallback: all three produced",
+   "route": "manual-negative",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4.json",
+   "flag": "starts-with-non-string-flag",
+   "id": "F3-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "same as ends-with: all three produced",
+   "route": "manual-negative",
+   "source": {
+    "path": "packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8379ef8ed1d8a15ea13adba762815b900a937bc4",
+    "repo": "fireflyframework/fireflyframework-php",
+    "sha256": "62feadf4fbf95696e56839f8e0feafc36d9573f67a37c22a96722e5721bbb2d4",
+    "url": "https://raw.githubusercontent.com/fireflyframework/fireflyframework-php/8379ef8ed1d8a15ea13adba762815b900a937bc4/packages/feature-flags/tests/Conformance/testbed/evaluator/flags/testkit-flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d.json",
+   "flag": "airflow.task.pool",
+   "id": "F3-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "canary via the branch, default via else",
+   "route": "manual-negative",
+   "source": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b.yaml",
+   "flag": "targeted-flag",
+   "id": "F3-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "targeted-value via rule, default-value as default",
+   "route": "manual-negative",
+   "source": {
+    "path": "integration-tests/flipt/src/main/resources/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9a642041e9602b9e884c04622a5eeb5d48613e8b",
+    "repo": "quarkiverse/quarkus-openfeature",
+    "sha256": "dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b",
+    "url": "https://raw.githubusercontent.com/quarkiverse/quarkus-openfeature/9a642041e9602b9e884c04622a5eeb5d48613e8b/integration-tests/flipt/src/main/resources/features.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a.yml",
+   "flag": "template-version",
+   "id": "F3-neg-006",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "v2 via rule, v1 default",
+   "route": "manual-negative",
+   "source": {
+    "path": "tests/fixtures/flags/test/smoke-test/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/tests/fixtures/flags/test/smoke-test/features.yml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8.yaml",
+   "flag": "test-flag-1",
+   "id": "F3-neg-007",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "enabled via rule, disabled default",
+   "route": "manual-negative",
+   "source": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6a829704f9e64d15e22359fa03049cb009826c88",
+    "repo": "BenAychh/ff-test",
+    "sha256": "155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8",
+    "url": "https://raw.githubusercontent.com/BenAychh/ff-test/6a829704f9e64d15e22359fa03049cb009826c88/flags.goff.yaml"
+   }
+  },
+  {
+   "class": "F3",
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "flag": "local-feature-flag",
+   "id": "F3-neg-008",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "both variations produced by rules and default percentage",
+   "route": "manual-negative",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04.yaml",
+   "flag": "enable-redis-cache-rollout",
+   "id": "F7-pos-015",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "Phase 0 example: BOOLEAN_FLAG_TYPE with rules (on: 10) that no Flipt engine evaluates",
+   "route": "phase0-smoke",
+   "source": {
+    "path": "flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "762adb7100f48f19539415989b5450a262a683a8",
+    "repo": "defnotalexrios/mmd",
+    "sha256": "adfcd27fd3aeb2ea3863e82fed2e98d414e7bd38f20591a2f00cf819b9e6ed04",
+    "url": "https://raw.githubusercontent.com/defnotalexrios/mmd/762adb7100f48f19539415989b5450a262a683a8/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/4a7577d009bfcb7442e50774ed541e37b6606cebe2ddf1fb66b62814ea476208.yml",
+   "flag": "newHomeUI",
+   "id": "F7-pos-016",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "BOOLEAN_FLAG_TYPE flag carrying rules",
+   "route": "detector+manual",
+   "source": {
+    "path": "flipt/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b9e1636cc35666e0ed59e722bce7f60e2abb1e8f",
+    "repo": "dev-alxv/openfeature-flipt-angular",
+    "sha256": "4a7577d009bfcb7442e50774ed541e37b6606cebe2ddf1fb66b62814ea476208",
+    "url": "https://raw.githubusercontent.com/dev-alxv/openfeature-flipt-angular/b9e1636cc35666e0ed59e722bce7f60e2abb1e8f/flipt/features.yml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/4a7577d009bfcb7442e50774ed541e37b6606cebe2ddf1fb66b62814ea476208.yml",
+   "flag": "newRevenueChart",
+   "id": "F7-pos-017",
+   "label": "positive",
+   "origin": "real",
+   "rationale": "BOOLEAN_FLAG_TYPE flag carrying rules",
+   "route": "detector+manual",
+   "source": {
+    "path": "flipt/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b9e1636cc35666e0ed59e722bce7f60e2abb1e8f",
+    "repo": "dev-alxv/openfeature-flipt-angular",
+    "sha256": "4a7577d009bfcb7442e50774ed541e37b6606cebe2ddf1fb66b62814ea476208",
+    "url": "https://raw.githubusercontent.com/dev-alxv/openfeature-flipt-angular/b9e1636cc35666e0ed59e722bce7f60e2abb1e8f/flipt/features.yml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/8e1388e0fc9bbbe8af87b45001df205bc241468dabf52f6001e1f823efa9d826.yaml",
+   "flag": "release-webv3",
+   "id": "F7-neg-001",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "boolean flag with rollouts only",
+   "route": "manual-negative",
+   "source": {
+    "path": "k8s/dev/base/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "0f7393d81fea96c0b68cd1c05ca1e093375461a6",
+    "repo": "tadoku/tadoku",
+    "sha256": "8e1388e0fc9bbbe8af87b45001df205bc241468dabf52f6001e1f823efa9d826",
+    "url": "https://raw.githubusercontent.com/tadoku/tadoku/0f7393d81fea96c0b68cd1c05ca1e093375461a6/k8s/dev/base/flipt/features.yaml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a.yml",
+   "flag": "segmented-flag",
+   "id": "F7-neg-002",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "boolean flag with rollouts only",
+   "route": "manual-negative",
+   "source": {
+    "path": "tests/fixtures/flags/test/smoke-test/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/tests/fixtures/flags/test/smoke-test/features.yml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "flag": "local-feature-flag",
+   "id": "F7-neg-003",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "GOFF rules use either percentage or variation, never both; defaultRule not disabled",
+   "route": "manual-negative",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095.yaml",
+   "flag": "new-query",
+   "id": "F7-neg-004",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "percentage-only rules",
+   "route": "manual-negative",
+   "source": {
+    "path": "pkg/unify-query/featureFlag.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e",
+    "repo": "TencentBlueKing/bkmonitor-datalink",
+    "sha256": "49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095",
+    "url": "https://raw.githubusercontent.com/TencentBlueKing/bkmonitor-datalink/ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e/pkg/unify-query/featureFlag.yaml"
+   }
+  },
+  {
+   "class": "F7",
+   "file": "files/real/dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b.yaml",
+   "flag": "targeted-flag",
+   "id": "F7-neg-005",
+   "label": "negative",
+   "origin": "real",
+   "rationale": "variant flag with rules only",
+   "route": "manual-negative",
+   "source": {
+    "path": "integration-tests/flipt/src/main/resources/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "9a642041e9602b9e884c04622a5eeb5d48613e8b",
+    "repo": "quarkiverse/quarkus-openfeature",
+    "sha256": "dcacde0b52f60e90644bda3f45862302c5b40773359a7d8a397cd57db2a5064b",
+    "url": "https://raw.githubusercontent.com/quarkiverse/quarkus-openfeature/9a642041e9602b9e884c04622a5eeb5d48613e8b/integration-tests/flipt/src/main/resources/features.yaml"
+   }
+  }
+ ],
+ "clean_set": [
+  {
+   "file": "files/real/1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d.json",
+   "rationale": "Phase 0 hand check (smoke 3)",
+   "source": {
+    "path": "system_tests/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "1195b997bf034da9beca849f2003c5ea24ae5bd720d806296cbbc78c8ce23a8d",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/flags.json"
+   }
+  },
+  {
+   "file": "files/real/36e66cac6e733b1babbd4832729de8fbac85e70f80e682650af658f6af672296.json",
+   "rationale": "3 flags, dag_id/cluster_id in list -> on/off, both reachable, all variants used",
+   "source": {
+    "path": "system_tests/flags/gates_flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "43dac4337db5780a5b40bd02712fbf88e9f00de1",
+    "repo": "1fanwang/airflow-provider-openfeature",
+    "sha256": "36e66cac6e733b1babbd4832729de8fbac85e70f80e682650af658f6af672296",
+    "url": "https://raw.githubusercontent.com/1fanwang/airflow-provider-openfeature/43dac4337db5780a5b40bd02712fbf88e9f00de1/system_tests/flags/gates_flags.json"
+   }
+  },
+  {
+   "file": "files/real/155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8.yaml",
+   "rationale": "one rule + default, both variations used",
+   "source": {
+    "path": "flags.goff.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "6a829704f9e64d15e22359fa03049cb009826c88",
+    "repo": "BenAychh/ff-test",
+    "sha256": "155f921b8fd188f95f19bd6a1df05cd565af9e23ccdd64b4143017a3962a97d8",
+    "url": "https://raw.githubusercontent.com/BenAychh/ff-test/6a829704f9e64d15e22359fa03049cb009826c88/flags.goff.yaml"
+   }
+  },
+  {
+   "file": "files/real/96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084.yaml",
+   "rationale": "single-variant flags, each produced by its 100% rule; boolean toggle",
+   "source": {
+    "path": "docker/flipt/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "cdf7ecafd77e2a4e1157ec6c7191a6361707153c",
+    "repo": "alexcardell/openfeature-scala",
+    "sha256": "96738ded2a4ed67978d4212144cfb5b41f5e2f8b5811fe40a8857eef89b9f084",
+    "url": "https://raw.githubusercontent.com/alexcardell/openfeature-scala/cdf7ecafd77e2a4e1157ec6c7191a6361707153c/docker/flipt/features.yaml"
+   }
+  },
+  {
+   "file": "files/real/00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a.yml",
+   "rationale": "toggles, one segment rollout, one rule v2 + default v1",
+   "source": {
+    "path": "tests/fixtures/flags/test/smoke-test/features.yml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "b30003a086f6f2d8c6c2b1685b107c91d372e47a",
+    "repo": "ministryofjustice/hmpps-feature-flags",
+    "sha256": "00be697feb794b23e6d1c0fd83f8928d543b359877f06d150b8f178fdc70946a",
+    "url": "https://raw.githubusercontent.com/ministryofjustice/hmpps-feature-flags/b30003a086f6f2d8c6c2b1685b107c91d372e47a/tests/fixtures/flags/test/smoke-test/features.yml"
+   }
+  },
+  {
+   "file": "files/real/5fa2778e8669e934715a3b68525b99fc21967eda477549a761cfbac3e686d595.json",
+   "rationale": "host in list -> on/off; other flags toggles",
+   "source": {
+    "path": "news-stream/deploy/apps/flags/flags.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "4c107a939ea496a4999ff653bbb33849789723bd",
+    "repo": "DE0CH/yyc-code",
+    "sha256": "5fa2778e8669e934715a3b68525b99fc21967eda477549a761cfbac3e686d595",
+    "url": "https://raw.githubusercontent.com/DE0CH/yyc-code/4c107a939ea496a4999ff653bbb33849789723bd/news-stream/deploy/apps/flags/flags.json"
+   }
+  },
+  {
+   "file": "files/real/bdc2045caf3b1ec27f040f5edf0e958fced81865b51a04aacfe153d2cc89f2a0.json",
+   "rationale": "toggles + one email == rule with on/off",
+   "source": {
+    "path": "test/Dynatrace.OpenFeature.Tests/Resources/flag-config.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "8855bf3e705bdd15938f42b29a23124b13989411",
+    "repo": "Dynatrace/openfeature-provider-dotnet",
+    "sha256": "bdc2045caf3b1ec27f040f5edf0e958fced81865b51a04aacfe153d2cc89f2a0",
+    "url": "https://raw.githubusercontent.com/Dynatrace/openfeature-provider-dotnet/8855bf3e705bdd15938f42b29a23124b13989411/test/Dynatrace.OpenFeature.Tests/Resources/flag-config.json"
+   }
+  },
+  {
+   "file": "files/real/5462d69ed24e14c90882b0c0ec65a899a56819ffb97db656e614d522fe212c3f.json",
+   "rationale": "toggles + roles contains preview:access -> on/off",
+   "source": {
+    "path": "scripts/check-flags/test/fixtures/bad-key/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "778cc4a391e7fc60370e3d1ceba6d214a36558c0",
+    "repo": "EconGraph/econ-graph",
+    "sha256": "5462d69ed24e14c90882b0c0ec65a899a56819ffb97db656e614d522fe212c3f",
+    "url": "https://raw.githubusercontent.com/EconGraph/econ-graph/778cc4a391e7fc60370e3d1ceba6d214a36558c0/scripts/check-flags/test/fixtures/bad-key/flags.flagd.json"
+   }
+  },
+  {
+   "file": "files/real/26ae8b825ab0a86c5ccb12f9527049b70fea12da069570b2d5d48d4a0789b111.json",
+   "rationale": "two emailDomain == rules with on/off",
+   "source": {
+    "path": "apps/backend/flags.flagd.json",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "0dcf7f8ce20e411b7aa018318055184d827dc1ad",
+    "repo": "GeorgeT7/advanced-waitlist",
+    "sha256": "26ae8b825ab0a86c5ccb12f9527049b70fea12da069570b2d5d48d4a0789b111",
+    "url": "https://raw.githubusercontent.com/GeorgeT7/advanced-waitlist/0dcf7f8ce20e411b7aa018318055184d827dc1ad/apps/backend/flags.flagd.json"
+   }
+  },
+  {
+   "file": "files/real/d8284ed888e2fe7cfa50b5502a1d1e48f50392844bb66cafa4eb6283a7f5232b.yaml",
+   "rationale": "boolean toggles and 100% threshold rollouts",
+   "source": {
+    "path": "tv-tracker-staging/default/features.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "3e70f0e85e931be21911bb6ededb80e96806f243",
+    "repo": "MichaelKohler/flags",
+    "sha256": "d8284ed888e2fe7cfa50b5502a1d1e48f50392844bb66cafa4eb6283a7f5232b",
+    "url": "https://raw.githubusercontent.com/MichaelKohler/flags/3e70f0e85e931be21911bb6ededb80e96806f243/tv-tracker-staging/default/features.yaml"
+   }
+  },
+  {
+   "file": "files/real/49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095.yaml",
+   "rationale": "one rule (percentage 100/0) + default (0/100), sums 100",
+   "source": {
+    "path": "pkg/unify-query/featureFlag.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e",
+    "repo": "TencentBlueKing/bkmonitor-datalink",
+    "sha256": "49be841f022a6ed2dbc498dd1bb169983d51eb4f24e6cd9cf219abd07276e095",
+    "url": "https://raw.githubusercontent.com/TencentBlueKing/bkmonitor-datalink/ba2f88c3db31ec9acd01db40dc0832a8e7d20c4e/pkg/unify-query/featureFlag.yaml"
+   }
+  },
+  {
+   "file": "files/real/ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c.yaml",
+   "rationale": "two disjoint rules + default percentage, sums 100",
+   "source": {
+    "path": "features/feature.yaml",
+    "provenance_prereg": "non-sample",
+    "provenance_strict": "non-sample",
+    "ref": "7e90fa88d097aa2ee1e75211d5e6026fe361bf5a",
+    "repo": "aliykh/docker-kubernetes",
+    "sha256": "ec5669d32f16de7fdfdd0e572bca22a076060ddac1bbae99738f0fcb7cd6e07c",
+    "url": "https://raw.githubusercontent.com/aliykh/docker-kubernetes/7e90fa88d097aa2ee1e75211d5e6026fe361bf5a/features/feature.yaml"
+   }
+  }
+ ],
+ "contexts": "D-6",
+ "frozen": "2026-11-25 (before the Gate 1 measurement run); two labels corrected by owner decision P1-Z-7",
+ "schema": "flagbound.devbench/v1"
+}
